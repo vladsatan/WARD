@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151722;
+    position: relative;
+    border-bottom: 2px solid #A5B3FF;
+}
+
+.header-container {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.header-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.header-container a:hover {
+    color: #3CB9FF;
+}
+
