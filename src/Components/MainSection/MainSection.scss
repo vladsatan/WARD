@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.MainSection {
+    width: 100%;
+    background-color: #151722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainSection_container {
+    display: flex;
+    max-width: 1920px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 84px 0px;
+}
+
+.left-s,.right-s {
+    width: 40%;
+}
+
+.left-s {
+    max-width: 715px;
+    text-align: left;
+    padding-right: 50px;
+    z-index: 3;
+}
+
+.left-s h1 {
+    font-size: 96px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-style: normal;
+}
+
+.left-s span {
+    color: #3cb9ff;
+}
+
+.left-s p {
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 28px;
+  font-weight: 400px;
+  padding: 60px 0px;
+}
+
+.left-s button {
+    width: 400px;
+    height: 100px;
+    background: #3CB9FF;
+    color: #151722;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    transition: .3s;
+}
+
+.left-s button:hover {
+    color: white;
+    box-shadow: 0px 3px 10px #3CB9FF;
+}
