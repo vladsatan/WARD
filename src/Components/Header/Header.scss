@@ -3,9 +3,6 @@
 
 header {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #151722;
     position: relative;
     border-bottom: 2px solid #A5B3FF;
@@ -13,10 +10,11 @@ header {
 
 .header-container {
     display: flex;
-    width: 60%;
+    max-width: 1620px;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0px;
+    padding: 50px;
+    margin: 0 auto;
 }
 
 .header-container a {
