@@ -4,6 +4,7 @@ import ImageSection from "./Components/ImageSection/ImageSection";
 import MainSection from "./Components/MainSection/MainSection";
 import chill from "./photos/chilllll.jpg";
 import girl from "./photos/3.jfif"
+import Difference from './Components/Difference/Difference';
 
 function App() {
   const sections = [
