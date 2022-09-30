@@ -28,6 +28,10 @@
     width: 40%;
 }
 
+.right-s {
+    position: relative;
+}
+
 .left-s {
     max-width: 715px;
     text-align: left;
@@ -73,5 +77,11 @@
 .left-s button:hover {
     color: white;
     box-shadow: 0px 3px 10px #3CB9FF;
-    cursor: url("../../icons8-курсор.svg"), pointer;
+}
+
+.figur {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./MainSection.scss"
 import figurs from "../../Logo/figurs.svg"
+import figurback from "../../Logo/figur-back.svg"
 
 export default function MainSection() {
   return (
@@ -16,6 +17,7 @@ export default function MainSection() {
 
             <div className='right-s'>
             <img src={figurs} alt="figurs" width={'120%'} />
+            <img className='figur'  src={figurback} alt="figurs" width={'140%'} />
             </div>
 
 
