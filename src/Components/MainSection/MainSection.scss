@@ -11,6 +11,10 @@
 .MainSection {
     width: 100%;
     background-color: #151722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .MainSection_container {
