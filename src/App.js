@@ -6,6 +6,7 @@ import chill from "./photos/chilllll.jpg";
 import girl from "./photos/3.jfif"
 import Difference from './Components/Difference/Difference';
 import TechStack from "./Components/TechStack/TechStack";
+import Strategy from "./Components/Strategy/Strategy.jsx";
 
 function App() {
   const sections = [
@@ -41,6 +42,7 @@ function App() {
       ))}
       <Difference/>
       <TechStack/>
+      <Strategy/>
     </div>
   );
 }

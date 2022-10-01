@@ -1,0 +1,105 @@
+$red: #a91a36;
+$blue: #3cb9ff;
+
+.Startegy-container {
+  max-width: 1500px;
+  width: 90vw;
+  height: auto;
+  padding: 200px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.Strategy-items-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Strategy-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.Strategy_header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 92px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Strategy-block {
+  width: 386px;
+  height: 537px;
+  margin-left: 30px;
+  background: rgba(4, 7, 22, 0.35);
+  border: 1px solid rgba(2, 6, 21, 0.5);
+  border-radius: 30px;
+  text-align: center;
+  padding: 30px;
+}
+.Strategy-button {
+  width: 332px;
+  height: 80px;
+  background: linear-gradient(180deg, #b91a38 0%, rgba(185, 26, 56, 0) 145%);
+  border-radius: 50px;
+  margin-top: 50px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.Startegy-head1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
+  color: $blue;
+  margin-bottom: 30px;
+}
+.Startegy-head2 {
+  color: $blue;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 30px;
+}
+.Startegy-text1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: white;
+  margin-bottom: 30px;
+}
+.Startegy-text2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.Strategy-red {
+  color: $red;
+}
