@@ -1,0 +1,147 @@
+.Technologies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.Tech-item {
+  width: 260px;
+  height: 180px;
+  background: rgba(4, 7, 22, 0.35);
+  border: 1px solid rgba(2, 6, 21, 0.5);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.Tech-container {
+  width: 90vw;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 200px 0px;
+  box-sizing: border-box;
+}
+
+.Image-paragraf,
+.Image-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52px;
+  color: #ffffff;
+}
+
+.Image-header {
+  font-size: 64px;
+  line-height: 92px;
+  width: 50vw;
+  display: inline;
+}
+.Image-blue {
+  color: #3cb9ff;
+}
+
+.Tech-deteils {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Tech-deteils-item {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.deteils-text {
+  margin-top: 30px;
+  width: 330px;
+  height: 317px;
+  background: rgba(4, 7, 22, 0.35);
+  border: 1px solid rgba(2, 6, 21, 0.5);
+  border-radius: 50px;
+  text-align: center;
+  padding: 30px;
+}
+.deteils-text h5 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #3cb9ff;
+  margin-bottom: 20px;
+}
+
+.deteils-text p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #d2d2d2;
+}
+
+.Startegy-way1 {
+  width: 306px;
+  height: 2px;
+  // margin: 10px 0;
+  background: #b74388;
+  position: relative;
+}
+.Startegy-way1:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -4px;
+  left: 100%;
+  border-width: 4px 0 4px 8px;
+  border-style: solid;
+  border-color: transparent #b74388;
+}
+// .Startegy-way1::before {
+//   content: "";
+//   width: 0;
+//   height: 0;
+//   position: absolute;
+//   top: -4px;
+//   right: 99%;
+//   border-width: 4px 8px 8px 4px;
+//   border-style: solid;
+//   border-color: transparent #b74388;
+// }
+
+.Startegy-way1::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom: 7px solid #b74388;
+  position: absolute;
+  top: -10px;
+  right: 306px;
+}
+
+.Strategy-left {
+  position: relative;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -9px;
+  top: -0.5px;
+  border: 5px solid transparent;
+  border-top: 7px solid #b74388;
+}
