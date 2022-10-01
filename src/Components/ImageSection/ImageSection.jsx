@@ -3,7 +3,7 @@ import chill from "../../photos/chilllll.jpg";
 
 const ImageSection = ({headerStart,headerEnd,paragraf,image,color}) => {
   return (
-    <div className="Image-box">
+    <div className="Image-box" id="aboutUs">
       <div className="Image-container">
         <h2 className="Image-header">
           {headerStart}<span className="Image-blue">{headerEnd}</span>
