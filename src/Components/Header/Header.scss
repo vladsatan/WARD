@@ -3,9 +3,10 @@
 
 header {
     width: 100%;
-    background-color: #151722;
-    position: relative;
+    background-color: #151722b1;
+    position: fixed;
     border-bottom: 2px solid #A5B3FF;
+    z-index: 5;
 }
 
 .header-container {
@@ -13,7 +14,7 @@ header {
     max-width: 1620px;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 25px 50px;
     margin: 0 auto;
 }
 

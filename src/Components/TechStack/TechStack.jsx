@@ -36,7 +36,7 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="Tech-container">
+    <div className="Tech-container" id="techStack">
       <h2 className="Image-header">
         Tech <span className="Image-blue">Stack</span>
       </h2>
@@ -47,7 +47,7 @@ const TechStack = () => {
           </div>
         ))}
       </div>
-      <h2 className="Image-header">
+      <h2 className="Image-header" id="services">
         What we can <span className="Image-blue">do?</span>
       </h2>
       <div className="Tech-deteils">

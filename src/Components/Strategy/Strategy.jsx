@@ -6,7 +6,7 @@ import arroy3 from "../../Logo/arroy3.svg"
 const Strategy = () => {
   
   return (
-    <div className="Startegy-container">
+    <div className="Startegy-container" id="strategy">
       <h2 className="Strategy_header">
         Flexible <span className="Strategy-red">Strategy</span> For Everyone
       </h2>

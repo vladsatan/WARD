@@ -8,6 +8,10 @@ body {
    overflow-x: hidden;
   }
 
+html {
+  scroll-behavior: smooth;
+  }
+
 html::-webkit-scrollbar {
   width: 0px;
   background: rgba(255, 255, 255, 0.0);
