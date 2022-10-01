@@ -15,12 +15,13 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding-bottom: 200px;
 }
 
 .MainSection_container {
     display: flex;
-    max-width: 1620px;
-    justify-content: center;
+    max-width: 1920px;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     padding: 84px 0px;
