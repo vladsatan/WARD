@@ -5,6 +5,7 @@ import MainSection from "./Components/MainSection/MainSection";
 import chill from "./photos/chilllll.jpg";
 import girl from "./photos/3.jfif"
 import Difference from './Components/Difference/Difference';
+import TechStack from "./Components/TechStack/TechStack";
 
 function App() {
   const sections = [
@@ -39,6 +40,7 @@ function App() {
         />
       ))}
       <Difference/>
+      <TechStack/>
     </div>
   );
 }
