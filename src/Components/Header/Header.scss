@@ -3,27 +3,30 @@
 
 header {
     width: 100%;
-    background-color: #151722b1;
+    background-color: #DE015F;
     position: fixed;
-    border-bottom: 2px solid #A5B3FF;
+    border-bottom: 1px solid #DDABBD;
+    border-top: 1px solid #DDABBD;
     z-index: 5;
+    top: 105px;
 }
 
 .header-container {
     display: flex;
-    max-width: 1620px;
+    max-width: 1440px;
+    height: 57px;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 50px;
     margin: 0 auto;
+    padding: 0px 272px;
 }
 
 .header-container a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 29px;
     font-family: 'Jost', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     transition: .3s;
 }
 

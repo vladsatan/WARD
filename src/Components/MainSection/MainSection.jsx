@@ -1,10 +1,17 @@
 import React from 'react'
 import "./MainSection.scss"
-import figurs from "../../Logo/figurs.svg"
-import figurback from "../../Logo/figur-back.svg"
+import cub from "../../anim/cub.png"
+import cvadrat from "../../anim/cvadrat.svg"
+import ellipse from "../../anim/Ellipse.svg"
+import line from "../../anim/Line.svg"
+import pizza from "../../anim/pizza.svg"
+import bigelipse from "../../anim/bigelipse.svg"
+
 
 export default function MainSection() {
   return (
+    <>
+    <div className='logoName'><h1>Ward inc.</h1></div>
     <div className='MainSection'>
         <div className='MainSection_container'>
 
@@ -16,12 +23,22 @@ export default function MainSection() {
 
 
             <div className='right-s'>
-            <img src={figurs} alt="figurs" width={'120%'} />
-            <img className='figur'  src={figurback} alt="figurs" width={'140%'} />
+            <div className="anim-cont">
+     <div className="cub"><img src={cub} alt="cub" /></div>
+     <img className="line" src={line} alt="line"/>
+     <img className="cvadrat" src={cvadrat} alt="cvadrat"/>
+     <img className="ellipse" src={ellipse} alt="ellipse"/>
+     <img className="pizza" src={pizza} alt="pizza"/>
+     <img className="bigelipse" src={bigelipse} alt="bigelipse"/>
+        </div>
+            {/* <img className='figur'  src={figurback} alt="figurs" width={'140%'} /> */}
             </div>
+
+          
 
 
         </div>
     </div>
+    </>
   )
 }
