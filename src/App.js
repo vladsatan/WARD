@@ -11,20 +11,12 @@ import Strategy from "./Components/Strategy/Strategy.jsx";
 function App() {
   const sections = [
     {
-      headerStart: "About ",
-      headerEnd: "Ward Inc.",
-      paragraf:
-        "We’ve provided world-class IT Services in the DFW area for 4+ years, consistently delivering business value with the latest technology.",
-      image: chill,
-      color: "#43F07C",
-    },
-    {
       headerStart: "Managet ",
       headerEnd: "IT",
       paragraf:"By outsourcing your Business’ IT Operations to a trusted partner like Ward Inc., you obtain unlimited IT support for your employees and strategic management of all of your IT infrastructure.",
       image: girl,
-      color: "rgb(170, 25, 49)",
-    },
+      color: "#D3095D",
+    }
   ];
 
   return (
