@@ -25,7 +25,7 @@ const TechStack = () => {
       <div className="Technologies">
         {photoArray.map((el) => (
           <div className="Tech-item">
-            <a target={'_blank'} href={el.href}><img className="Tech-logo" src={el.icon} alt="logo"></img></a>
+            <a target={'_blank'} rel="noreferrer" href={el.href}><img className="Tech-logo" src={el.icon} alt="logo"></img></a>
           </div>
         ))}
       </div>
