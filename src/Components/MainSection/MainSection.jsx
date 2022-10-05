@@ -12,7 +12,7 @@ import figurback from "../../Logo/figur-back.svg"
 export default function MainSection() {
   return (
     <>
-    <div className='logoName'><h1>Ward inc.</h1></div>
+  
     <div className='MainSection'>
         <div className='MainSection_container'>
 

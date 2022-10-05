@@ -4,11 +4,12 @@
 header {
     width: 100%;
     background-color: #DE015F;
-    position: fixed;
+    position: sticky;
     border-bottom: 1px solid #DDABBD;
     border-top: 1px solid #DDABBD;
     z-index: 5;
-    top: 105px;
+    top: 0px;
+
 }
 
 .header-container {
