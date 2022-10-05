@@ -2,7 +2,7 @@ $red: #a91a36;
 $blue: #3cb9ff;
 
 .Startegy-container {
-  max-width: 1500px;
+  max-width: 1440px;
   width: 90vw;
   height: auto;
   padding: 200px 0px;
@@ -19,10 +19,8 @@ $blue: #3cb9ff;
 }
 
 .Strategy-item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin-top: 50px;
+  text-align: center;
 }
 
 .Strategy_header {
@@ -38,7 +36,7 @@ $blue: #3cb9ff;
 .Strategy-block {
   width: 386px;
   height: 537px;
-  margin-left: 30px;
+  margin: 0 auto;
   background: rgba(4, 7, 22, 0.35);
   border: 1px solid rgba(2, 6, 21, 0.5);
   border-radius: 30px;
@@ -59,6 +57,11 @@ $blue: #3cb9ff;
   text-align: center;
   color: #ffffff;
   border: none;
+  transition: .3s ease-in-out;
+}
+
+.Strategy-button:hover {
+  font-size: 26px;
 }
 
 .Startegy-head1 {
@@ -78,7 +81,6 @@ $blue: #3cb9ff;
   font-weight: 400;
   font-size: 24px;
   line-height: 125%;
-  margin-bottom: 30px;
 }
 .Startegy-text1 {
   font-family: "Jost";
@@ -87,8 +89,29 @@ $blue: #3cb9ff;
   font-size: 24px;
   line-height: 125%;
   color: white;
+  margin-bottom: 60px;
+}
+
+.Startegy-text12 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: white;
   margin-bottom: 30px;
 }
+
+.Startegy-text13 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: white;
+  margin-bottom: 30px;
+}
+
 .Startegy-text2 {
   font-family: "Jost";
   font-style: normal;
@@ -98,8 +121,14 @@ $blue: #3cb9ff;
   text-align: center;
   color: white;
   margin-bottom: 30px;
+  list-style-position:inside;
 }
 
 .Strategy-red {
-  color: $red;
+  color: $blue;
+}
+
+.arroy {
+  margin-top: 23px;
+  margin-bottom: 28px;
 }

@@ -5,7 +5,7 @@
 }
 
 .Image-box {
-  width: 90vw;
+  max-width: 1440px;
   height: max-content;
   box-sizing: border-box;
   position: relative;
@@ -16,11 +16,6 @@
   //   overflow: hidden;
   max-width: 1500px;
   padding-left: 100px;
-  margin-top: 100px;
-}
-.Image-paragraf,
-.Image-header {
-  // margin-left: 20px;
 }
 
 .Image-paragraf,
@@ -54,9 +49,6 @@
   max-width: 750px;
 }
 
-.Image-circle_back {
-}
-
 .Section_transp {
   width: 700px;
   height: 700px;
@@ -86,7 +78,7 @@
   height: 300px;
   border-radius: 50%;
   position: absolute;
-  right: 340px;
-  top: 93px;
+  right: 335px;
+  top: 86px;
   z-index: 0;
 }

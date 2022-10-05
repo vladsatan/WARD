@@ -17,14 +17,17 @@
   margin-left: 10px;
   margin-top: 50px;
   margin-bottom: 50px;
+  transition: all .3s ease-in-out;
+}
+
+.Tech-item:hover {
+  border: 1px solid #3cb9ff;
 }
 
 .Tech-container {
-  width: 90vw;
-  max-width: 1500px;
+  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
-  padding: 200px 0px;
   box-sizing: border-box;
 }
 
@@ -63,14 +66,14 @@
 
 .deteils-text {
   margin-top: 30px;
-  width: 330px;
+  width: 280px;
   height: 317px;
-  background: rgba(4, 7, 22, 0.35);
-  border: 1px solid rgba(2, 6, 21, 0.5);
+  background: linear-gradient(180deg, #0F1016 0%, rgba(15, 16, 22, 0) 100%);
   border-radius: 50px;
   text-align: center;
   padding: 30px;
 }
+
 .deteils-text h5 {
   font-family: "Jost";
   font-style: normal;
