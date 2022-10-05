@@ -8,3 +8,28 @@
     background-color: #151722;
 
 }
+
+.logoName {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px 118px;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    color: #3CB9FF;
+}
+
+@media (max-width: 780px) {
+    .logoName {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    .logoName {
+        padding: 10px 30px;
+    }
+    .logoName h1 {
+       font-size: 50px;
+    }
+}
