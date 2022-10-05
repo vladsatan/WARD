@@ -3,33 +3,31 @@ import Header from "./Components/Header/Header";
 import ImageSection from "./Components/ImageSection/ImageSection";
 import MainSection from "./Components/MainSection/MainSection";
 import chill from "./photos/chilllll.jpg";
-import girl from "./photos/3.jfif"
-import Difference from './Components/Difference/Difference';
+import girl from "./photos/3.jfif";
+import Difference from "./Components/Difference/Difference";
 import TechStack from "./Components/TechStack/TechStack";
 import Strategy from "./Components/Strategy/Strategy.jsx";
 import OurServises from "./Components/OurServises/OurServises";
 import Calendary from "./Components/Calendary/Calendary";
+import { useEffect } from "react";
 
 function App() {
+  
   const sections = [
     {
       headerStart: "Managet ",
       headerEnd: "IT",
-      paragraf:"By outsourcing your Business’ IT Operations to a trusted partner like Ward Inc., you obtain unlimited IT support for your employees and strategic management of all of your IT infrastructure.",
+      paragraf:
+        "By outsourcing your Business’ IT Operations to a trusted partner like Ward Inc., you obtain unlimited IT support for your employees and strategic management of all of your IT infrastructure.",
       image: girl,
       color: "#D3095D",
-    }
+    },
   ];
 
-  const doScroll =()=>{
-    let scroll = window.scrollY
-    console.log(scroll);
-  }
-  
+ 
 
   return (
-    <div className="App" onScroll={doScroll}>
-      <Header />
+    <div className="App">
       <MainSection />
       {sections.map((el) => (
         <ImageSection
@@ -41,9 +39,9 @@ function App() {
         />
       ))}
       <OurServises />
-      <Difference/>
-      <TechStack/>
-      <Strategy/>
+      <Difference />
+      <TechStack />
+      <Strategy />
       <Calendary />
     </div>
   );
