@@ -6,6 +6,7 @@ import ellipse from "../../anim/Ellipse.svg"
 import line from "../../anim/Line.svg"
 import pizza from "../../anim/pizza.svg"
 import bigelipse from "../../anim/bigelipse.svg"
+import figurback from "../../Logo/figur-back.svg"
 
 
 export default function MainSection() {
@@ -30,8 +31,9 @@ export default function MainSection() {
      <img className="ellipse" src={ellipse} alt="ellipse"/>
      <img className="pizza" src={pizza} alt="pizza"/>
      <img className="bigelipse" src={bigelipse} alt="bigelipse"/>
+     <img className='figur' src={figurback} alt="figurs" width={'100%'}  />
         </div>
-            {/* <img className='figur'  src={figurback} alt="figurs" width={'140%'} /> */}
+            
             </div>
 
           
