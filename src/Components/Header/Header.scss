@@ -39,3 +39,31 @@ header {
 .header-container a:hover {
   color: #3cb9ff;
 }
+
+@media (max-width: 1200px) {
+  .header-container{
+      padding: 0px 100px;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .header-container a {font-size: 24px;}
+}
+
+@media (max-width: 720px) {
+  .header-container a {font-size: 20px;}
+}
+
+@media (max-width: 680px) {
+  .header-container{
+      padding: 0px 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-container{
+      padding: 0px 10px;
+  }
+}
+

@@ -9,7 +9,6 @@ import TechStack from "./Components/TechStack/TechStack";
 import Strategy from "./Components/Strategy/Strategy.jsx";
 import OurServises from "./Components/OurServises/OurServises";
 import Calendary from "./Components/Calendary/Calendary";
-import { useEffect } from "react";
 
 function App() {
   
@@ -27,9 +26,11 @@ function App() {
  
 
   return (
-    <div className="App">
+    <div className="App" >
+      <div className='logoName'><h1>Ward inc.</h1></div>
+
       <MainSection />
-      {sections.map((el) => (
+      {/* {sections.map((el) => (
         <ImageSection
           headerStart={el.headerStart}
           headerEnd={el.headerEnd}
@@ -37,7 +38,7 @@ function App() {
           image={el.image}
           color={el.color}
         />
-      ))}
+      ))} */}
       <OurServises />
       <Difference />
       <TechStack />

@@ -10,12 +10,14 @@ $blue: #3cb9ff;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .Strategy-items-container {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .Strategy-item {
@@ -131,4 +133,88 @@ $blue: #3cb9ff;
 .arroy {
   margin-top: 23px;
   margin-bottom: 28px;
+}
+
+@media (max-width: 1200px) {
+  .Strategy-items-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+  }
+  .Strategy-item{
+    margin-right: 20px;
+  }
+
+ .Startegy-container {
+  max-width: 1440px;
+  height: auto;
+  padding: 70px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+}
+
+@media (max-width: 680px){
+  .Strategy_header{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .Strategy_header {
+   font-size: 34px;
+  }
+
+  .Strategy-block {
+    width: 320px;
+    height: auto;
+}
+
+.Startegy-head1 {
+  
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.Startegy-text1 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.arroy {
+  width: 245px;
+  margin-top: 23px;
+  margin-bottom: 15px;
+}
+
+.Startegy-text2 {
+ font-size: 18px;
+ margin-bottom: 0px;
+}
+
+.Startegy-text12 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.Startegy-text13 {
+ 
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.Startegy-head2 {
+  font-size: 21px;
+}
+.Strategy-items-container {
+  padding: 0px 0px;
+}
+
+.Strategy-button {
+  width: 246px;
+  height: 69px;
+  font-size: 18px;
+}
 }
