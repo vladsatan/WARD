@@ -7,6 +7,8 @@ import girl from "./photos/3.jfif"
 import Difference from './Components/Difference/Difference';
 import TechStack from "./Components/TechStack/TechStack";
 import Strategy from "./Components/Strategy/Strategy.jsx";
+import OurServises from "./Components/OurServises/OurServises";
+import Calendary from "./Components/Calendary/Calendary";
 
 function App() {
   const sections = [
@@ -19,8 +21,14 @@ function App() {
     }
   ];
 
+  const doScroll =()=>{
+    let scroll = window.scrollY
+    console.log(scroll);
+  }
+  
+
   return (
-    <div className="App">
+    <div className="App" onScroll={doScroll}>
       <Header />
       <MainSection />
       {sections.map((el) => (
@@ -32,9 +40,11 @@ function App() {
           color={el.color}
         />
       ))}
+      <OurServises />
       <Difference/>
       <TechStack/>
       <Strategy/>
+      <Calendary />
     </div>
   );
 }
