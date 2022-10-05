@@ -1,15 +1,30 @@
-import React from 'react'
-import "./Header.scss"
+import React, { useState } from "react";
+import "./Header.scss";
+import { useEffect } from "react";
 
 export default function Header() {
+  const [transparent, setTransparent] = useState(0);
+  
+
+  useEffect(() => {
+    let event = window.addEventListener("scroll", () => {
+      const position = window.scrollY;
+      if (position > 110) {
+        setTransparent(position);
+      } else {
+        setTransparent(null);
+      }
+      return window.removeEventListener(event);
+    });
+  }, []);
   return (
-    <header>
-        <div className='header-container'>
-                <a href='#aboutUs'>ABOUT US</a>
-                <a href='#services'>Our Services</a>
-                <a href='#techStack'>Tech Stack</a>
-                <a href='#strategy'>Strategy</a>
-        </div>
+    <header className={transparent ? "Header-transparent" : "header"}>
+      <div className="header-container">
+        <a href="#aboutUs">ABOUT US</a>
+        <a href="#services">Our Services</a>
+        <a href="#techStack">Tech Stack</a>
+        <a href="#strategy">Strategy</a>
+      </div>
     </header>
-  )
+  );
 }
