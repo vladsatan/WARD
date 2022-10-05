@@ -1,64 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 
 header {
-    width: 100%;
-    background-color: #DE015F;
-    position: sticky;
-    border-bottom: 1px solid #DDABBD;
-    border-top: 1px solid #DDABBD;
-    z-index: 5;
-    top: 0px;
+  width: 100%;
+  position: sticky;
+  border-bottom: 1px solid #ddabbd;
+  border-top: 1px solid #ddabbd;
+  z-index: 5;
+  top: 0;
+  transition-duration: 3s;
+}
+.header {
+  background-color: #de015f;
+}
 
+.Header-transparent {
+    background-color: #de01614d;
 }
 
 .header-container {
-    display: flex;
-    max-width: 1440px;
-    height: 57px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0px 272px;
+  display: flex;
+  max-width: 1440px;
+  height: 57px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px 272px;
 }
 
 .header-container a {
-    color: white;
-    text-decoration: none;
-    font-size: 29px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    transition: .3s;
+  color: white;
+  text-decoration: none;
+  font-size: 29px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  transition: 0.3s;
 }
 
 .header-container a:hover {
-    color: #3CB9FF;
+  color: #3cb9ff;
 }
 
 @media (max-width: 1200px) {
-    .header-container{
-        padding: 0px 100px;
-    }
-    
+  .header-container{
+      padding: 0px 100px;
+  }
+  
 }
 
 @media (max-width: 800px) {
-    .header-container a {font-size: 24px;}
+  .header-container a {font-size: 24px;}
 }
 
 @media (max-width: 720px) {
-    .header-container a {font-size: 20px;}
+  .header-container a {font-size: 20px;}
 }
 
 @media (max-width: 680px) {
-    .header-container{
-        padding: 0px 50px;
-    }
+  .header-container{
+      padding: 0px 50px;
+  }
 }
 
 @media (max-width: 500px) {
-    .header-container{
-        padding: 0px 10px;
-    }
+  .header-container{
+      padding: 0px 10px;
+  }
 }
 
