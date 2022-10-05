@@ -27,7 +27,7 @@ function App() {
       <div className='logoName'><h1>Ward inc.</h1></div>
       <Header />
       <MainSection />
-      {sections.map((el) => (
+      {/* {sections.map((el) => (
         <ImageSection
           headerStart={el.headerStart}
           headerEnd={el.headerEnd}
@@ -35,7 +35,7 @@ function App() {
           image={el.image}
           color={el.color}
         />
-      ))}
+      ))} */}
       <OurServises />
       <Difference/>
       <TechStack/>

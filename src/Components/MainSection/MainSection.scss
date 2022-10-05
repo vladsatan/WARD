@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 .MainSection {
     width: 100%;
     background-color: #151722;
@@ -24,19 +25,10 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    padding: 72px 156px 80px;
+    padding: 72px 20px 80px;
     margin: 0 auto;
 }
 
-.logoName {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 10px 118px;
-    font-weight: 400;
-    font-size: 36px;
-    font-family: 'Bebas Neue', cursive;
-    color: #3CB9FF;
-}
 
 .left-s {
     max-width: 470px;
@@ -155,3 +147,167 @@
     right: 186px;
     bottom: 199px;
   }
+
+  .disnun{
+    display: none;
+  }
+
+  @media (max-width: 1200px) {
+    .MainSection{padding-bottom: 0px;}
+}
+
+  @media (max-width: 1100px){
+    .left-s {
+      max-width: 1100px;
+      text-align: left;
+      z-index: 3;
+  }
+  .disnun{
+    display: block;
+    width: 667px;
+    height: 685px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-s{
+    display: none;
+  }
+
+  .left-s button{
+    margin: 0;
+  }
+  .left-s h1{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 920px) {
+  .MainSection_container {
+    justify-content: space-between;
+    padding: 72px 156px 80px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width: 720px) {
+  .left-s h1 {
+    font-size: 74px;
+    padding-left: 30px;
+}
+.left-s p {
+  padding-left: 30px;
+}
+.left-s button{
+  margin-left: 30px;
+}
+}
+
+@media (max-width: 680px) {
+  .MainSection_container {
+    justify-content: space-between;
+    padding: 30px 0px 0px 0px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+  .left-s h1 {
+    font-size: 54px;
+    padding-left: 30px;
+}
+
+.left-s button {
+  margin: 0 auto;
+}
+
+//animation
+
+.anim-cont {
+  width: 333px;
+  height: 342px;
+  margin: 50px auto;
+}
+
+.cub img {
+  width: 195px;
+}
+
+.line {
+  position: absolute;
+  top: 20px;
+  left: 17px;
+  width: 300px;
+}
+
+.cvadrat {
+  position: absolute;
+  bottom: 53px;
+  right: 47px;
+  transition: .5s ease-in-out;
+  width: 138px;
+}
+
+.ellipse {
+  position: absolute;
+  top: 37px;
+  left: 35px;
+  width: 137px;
+  transition: .5s ease-in-out;
+  z-index: 2;
+}
+
+.pizza {
+  position: absolute;
+  top: 84px;
+  left: 81px;
+  width: 137px;
+  transition: .5s ease-in-out;
+}
+
+.bigelipse {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 137px;
+  transition: .5s ease-in-out;
+}
+
+}
+
+@media (max-width: 520px) {
+  .left-s h1 {
+    font-size: 34px;
+    padding-left: 10px;
+}
+
+.left-s p {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.left-s button{
+  width: 250px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+}
+
+@media (max-width: 420px) {
+  .left-s h1 {
+    font-size: 28px;
+    padding-left: 0px;
+}
+
+.left-s button {
+  width: 250px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  display: block;
+}
+}

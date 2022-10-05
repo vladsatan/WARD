@@ -18,6 +18,19 @@ export default function MainSection() {
 
             <div className='left-s'>
                 <h1>WE’RE <span>Ward INC.</span><br></br>We Are Managed Technology</h1>
+
+                <div className="anim-cont disnun">
+     <div className="cub"><img src={cub} alt="cub" /></div>
+     <img className="line" src={line} alt="line"/>
+     <img className="cvadrat" src={cvadrat} alt="cvadrat"/>
+     <img className="ellipse" src={ellipse} alt="ellipse"/>
+     <img className="pizza" src={pizza} alt="pizza"/>
+     <img className="bigelipse" src={bigelipse} alt="bigelipse"/>
+     <img className='figur' src={figurback} alt="figurs" width={'100%'}  />
+        </div>
+
+
+
                 <p>We help organizations of all sizes<br></br> simplify and take control<br></br> of their IT.</p>
                 <button>GET YOUR PLAN TODAY</button>
             </div>
