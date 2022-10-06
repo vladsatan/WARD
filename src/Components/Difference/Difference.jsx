@@ -12,7 +12,7 @@ export default function Difference() {
         <div className='difference-container'>
             <h1><span>Ward Inc.</span> Difference</h1>
             <div className='flex-diff'>
-            <img className='differ-img' src={differBack} alt='differBack' width={'80%'} />
+            <img className='differ-img' src={differBack} alt='differBack' width={'100%'} />
                 <div className='box'>
                     <img src={analyticsReference} alt="analyticsReference" />
                     <h2>Better value for your money</h2>
@@ -37,7 +37,7 @@ export default function Difference() {
                 <div className='box'>
                     <img src={bot} alt="bot" />
                     <h2>Certified Professionals</h2>
-                    <p>We make sure our team <br />
+                    <p id="techStack">We make sure our team <br />
                        carries the perfect combination <br />
                        of theoretical and field expertise, <br />
                        so rest assured your IT Operations <br />

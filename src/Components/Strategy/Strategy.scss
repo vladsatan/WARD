@@ -135,6 +135,15 @@ $blue: #3cb9ff;
   margin-bottom: 28px;
 }
 
+@media (max-width: 1317px) {
+  .Strategy-items-container {
+    justify-content: center;
+  }
+  .Strategy-item {
+    margin-right: 20px;
+  }
+}
+
 @media (max-width: 1200px) {
   .Strategy-items-container {
     justify-content: center;

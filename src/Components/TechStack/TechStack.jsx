@@ -18,7 +18,7 @@ const TechStack = () => {
 ]
 
   return (
-    <div className="Tech-container" id="techStack">
+    <div className="Tech-container">
       <h2 className="Image-header">
         Tech <span className="Image-blue">Stack</span>
       </h2>

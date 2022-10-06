@@ -117,8 +117,14 @@
     border: 5px solid transparent;
     border-top: 7px solid #b74388;
   }
+
+@media (max-width: 1317px) {
+  .Tech-deteils {
+    justify-content: center;
+  }
+}
   
-  @media (max-width: 1200px){
+@media (max-width: 1200px){
     .Tech-deteils {
       justify-content: center;
     }
@@ -129,9 +135,9 @@
       align-items: center;
       margin-top: 50px;
     }
-  }
+}
 
-  @media (max-width: 520px) {
+@media (max-width: 520px) {
     .Image-header {
       font-size: 44px;
     }

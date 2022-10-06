@@ -81,6 +81,13 @@
     color: #d2d2d2c8;
 }
 
+@media (max-width: 1317px) {
+    .flex-diff {
+      justify-content: center;
+      padding: 51px 10px 0px 10px;
+    }
+}
+
 @media (max-width: 1200px) {
     .flex-diff{
         justify-content: center;
