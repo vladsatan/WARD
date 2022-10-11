@@ -23,7 +23,7 @@ function App() {
       <Brand />
       <Help />
       <TechStack />
-      <Cases />
+      {/* <Cases /> */}
       <Feedback status={isFeetback} setStatus={setIsFeetback} />
       <div className="flag" onClick={()=>setIsFeetback(!isFeetback)}>HIRE US</div>
     </div>
