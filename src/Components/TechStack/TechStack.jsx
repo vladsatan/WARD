@@ -1,36 +1,27 @@
-import redux from "../../photos/redux-logo 2.png";
-import nodeLogo from "../../photos/node-logo-png-6 1.png";
-import sassLogo from "../../photos/OIP 1.png";
-import jsLogo from "../../photos/javascript-300x300 1.png";
-import phpLogo from "../../photos/R (2) 1.png";
-import reactLogo from "../../photos/da1c1ba16e52114d1a59e9ad666a4ae6 2.png";
-import "../TechStack/TechStack.scss";
+import React from 'react'
+import "./TechStack.scss"
+import redux from "../../Logo/redux-logo.svg"
+import php from "../../Logo/php-logo.svg"
+import node from "../../Logo/node-logo.svg"
+import javaskript from "../../Logo/javascript-logo.svg"
+import sass from "../../Logo/sass-logo.svg"
+import react from "../../Logo/react-logo.svg"
 
-const TechStack = () => {
-
-  const photoArray = [
-    { icon: redux, href: 'https://redux.js.org/'},
-    { icon: nodeLogo, href: 'https://nodejs.org/en/'},
-    { icon: sassLogo, href: 'https://sass-lang.com/'},
-    { icon: jsLogo, href: 'https://learn.javascript.ru/'},
-    { icon: phpLogo, href: 'https://www.php.net/manual/ru/intro-whatis.php'},
-    { icon: reactLogo, href: 'https://reactjs.org/'},
-]
-
+export default function TechStack() {
   return (
-    <div className="Tech-container">
-      <h2 className="Image-header">
-        Tech <span className="Image-blue">Stack</span>
-      </h2>
-      <div className="Technologies">
-        {photoArray.map((el) => (
-          <div className="Tech-item">
-            <a target={'_blank'} rel="noreferrer" href={el.href}><img className="Tech-logo" src={el.icon} alt="logo"></img></a>
-          </div>
-        ))}
-      </div>
+    <div className='TechStack' id='techStack'>
+        <div className='TechStack_container'>
+            <h1><span>Tech</span> Stack</h1>
+            <div className='big_stack_container'>
+             <a target={"_blank"} rel="noreferrer" href="https://redux.js.org/"><div className='stack_container1'><img src={redux} alt="" /></div></a>
+            <a target={"_blank"} rel="noreferrer" href="https://www.php.net/"><div className='stack_container2'><img src={php} alt="" /></div></a> 
+            <a target={"_blank"} rel="noreferrer" href="https://nodejs.org/en/"><div className='stack_container3'><img src={node} alt="" /></div></a>
+            <a target={"_blank"} rel="noreferrer" href="https://javascript.info/"><div className='stack_container4'><img src={javaskript} alt="" /></div></a>
+            <a target={"_blank"} rel="noreferrer" href="https://sass-lang.com/"><div className='stack_container5'><img src={sass} alt="" /></div></a>
+            <a target={"_blank"} rel="noreferrer" href="https://reactjs.org/"><div className='stack_container6'><img src={react} alt="" /></div></a>
+            </div>
+        </div>
     </div>
-  );
-};
+  )
+}
 
-export default TechStack;

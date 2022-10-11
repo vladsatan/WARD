@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Jost', sans-serif;
+
+.Brand {
+ width: 100%;
+}
+
+.brand-cotainer {
+  max-width: 1440px;
+  margin: 100px auto;
+  position: relative;
+  text-align: center;
+}
+
+.equity_ti {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    color: #F7F8FA;
+    margin-bottom: 72px;
+}
+
+
+.equity_flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.equity_container {
+    width: 337px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+}
+
+.equity_container img {
+    padding-bottom: 45px;
+}
+
+.equity_container p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #F3F5F8;
+}
+
+.equity_container span {
+    color: #3CB9FF;
+}
+
+.equity_tittle_span,.equity_tittle {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    color: #F7F8FA;
+}
+
+.equity_tittle_span {
+    margin-bottom: 92px;
+}
+
+.equity_tittle {
+    margin-bottom: 44px;
+}

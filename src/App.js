@@ -1,49 +1,31 @@
 import "./App.scss";
-import Header from "./Components/Header/Header";
-import ImageSection from "./Components/ImageSection/ImageSection";
 import MainSection from "./Components/MainSection/MainSection";
-import chill from "./photos/chilllll.jpg";
-import girl from "./photos/3.jfif";
-import Difference from "./Components/Difference/Difference";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import Solution from "./Components/Solution/Solution";
+import Brand from "./Components/Brand/Brand";
 import TechStack from "./Components/TechStack/TechStack";
-import Strategy from "./Components/Strategy/Strategy.jsx";
-import OurServises from "./Components/OurServises/OurServises";
-import Calendary from "./Components/Calendary/Calendary";
+import Help from "./Components/Help/Help";
+import Cases from "./Components/Cases/Cases";
+import Feedback from "./Components/Feedback/Feedback";
+import { useState } from "react";
+
 
 function App() {
-  
-  const sections = [
-    {
-      headerStart: "Managet ",
-      headerEnd: "IT",
-      paragraf:
-        "By outsourcing your Business’ IT Operations to a trusted partner like Ward Inc., you obtain unlimited IT support for your employees and strategic management of all of your IT infrastructure.",
-      image: girl,
-      color: "#D3095D",
-    },
-  ];
 
- 
+  const [isFeetback, setIsFeetback] = useState(false);
 
   return (
     <div className="App" >
       <div className='logoName'><h1>Ward inc.</h1></div>
-
-      <MainSection />
-      {/* {sections.map((el) => (
-        <ImageSection
-          headerStart={el.headerStart}
-          headerEnd={el.headerEnd}
-          paragraf={el.paragraf}
-          image={el.image}
-          color={el.color}
-        />
-      ))} */}
-      <OurServises />
-      <Difference />
+      <MainSection setStatus={setIsFeetback} />
+      <AboutUs />
+      <Solution />
+      <Brand />
+      <Help />
       <TechStack />
-      <Strategy />
-      <Calendary />
+      <Cases />
+      <Feedback status={isFeetback} setStatus={setIsFeetback} />
+      <div className="flag" onClick={()=>setIsFeetback(!isFeetback)}>HIRE US</div>
     </div>
   );
 }

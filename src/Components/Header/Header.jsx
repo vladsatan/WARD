@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className={transparent ? "Header-transparent" : "header"}>
       <div className="header-container">
-        <a href="#">ABOUT US</a>
+        <a href="#about">ABOUT US</a>
         <a href="#services">Our Services</a>
         <a href="#techStack">Tech Stack</a>
         <a href="#strategy">Strategy</a>
