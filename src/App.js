@@ -8,6 +8,7 @@ import Help from "./Components/Help/Help";
 import Cases from "./Components/Cases/Cases";
 import Feedback from "./Components/Feedback/Feedback";
 import { useState } from "react";
+import ClientsSay from "./Components/ClientsSay/ClientsSay";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Brand />
       <Help />
       <TechStack />
+      <ClientsSay/>
       <Cases />
       <Feedback status={isFeetback} setStatus={setIsFeetback} />
       <div className="flag" onClick={()=>setIsFeetback(!isFeetback)}>HIRE US</div>

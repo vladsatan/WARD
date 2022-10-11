@@ -14,7 +14,6 @@ export default function Header() {
       } else {
         setTransparent(null);
       }
-      return window.removeEventListener(event);
     });
   }, []);
   return (

@@ -1,0 +1,131 @@
+.clients_container {
+  width: 100vw;
+  max-width: 1440px;
+  background-image: url(../../photos/clientsBack.svg);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.clients_container h1 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 77px;
+  color: #f7f8fa;
+}
+
+.clients_container h1 span {
+  color: #61c6ff;
+}
+
+.clients_slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding-top: 100px;
+}
+
+.client_primary {
+  width: 80%;
+  max-width: 600px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(123, 176, 255, 0.25);
+  backdrop-filter: blur(5px);
+  margin-left: 20px;
+}
+
+.clients_transpareny {
+  width: 80%;
+  max-width: 600px;
+  height: 400px;
+  margin-left: 20px;
+}
+
+.client_primary img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.client_primary p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #d8e5ff;
+}
+
+.client_primary span {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #b7dcef;
+}
+
+.client_secondary {
+  background: rgba(123, 176, 255, 0.15);
+  backdrop-filter: blur(5px);
+  width: 80%;
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 20px;
+}
+.client_secondary img {
+  width: 120px;
+  height: 120px;
+}
+.client_secondary p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: rgba(216, 229, 255, 0.5);
+}
+
+.before {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  z-index: 2;
+}
+
+.after {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 2;
+}
