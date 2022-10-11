@@ -78,3 +78,147 @@
     color: #929395;
     padding-bottom: 221px;
 }
+
+@media (max-width: 1200px) {
+    .about_img {
+        order: 1;
+        margin: 0 auto;
+    }
+    .grey {
+        width: 700px;
+        padding-bottom: 45px;
+        
+    }
+
+    .about-container h2 {
+        font-size: 35px;
+        padding-bottom: 72px;
+        font-weight: 400;
+        padding: 0px 20px 72px 20px;
+    }
+
+    .earth {
+        position: absolute;
+        top: 55px;
+        right: 20px;
+    }
+
+    .about_text {
+        order: 2;
+        margin-top: 42px;
+        padding-left: 100px;
+    }
+    .about-flex {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 0px 49px;
+    flex-wrap: wrap;
+    }
+    .grey_2 {
+        width: 466px;
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: #929395;
+        padding-bottom: 21px;
+    }
+}
+  
+
+@media (max-width: 920px) {
+    .earth {
+        position: absolute;
+        top: 182px;
+        right: 2px;
+    }
+    .about_text {
+        order: 2;
+        margin-top: 42px;
+        padding-left: 17px;
+    }
+}
+
+
+
+
+  
+
+@media (max-width: 720px) {
+    .earth {
+        top: 113px;
+        right: 110px;
+        width: 500px;
+    }
+    .about-container h2 {
+        font-size: 24px;
+        padding: 0px 20px 23px 20px;
+    }
+    .about_img img {
+        width: 300px;
+        height: 300px;
+    }
+    .grey {
+        width: 400px;
+        font-size: 27px;
+    }
+    .grey_1 {
+    font-size: 24px;
+    }
+    .grey_2 {
+        max-width: 466px;
+        font-size: 22px;
+
+    }
+    .about_text h1 {
+        font-size: 54px;
+    }
+}
+  
+@media (max-width: 540px) {
+    .about_text h1 {
+        font-size: 40px;
+    }
+    .earth {
+        top: 122px;
+        right: 63px;
+        width: 419px;
+    }
+    .about_img img {
+        width: 250px;
+        height: 300px;
+    }
+    .about-container h2 {
+        font-size: 18px;
+        padding: 0px 20px 23px 20px;
+    }
+    .grey {
+        width: 316px;
+        font-size: 18px;
+    }
+    .grey_1 {
+        font-size: 18px;
+        width: 281px;
+    }
+    .grey_2 {
+        max-width: 255px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px) {
+    .earth {
+        top: 147px;
+        right: 36px;
+        width: 364px;
+    }
+    .about-flex {
+        padding: 0px 27px;
+    }
+}
+
+@media (max-width: 360px) {
+    .about-flex {
+        padding: 0px 6px;
+    }
+}

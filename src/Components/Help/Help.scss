@@ -78,3 +78,40 @@
     padding-bottom: 46px;
 }
 
+@media (max-width: 720px) {
+    .help_container h1 {
+        padding: 34px 0px;
+        font-size: 48px;
+    }
+    .mini-container {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .help_container h1 {
+        padding: 34px 0px;
+        font-size: 35px;
+    }
+    .mini-container img {
+        margin-bottom: 16px;
+        width: 150px;
+    }
+    .box h3 {
+        color: rgb(188, 216, 241);
+        font-family: "Jost", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .box p {
+        color: rgb(243, 245, 248);
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .box {
+        padding: 16px 20px;
+        width: 279px;
+    }
+}

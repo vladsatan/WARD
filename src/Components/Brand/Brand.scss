@@ -69,3 +69,62 @@
 .equity_tittle {
     margin-bottom: 44px;
 }
+
+@media (max-width: 720px) {
+    .equity_container {
+        margin-right: 24px;
+    }
+    .equity_tittle_span {
+        margin-bottom: 37px;
+    }
+    .equity_container img {
+        padding-bottom: 20px;
+    }
+    .equity_ti {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .brand-cotainer {
+        margin: 3px auto;
+    }
+    .equity_ti {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .equity_container img {
+        padding-bottom: 20px;
+        width: 150px;
+    }
+    .equity_tittle_span {
+        margin-bottom: 37px;
+        font-size: 28px;
+    }
+    .equity_container p {
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #F3F5F8;
+    }
+    .equity_tittle {
+        margin-bottom: 44px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 420px) {
+    .equity_container p {
+        padding: 0 35px;
+    }
+}
+
+@media (max-width: 360px) {
+    .equity_container {
+        margin-right: -5px;
+    }
+    .equity_tittle {
+        padding: 0 55px;
+    }
+}

@@ -67,3 +67,9 @@ header {
   }
 }
 
+@media (max-width: 420px) {
+  .header-container a {
+    font-size: 14px;
+}
+}
+

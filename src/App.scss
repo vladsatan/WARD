@@ -38,6 +38,7 @@
     user-select: none; 
     animation: hire 2s infinite;
     transition: .3s;
+    z-index: 100;
 }
 
 .flag:hover {
@@ -70,5 +71,15 @@
     }
     .logoName h1 {
        font-size: 50px;
+    }
+}
+
+@media (max-width: 720px) {
+    .flag {
+        width: 100px;
+        padding: 10px 26px;
+        font-size: 10px;
+        bottom: 110px;
+        z-index: 100;
     }
 }
