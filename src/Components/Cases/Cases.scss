@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Jost', sans-serif;
+
+.Cases {
+    width: 100%;
+    // background-image: url(../../Logo/Desktop16.svg);
+    // background-size: cover;
+}
+
+.cases-container {
+    max-width: 1440px;
+    min-height: 1223px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cases-bg-container {
+    max-width: 1440px;
+    min-height: 1023px;
+    margin: -3px auto;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 1px 0px 10px #2b3d5c;
+}
+
+.sky {
+    width: 100%;
+}
+
+.sky img {
+    width: 100%;
+}
+
+.sloy1 {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.sloy2 {
+    position: absolute;
+    top: 0;
+    left: 584px;
+    z-index: 2;
+}
+
+.sloy3 {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    z-index: 1;
+}
+
+.man-container {
+    width: 680px;
+    height: 680px;
+    margin: 156px auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.oblako1 {
+    position: absolute;
+    top: -94px;
+    right: -11px;
+}
+
+.oblako2 {
+    position: absolute;
+    top: 119px;
+    left: -3px;
+}
+
+.oblako3 {
+    position: absolute;
+    top: 421px;
+    left: 168px;
+    z-index: 6;
+}
+
+.man {
+    position: absolute;
+    top: 44px;
+    left: 155px;
+}
+
+.text {
+    position: absolute;
+    top: 78px;
+    left: 168px;
+}
+
+
+
+.content-part {
+    width: 100%;
+    z-index: 12;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    padding: 72px 72px 43px 73px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-l {
+    max-width: 600px;
+    padding-right: 230px;
+}
+
+.case-l p {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(207, 215, 231, 1);
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 24px;
+}
+
+.case-l h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(247, 248, 250, 1);
+  font-family: 'Jost', sans-serif;
+  padding: 16px 0px;
+}
+
+.case-r {
+    max-width: 600px;
+    text-align: right;
+    padding-left: 230px;
+}
+
+.case-r p {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(207, 215, 231, 1);
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 24px;
+}
+
+.case-r h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(247, 248, 250, 1);
+  font-family: 'Jost', sans-serif;
+  padding: 16px 0px;
+}

@@ -9,7 +9,10 @@ import bigelipse from "../../anim/bigelipse.svg";
 import figurback from "../../Logo/figur-back.svg";
 import Header from "../Header/Header";
 
-export default function MainSection() {
+export default function MainSection(props) {
+
+  const {setStatus} = props;
+
   return (
     <>
       <Header />
@@ -18,9 +21,7 @@ export default function MainSection() {
         <div className="MainSection_container">
           <div className="left-s">
             <h1>
-              WE’RE <span>Ward INC.</span>
-              <br></br>We Are Managed Technology
-            </h1>
+           <span>The Ward Company</span><br /> We are a engineering<br /> & design company<br /> from the future</h1>
 
             <div className="anim-cont disnun">
               <div className="cub">
@@ -40,10 +41,9 @@ export default function MainSection() {
             </div>
 
             <p>
-              We help organizations of all sizes<br></br> simplify and take
-              control<br></br> of their IT.
+            We help brands of all sizes increase their visibility and profitability!
             </p>
-            <button>GET YOUR PLAN TODAY</button>
+            <button onClick={()=>setStatus(true)}>HIRE US</button>
           </div>
 
           <div className="right-s">

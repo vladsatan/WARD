@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.solution {
+    width: 100%;
+    
+}
+
+.solution_container {
+    max-width: 1440px;
+    min-height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.solution-header {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.solution-header img {
+    width: 100%;
+}
+
+.bg-container {
+    max-width: 1440px;
+    height: 760px;
+    position: absolute;
+    bottom: 0;
+}
+
+.bg-container img {
+    width: 100%;
+}
+
+.darknes {
+    width: 100%;
+    min-height: 760px;
+    background: linear-gradient(rgb(21 23 34 / 54%), #151722);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.solution_container h1 {
+    width: 517px;
+    width: auto;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 96px;
+    font-weight: 400;
+    color: transparent;
+    background-clip: text;
+    background-image:linear-gradient(180deg, #33343C 0%, rgba(33, 33, 33, 0.54) 100%);
+    margin-bottom: 72px;
+    padding-top: 102px;
+    z-index: 6;
+}
+
+.solution_container h1 span {
+   color: #3CB9FF;
+   z-index: 6;
+}
+
+.solution_content {
+    position: relative;
+    padding-left: 156px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.solution1 {
+    max-width: 763px;
+    font-family: 'Jost', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #F3F5F8;
+    padding-bottom: 72px;
+    margin: 0;
+}
+
+.solution2 {
+    max-width: 650px;
+    font-family: 'Jost', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #DBDDDF;
+    padding-bottom: 72px;
+    margin-left: 480px;
+}
+
+.solution3 {
+    max-width: 766px;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #929395;
+    padding-bottom: 72px;
+    margin: 0;
+}
+
