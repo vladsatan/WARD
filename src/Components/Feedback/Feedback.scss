@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Jost', sans-serif;
+
+.feedback_container {
+    margin: 0 auto;
+    width: 655px;
+    background-color: #91B3CF;
+    padding: 72px 90px 48px 90px;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(110%);
+    transition: .5s;
+    z-index: 101;
+}
+
+.feedback_container.active {
+    transform: translateX(0%);
+}
+
+.feedback_container h1 {
+    font-size: 96px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    color: transparent;
+    background-clip: text;
+    background-image: url(../../photos/feetback.png);
+    background-position: 27px 20px;
+}
+
+.feedback_container h2 {
+    font-size: 24px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    color: rgba(231, 237, 242, 1);
+}
+
+.error-text {
+    font-size: 14px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.error-text span {
+    color: rgba(222, 1, 95, 1);
+}
+
+.input_flex {
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.input_flex input {
+    width: 230px;
+    border: none;
+    outline: none;
+    border: 1px solid #93C5F3;
+    border-radius: 5px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 4px 10px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+}
+
+.check_container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.side {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    color: rgba(31, 35, 48, 1);
+}
+
+.side h4 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    color: rgba(49, 56, 77, 1);
+    margin-bottom: 21px;
+}
+
+.box-check {
+    display: flex;
+    margin-bottom: 11px;
+}
+
+.box-check input {
+    margin-right: 16px;
+}
+
+.side-r {
+    margin-left: 95px;
+}
+
+.check_container h4 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    color: rgba(49, 56, 77, 1);
+    margin-bottom: 16px;
+}
+
+.check_container h4 span {
+    color: rgba(222, 1, 95, 1);
+}
+
+.check_container textarea {
+    width: 230px;
+    height: 100px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #93C5F3;
+    padding: 10px;
+    resize: none;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    color: rgba(71, 77, 95, 1);
+}
+
+.check_container textarea::-webkit-scrollbar {
+    width: 0;
+  }
+
+.text-left {
+    text-align: left;
+}
+
+.aria-box {
+    margin-right: 16px;
+}
+
+.feedback_container button {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(178.66deg, #C8D9E7 1.14%, rgba(200, 217, 231, 0) 130.77%);
+    border: 1px solid #BEE1FD;
+    color:rgba(49, 56, 77, 1) ;
+    transition: .1s;
+   
+}
+
+.feedback_container button:hover{
+ background: #041f50c3;
+ color: white;
+}
+
+.close {
+    width: 50px;
+    height: 50px;
+    background: #91B3CF;
+    position: fixed;
+    top: 45%;
+    left: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 102;
+}
+
+@media (max-width: 1440px) {
+    .feedback_container {
+        padding: 20px 90px 20px 90px;
+    }
+    .feedback_container h1 {
+        font-size: 80px;
+    }
+    
+    .feedback_container h2 {
+        font-size: 22px;
+  
+    }
+    
+    .error-text {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .input_flex {
+        margin-bottom: 5px;
+    }
+    .check_container {
+        margin-bottom: 5px;
+    }
+    .feedback_container button {
+       margin-top: 15px;
+       
+    }
+    
+}

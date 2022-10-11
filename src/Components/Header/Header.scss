@@ -3,9 +3,9 @@
 header {
   width: 100%;
   position: sticky;
-  border-bottom: 1px solid #ddabbd;
-  border-top: 1px solid #ddabbd;
-  z-index: 5;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  z-index: 100;
   top: 0;
   transition-duration: 3s;
 }
@@ -14,7 +14,7 @@ header {
 }
 
 .Header-transparent {
-    background-color: #de01614d;
+ background-color: rgb(61 188 255 / 27%);
 }
 
 .header-container {

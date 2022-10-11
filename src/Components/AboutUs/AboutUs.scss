@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+.AboutUs {
+    width: 100%;
+}
+
+.about-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.earth {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-container h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(247, 248, 250, 0.9);
+    font-size: 40px;
+    padding-bottom: 72px;
+    font-weight: 400;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 100px;
+}
+
+.about_text {
+    text-align: left;
+    margin-right: 45px;
+}
+
+.about_text h1 {
+  font-size: 74px;
+  font-family: 'Bebas Neue', cursive ;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding-bottom: 44px;
+}
+
+.about_text span {
+  color: #3CB9FF;
+}
+
+
+.grey {
+    max-width: 600px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #DBDDDF;
+    padding-bottom: 45px;
+}
+
+.grey_1 {
+    max-width: 444px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #B6B8BA;
+    padding-bottom: 45px;
+}
+
+.grey_2 {
+    max-width: 466px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #929395;
+    padding-bottom: 221px;
+}

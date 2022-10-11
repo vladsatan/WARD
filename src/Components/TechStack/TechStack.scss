@@ -1,179 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Jost', sans-serif;
 
-
-.Technologies {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
+.TechStack {
+    width: 100%;
 }
 
-.Tech-item {
-  width: 260px;
-  height: 180px;
-  background: rgba(4, 7, 22, 0.35);
-  border: 1px solid rgba(2, 6, 21, 0.5);
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  transition: all .3s ease-in-out;
+.TechStack_container {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 52px 0px;
 }
 
-.Tech-item:hover {
-  border: 1px solid #3cb9ff;
+.TechStack_container h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 74px;
+    color: #F7F8FA;
+    margin-bottom: 24px;
 }
 
-.Tech-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  text-align: center;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+.TechStack_container span {
+    color: #3CB9FF;
 }
 
-.Image-paragraf,
-.Image-header {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 52px;
-  color: #ffffff;
-}
-
-.Image-header {
-  font-size: 64px;
-  line-height: 92px;
-  width: 50vw;
-  font-weight: 900;
-  display: inline;
-}
-.Image-blue {
-  color: #3cb9ff;
-}
-
-.Tech-deteils {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.Tech-deteils-item {
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.deteils-text {
-  margin-top: 30px;
-  width: 280px;
-  height: 317px;
-  background: linear-gradient(180deg, #0F1016 0%, rgba(15, 16, 22, 0) 100%);
-  border-radius: 50px;
-  text-align: center;
-  padding: 30px;
-}
-
-.deteils-text h5 {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: center;
-  color: #3cb9ff;
-  margin-bottom: 20px;
-}
-
-.deteils-text p {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 35px;
-  text-align: center;
-
-  color: #d2d2d2;
-}
-
-.Startegy-way1 {
-  width: 306px;
-  height: 2px;
-  background: #b74388;
-  position: relative;
-}
-.Startegy-way1:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: -4px;
-  left: 100%;
-  border-width: 4px 0 4px 8px;
-  border-style: solid;
-  border-color: transparent #b74388;
-}
-
-.Startegy-way1::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border: 5px solid transparent;
-  border-bottom: 7px solid #b74388;
-  position: absolute;
-  top: -10px;
-  right: 306px;
-}
-
-.Strategy-left {
-  position: relative;
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: -9px;
-  top: -0.5px;
-  border: 5px solid transparent;
-  border-top: 7px solid #b74388;
-}
-
-@media (max-width: 1200px) {
-  .Technologies {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 520px) {
-  .Tech-item {
-    width: 170px;
-    height: 100px;
-    background: rgba(4, 7, 22, 0.35);
-    border: 1px solid rgba(2, 6, 21, 0.5);
-    border-radius: 30px;
+.big_stack_container {
     display: flex;
+    justify-content: center;
+    max-width: 1222px;
+    flex-wrap: wrap;
+    margin: 0 auto 45px auto;
+}
+
+.stack_container1,
+.stack_container2,
+.stack_container3,
+.stack_container4,
+.stack_container5,
+.stack_container6 {
+    width: 400px;
+    height: 316px;
+    background-color: gray;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    transition: .3s;
 }
 
-.Tech-logo {
-  width: 80px;
-}
+.stack_container1 {
+    border-top-left-radius: 30px;
+      background-image: url(../../Logo/redux.svg);
+      background-size: cover;
 }
 
-@media (max-width: 420px) {
-.Tech-logo {
-    width: 60px;
+.stack_container2 {
+    background-image: url(../../Logo/php.svg);
+    background-size: cover;
 }
-.Tech-item {
-  width: 161px;
-  height: 111px;
+
+.stack_container3 {
+    border-top-right-radius: 30px;
+    background-image: url(../../Logo/node.svg);
+    background-size: cover;
 }
+
+.stack_container4 {
+    border-bottom-left-radius: 30px;
+    background-image: url(../../Logo/JS.svg);
+    background-size: cover;
+}
+
+.stack_container5 {
+    background-image: url(../../Logo/Sass.svg);
+    background-size: cover;
+}
+
+.stack_container6 {
+    border-bottom-right-radius: 30px;
+    background-image: url(../../Logo/React.svg);
+    background-size: cover;
+}
+
+.stack_container1:hover {
+    box-shadow: 0px 0px 10px 5px #3cb9ff;
+}
+
+.stack_container2:hover {
+    box-shadow: 0px 0px 10px 5px #3cb9ff;
+}
+
+.stack_container3:hover {
+    box-shadow: 0px 0px 10px 5px #3cb9ff;
+}
+
+.stack_container4:hover {
+    box-shadow: 0px 0px 10px 5px #3cb9ff;
+}
+
+.stack_container5:hover {
+    box-shadow: 0px 0px 10px 5px #3cb9ff;
+}
+
+.stack_container6:hover {
+    box-shadow: 0px 0px 10px 5px #3cb9ff;
+}
+
+@media (max-width: 1220px) {
+    .stack_container2 {
+        border-top-right-radius: 30px;
+    }
+    .stack_container3 {
+        border-top-right-radius: 0px;
+    }
+    .stack_container4 {
+        border-bottom-left-radius: 0px;
+    }
+    .stack_container5 {
+        border-bottom-left-radius: 30px;
+    }
+
 }
