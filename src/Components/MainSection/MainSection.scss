@@ -211,20 +211,49 @@
   .left-s h1{
     margin-bottom: 30px;
   }
+  .left-s p {
+    width: 452px;
+  }
+  .MainSection_container {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: flex-start;
+    position: relative;
+    padding: 30px 1px 69px;
+    margin: 0 130px
+}
 }
 
 @media (max-width: 920px) {
   .MainSection_container {
     justify-content: space-between;
-    padding: 72px 156px 80px;
+    padding: 18px 80px 80px;
     margin: 0 auto;
     flex-wrap: wrap;
+}
+.left-s button {
+  width: 200px;
+  height: 70px;
+  background: linear-gradient(180deg, #3CB9FF 0%, rgba(195, 233, 255, 0.5) 100%);
+  color: white;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  transition: .3s ease-in-out;
+  margin: 0 35px;
+  display: block;
+  // animation: mainButton 2s infinite;
 }
 }
 
 @media (max-width: 720px) {
   .left-s h1 {
-    font-size: 74px;
+    font-size: 50px;
     padding-left: 30px;
 }
 .left-s p {
@@ -233,9 +262,12 @@
 .left-s button{
   margin-left: 30px;
 }
+.MainSection_container {
+  padding: 18px 15px 2px;
+}
 }
 
-@media (max-width: 680px) {
+@media (max-width: 640px) {
   .MainSection_container {
     justify-content: space-between;
     padding: 30px 0px 0px 0px;
@@ -306,7 +338,18 @@
 
 }
 
-@media (max-width: 520px) {
+@media (max-width: 540px) {
+  .anim-cont {
+    width: 333px;
+    height: 342px;
+    margin: 0px auto;
+}
+  .left-s {
+    max-width: 1100px;
+    text-align: left;
+    z-index: 3;
+    margin: 0 auto;
+}
   .left-s h1 {
     font-size: 34px;
     padding-left: 10px;
@@ -315,9 +358,11 @@
 .left-s p {
   font-size: 20px;
   padding-left: 10px;
+  padding-right: 92px;
 }
-.left-s button{
-  width: 250px;
+
+.left-s button {
+  width: 160px;
   height: 60px;
   font-size: 16px;
   font-weight: 400;
@@ -326,17 +371,48 @@
 }
 
 @media (max-width: 420px) {
+  .MainSection_container {
+    justify-content: space-between;
+    padding: 0px 0px 0px 0px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+  .left-s {
+    padding-left: 20px;
+}
+  .anim-cont {
+    width: 333px;
+    height: 342px;
+    margin: 0px 15px;
+}
   .left-s h1 {
     font-size: 28px;
     padding-left: 0px;
 }
 
 .left-s button {
-  width: 250px;
-  height: 60px;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 auto;
-  display: block;
+  width: 208px;
+  height: 55px;
+  margin: 0 83px;
+}
+.left-s p {
+  padding-left: 6px;
+  padding-right: 220px;
+}
+}
+
+@media (max-width: 360px) {
+  .anim-cont {
+    margin: 0px -16px;
+}
+.left-s {
+  padding-left: 10px;
+}
+.left-s p {
+  padding-left: 6px;
+  padding-right: 220px;
+}
+.left-s button {
+  margin: 0 59px;
 }
 }

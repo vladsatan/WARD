@@ -13,12 +13,12 @@ export default function TechStack() {
         <div className='TechStack_container'>
             <h1><span>Tech</span> Stack</h1>
             <div className='big_stack_container'>
-             <a target={"_blank"} rel="noreferrer" href="https://redux.js.org/"><div className='stack_container1'><img src={redux} alt="" /></div></a>
-            <a target={"_blank"} rel="noreferrer" href="https://www.php.net/"><div className='stack_container2'><img src={php} alt="" /></div></a> 
-            <a target={"_blank"} rel="noreferrer" href="https://nodejs.org/en/"><div className='stack_container3'><img src={node} alt="" /></div></a>
-            <a target={"_blank"} rel="noreferrer" href="https://javascript.info/"><div className='stack_container4'><img src={javaskript} alt="" /></div></a>
-            <a target={"_blank"} rel="noreferrer" href="https://sass-lang.com/"><div className='stack_container5'><img src={sass} alt="" /></div></a>
-            <a target={"_blank"} rel="noreferrer" href="https://reactjs.org/"><div className='stack_container6'><img src={react} alt="" /></div></a>
+             <a target={"_blank"} rel="noreferrer" href="https://redux.js.org/"><div className='stack_container1'><img className='stack-logos' src={redux} alt="" /></div></a>
+            <a target={"_blank"} rel="noreferrer" href="https://www.php.net/"><div className='stack_container2'><img className='stack-logos' src={php} alt="" /></div></a> 
+            <a target={"_blank"} rel="noreferrer" href="https://nodejs.org/en/"><div className='stack_container3'><img className='stack-logos' src={node} alt="" /></div></a>
+            <a target={"_blank"} rel="noreferrer" href="https://javascript.info/"><div className='stack_container4'><img className='stack-logos' src={javaskript} alt="" /></div></a>
+            <a target={"_blank"} rel="noreferrer" href="https://sass-lang.com/"><div className='stack_container5'><img className='stack-logos' src={sass} alt="" /></div></a>
+            <a target={"_blank"} rel="noreferrer" href="https://reactjs.org/"><div className='stack_container6'><img className='stack-logos' src={react} alt="" /></div></a>
             </div>
         </div>
     </div>
