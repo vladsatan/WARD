@@ -15,11 +15,13 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 10px 140px;
-    font-weight: 400;
-    font-size: 36px;
-    font-family: 'Bebas Neue', cursive;
-    color: #3CB9FF;
 }
+
+.logoName img {
+    width: 226px;
+    height: 81px;
+}
+
 
 .flag {
     position: fixed;
@@ -63,14 +65,17 @@
     .logoName {
         padding: 10px 50px;
     }
+    .logoName img {
+            width: 177px;
+       }
 }
 
 @media (max-width: 520px) {
     .logoName {
         padding: 10px 30px;
     }
-    .logoName h1 {
-       font-size: 50px;
+    .logoName img {
+        width: 154px;
     }
 }
 

@@ -65,6 +65,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .mini-container {
@@ -82,4 +83,51 @@
 
 .box-padd2 {
   padding-bottom: 46px;
+}
+
+@media (max-width: 1200px) {
+  .help_container h1 {
+    padding: 36px 0px;
+}
+.help_flex {
+  margin-top: 35px;
+}
+.mini-container {
+  margin: 0px 20px 20px 20px;
+}
+}
+
+@media (max-width: 720px) {
+  .help_container h1 {
+    padding: 19px 0px;
+    font-size: 50px;
+}
+.mini-container img {
+  margin-bottom: 16px;
+  width: 170px;
+}
+.box p {
+  padding: 0 10px;
+}
+}
+
+
+@media (max-width: 420px) {
+  .help_container h1 {
+    font-size: 30px;
+}
+.box {
+  width: 293px;
+}
+.box p {
+  padding: 0 10px;
+  font-size: 18px;
+}
+.box-padd2 {
+  padding-bottom: 17px;
+}
+}
+
+@media (max-width: 360px) {
+
 }

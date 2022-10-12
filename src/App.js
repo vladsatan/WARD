@@ -15,6 +15,9 @@ const AboutUs = React.lazy(() => import("./Components/AboutUs/AboutUs"));
 const MainSection = React.lazy(() =>
   import("./Components/MainSection/MainSection")
 );
+import ClientsSay from "./Components/ClientsSay/ClientsSay";
+import wardLogo from "./wardLogo.svg"
+
 
 function App() {
   const [isFeetback, setIsFeetback] = useState(false);
@@ -22,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <div className="logoName">
-        <h1>Ward inc.</h1>
+          <img src={wardLogo} />
       </div>
       <MainSection setStatus={setIsFeetback} />
       <AboutUs />
