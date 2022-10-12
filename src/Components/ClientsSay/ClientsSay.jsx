@@ -70,6 +70,13 @@ const ClientsSay = () => {
       }
     });
   };
+  useEffect(() => {
+    const width = window.screen.width;
+    console.log(width);
+    if (width < 600) {
+    }
+    slidebur.current.scrollLeft = width / 2 - 400;
+  }, []);
 
   useEffect(() => {
     setClients([
