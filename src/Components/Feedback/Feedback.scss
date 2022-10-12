@@ -16,6 +16,9 @@
     transform: translateX(110%);
     transition: .5s;
     z-index: 101;
+    max-height: 100vh;
+    overflow: scroll;
+    
 }
 
 .feedback_container.active {

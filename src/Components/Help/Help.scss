@@ -1,69 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Jost', sans-serif;
 
 .Help {
-    width: 100%;
+  width: 100%;
 }
 
 .help_container {
-    max-width: 1440px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    padding: 0px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding: 0px 20px;
 }
 
 .help_container h1 {
-    padding: 72px 0px;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-    font-size: 74px;
-    color: white;
+  padding: 72px 0px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 74px;
+  color: white;
+  background-image: url(../../photos/smog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 80px 0px 100px #151722 , inset -80px 0px 100px #151722;
+  background-color: black;
+  background-position:center;
 }
 
 .help_container h1 span {
-    color: #61C6FF;
+  color: #61c6ff;
 }
 
 .help_content {
-    z-index: 3;
-    width: 100%;
+  z-index: 3;
+  width: 100%;
 }
 
 .box {
-    padding: 16px 26px;
-    width: 360px;
-    background: linear-gradient(180deg, #0F1016 0%, rgba(15, 16, 22, 0) 100%);
-    border-radius: 10px;
-    padding-bottom: 30px;
+  padding: 16px 26px;
+  width: 360px;
+  background: linear-gradient(180deg, #0f1016 0%, rgba(15, 16, 22, 0) 100%);
+  border-radius: 10px;
+  padding-bottom: 30px;
 }
 
 .box h3 {
-    color: rgba(188, 216, 241, 1);
-    font-family: 'Jost', sans-serif;
-    font-size: 32px;
-    font-weight: 500;
-} 
+  color: rgba(188, 216, 241, 1);
+  font-family: "Jost", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
 
 .box p {
-    color: rgba(243, 245, 248, 1);
-    font-family: 'Jost', sans-serif;
-    font-size: 24px;
-    font-weight: 300;
+  color: rgba(243, 245, 248, 1);
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .help_flex {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .mini-container {
-    margin-right: 72px;
-    margin-bottom: 20px;
+  margin-right: 72px;
+  margin-bottom: 20px;
 }
 
 .mini-container img {
@@ -71,47 +77,9 @@
 }
 
 .box-padd {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .box-padd2 {
-    padding-bottom: 46px;
-}
-
-@media (max-width: 720px) {
-    .help_container h1 {
-        padding: 34px 0px;
-        font-size: 48px;
-    }
-    .mini-container {
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 540px) {
-    .help_container h1 {
-        padding: 34px 0px;
-        font-size: 35px;
-    }
-    .mini-container img {
-        margin-bottom: 16px;
-        width: 150px;
-    }
-    .box h3 {
-        color: rgb(188, 216, 241);
-        font-family: "Jost", sans-serif;
-        font-size: 24px;
-        font-weight: 500;
-    }
-    .box p {
-        color: rgb(243, 245, 248);
-        font-family: "Jost", sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-    }
-    .box {
-        padding: 16px 20px;
-        width: 279px;
-    }
+  padding-bottom: 46px;
 }

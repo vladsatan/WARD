@@ -3,6 +3,7 @@ import "./Brand.scss"
 import price from "../../Logo/price.svg"
 import clock from "../../Logo/Clock.svg"
 import team from "../../Logo/team.svg"
+import back from "../../photos/equityBack.svg"
 
 export default function Brand() {
   return (
@@ -12,6 +13,7 @@ export default function Brand() {
 
     <h1 className='equity_ti'>We develop brand equity.</h1>
             <div className='equity_flex'>
+              <div className="equity_back"/>
 
             <div className='equity_container'>
                 <img src={price} alt="" />
