@@ -36,8 +36,7 @@
   text-align: center;
   color: white;
   padding: 5px;
-  margin-right: 80px;
-  margin-bottom: 20px;
+  margin: 0px 30px 20px 30px;
 }
 
 .equity_container img {
@@ -84,9 +83,12 @@
 }
 
 @media (max-width: 720px) {
-    .equity_container {
-        margin-right: 24px;
-    }
+  .equity_flex {
+    margin: 0 auto 36px auto;
+}
+  .equity_container {
+    margin: 0px 5px;
+}
     .equity_tittle_span {
         margin-bottom: 37px;
     }
@@ -100,6 +102,9 @@
 }
 
 @media (max-width: 540px) {
+  .equity_flex {
+    margin: 0 auto 36px auto;
+}
     .brand-cotainer {
         margin: 3px auto;
     }
@@ -120,10 +125,13 @@
         font-weight: 300;
         font-size: 18px;
         color: #F3F5F8;
+        padding: 0 35px;
     }
     .equity_tittle {
         margin-bottom: 44px;
         font-size: 28px;
+          padding: 0 61px;
+
     }
 }
 
@@ -131,6 +139,9 @@
     .equity_container p {
         padding: 0 35px;
     }
+    .equity_flex {
+      margin: 0 auto 36px auto;
+  }
 }
 
 @media (max-width: 360px) {

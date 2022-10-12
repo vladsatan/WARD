@@ -16,7 +16,6 @@ export default function Feedback(props) {
             <input type={'tel'} placeholder='Phone Number' />
             <input type={'text'} placeholder='Company name' />
             <input type={'text'} placeholder='Website URL' />
-            <div className='close' onClick={()=>setStatus(!status)}><img src={close} alt=""/></div>
         </div>
         <div className='check_container'>
             <div className='side'>
@@ -89,7 +88,7 @@ export default function Feedback(props) {
             </div>
         </div>
         <button>SUBMIT</button>
-        
+        <div className='close' onClick={()=>setStatus(!status)}><img src={close} alt=""/></div>
     </div>
   )
 }
