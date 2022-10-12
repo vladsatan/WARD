@@ -15,6 +15,8 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition-duration: 1s;
+
 }
 
 .clients_container h1 {
@@ -51,6 +53,7 @@
   background: rgba(123, 176, 255, 0.25);
   backdrop-filter: blur(5px);
   margin-left: 20px;
+  transition-duration: 1s;
 }
 
 .clients_transpareny {
@@ -58,6 +61,8 @@
   max-width: 600px;
   height: 400px;
   margin-left: 20px;
+  transition-duration: 1s;
+
 }
 
 .client_primary img {
@@ -90,6 +95,8 @@
   background: rgba(123, 176, 255, 0.15);
   backdrop-filter: blur(5px);
   width: 80%;
+  transition-duration: 1s;
+
   max-width: 600px;
   height: 400px;
   display: flex;
@@ -98,6 +105,8 @@
   justify-content: space-between;
   padding: 10px;
   margin-left: 20px;
+  transition-duration: 1s;
+
 }
 .client_secondary img {
   width: 120px;

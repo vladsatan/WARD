@@ -34,6 +34,7 @@ const ClientsSay = () => {
   const back = useRef();
   const prev = (number) => {
     setPage((page) => page + number);
+
     setClients([
       ...clientsArray.slice(0, page),
       {
@@ -60,10 +61,7 @@ const ClientsSay = () => {
       <h1>
         what our <span>clients</span> say
       </h1>
-      <div
-        onClick={() => page !== 1 && prev(-1)}
-        className="before"
-      />
+      <div onClick={() => page !== 1 && prev(-1)} className="before" />
 
       <div className="clients_slider" ref={back}>
         {clientsArray.slice(page - 1, page + 2).map((el) => (
