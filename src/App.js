@@ -1,6 +1,7 @@
 import "./App.scss";
 import React from "react";
 import { useState } from "react";
+import wardLogo from "./wardLogo.svg"
 const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 const ClientsSay = React.lazy(() =>
   import("./Components/ClientsSay/ClientsSay")
@@ -15,8 +16,6 @@ const AboutUs = React.lazy(() => import("./Components/AboutUs/AboutUs"));
 const MainSection = React.lazy(() =>
   import("./Components/MainSection/MainSection")
 );
-import ClientsSay from "./Components/ClientsSay/ClientsSay";
-import wardLogo from "./wardLogo.svg"
 
 
 function App() {
@@ -33,10 +32,10 @@ function App() {
       <Brand />
       <Help />
       <TechStack />
-      <ClientsSay />
-      <Cases />
+      {/* /* <ClientsSay /> */}
+       {/* <Cases /> */}
       <Feedback status={isFeetback} setStatus={setIsFeetback} />
-      <Footer />
+      {/* <Footer /> */}
 
       <div className="flag" onClick={() => setIsFeetback(!isFeetback)}>
         HIRE US
