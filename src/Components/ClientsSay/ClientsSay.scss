@@ -16,7 +16,6 @@
   justify-content: center;
   position: relative;
   transition-duration: 1s;
-
 }
 
 .clients_container h1 {
@@ -37,6 +36,7 @@
   align-items: center;
   justify-content: center;
   width: max-content;
+  height: 450px;
   padding-top: 100px;
   transition-duration: 1s;
 }
@@ -62,7 +62,6 @@
   height: 400px;
   margin-left: 20px;
   transition-duration: 1s;
-
 }
 
 .client_primary img {
@@ -106,7 +105,6 @@
   padding: 10px;
   margin-left: 20px;
   transition-duration: 1s;
-
 }
 .client_secondary img {
   width: 120px;
@@ -138,4 +136,18 @@
   top: 0;
   right: 10%;
   z-index: 2;
+}
+
+.slidebur_container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  
+}
+
+.slidebur_container::-webkit-scrollbar {
+  width: 0px;
 }
