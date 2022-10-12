@@ -9,7 +9,7 @@ const ClientsSay = () => {
   const [clientsArray, setClients] = useState([
     {},
     {
-      active: false,
+      active: true,
       image: client1,
       p: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien blandit purus bibendum quis massa lectus. Duis sed dictumst laoreet duis aliquam augue facilisi blandit imperdiet."',
       span: "Baby John - Head of Artur Ravlyk HUI",
