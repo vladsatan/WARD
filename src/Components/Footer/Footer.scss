@@ -1,0 +1,97 @@
+.footer_container {
+  max-width: 1440px;
+  width: 100vw;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  height: auto;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+}
+
+@mixin fam {
+  font-family: "Jost";
+  font-style: normal;
+
+  color: #f7f8fa;
+}
+
+.footer_container span {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+  @include fam();
+  z-index: 1;
+}
+
+.footer_container div.footer_text {
+
+  @include fam();
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  z-index: 1;
+
+}
+
+.footer_container h5 {
+  z-index: 1;
+
+  @include fam();
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.footer_sloy1 {
+  z-index: 0;
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+
+  background-image: url(../../photos/sloy1.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.footer_sloy2 {
+  z-index: 0;
+
+  position: absolute;
+  left: 25%;
+  top: 0;
+  height: 100%;
+
+  width: 70%;
+  background-image: url(../../photos/sloy2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.footer_sloy3 {
+  z-index: 0;
+
+  position: absolute;
+  left: 75%;
+  width: 30%;
+  top: 0;
+  height: 100%;
+
+  background-image: url(../../photos/sloy3.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}

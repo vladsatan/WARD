@@ -1,15 +1,23 @@
 import "./App.scss";
-import MainSection from "./Components/MainSection/MainSection";
-import AboutUs from "./Components/AboutUs/AboutUs";
-import Solution from "./Components/Solution/Solution";
-import Brand from "./Components/Brand/Brand";
-import TechStack from "./Components/TechStack/TechStack";
-import Help from "./Components/Help/Help";
-import Cases from "./Components/Cases/Cases";
-import Feedback from "./Components/Feedback/Feedback";
+import React from "react";
 import { useState } from "react";
+const Footer = React.lazy(() => import("./Components/Footer/Footer"));
+const ClientsSay = React.lazy(() =>
+  import("./Components/ClientsSay/ClientsSay")
+);
+const Feedback = React.lazy(() => import("./Components/Feedback/Feedback"));
+const Cases = React.lazy(() => import("./Components/Cases/Cases"));
+const Help = React.lazy(() => import("./Components/Help/Help"));
+const TechStack = React.lazy(() => import("./Components/TechStack/TechStack"));
+const Brand = React.lazy(() => import("./Components/Brand/Brand"));
+const Solution = React.lazy(() => import("./Components/Solution/Solution"));
+const AboutUs = React.lazy(() => import("./Components/AboutUs/AboutUs"));
+const MainSection = React.lazy(() =>
+  import("./Components/MainSection/MainSection")
+);
 import ClientsSay from "./Components/ClientsSay/ClientsSay";
 import wardLogo from "./wardLogo.svg"
+
 
 function App() {
   const [isFeetback, setIsFeetback] = useState(false);
@@ -28,6 +36,8 @@ function App() {
       <ClientsSay />
       <Cases />
       <Feedback status={isFeetback} setStatus={setIsFeetback} />
+      <Footer />
+
       <div className="flag" onClick={() => setIsFeetback(!isFeetback)}>
         HIRE US
       </div>
