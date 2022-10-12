@@ -9,7 +9,7 @@ const ClientsSay = () => {
   const [clientsArray, setClients] = useState([
     {},
     {
-      active: false,
+      active: true,
       image: client1,
       p: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien blandit purus bibendum quis massa lectus. Duis sed dictumst laoreet duis aliquam augue facilisi blandit imperdiet."',
       span: "Baby John - Head of Artur Ravlyk HUI",
@@ -70,6 +70,13 @@ const ClientsSay = () => {
       }
     });
   };
+  useEffect(() => {
+    const width = window.screen.width;
+    console.log(width);
+    if (width < 600) {
+    }
+    slidebur.current.scrollLeft = width / 2 - 400;
+  }, []);
 
   useEffect(() => {
     setClients([

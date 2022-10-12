@@ -1,7 +1,7 @@
 import "./App.scss";
 import React from "react";
 import { useState } from "react";
-import wardLogo from "./wardLogo.svg"
+import wardLogo from "./wardLogo.svg";
 const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 const ClientsSay = React.lazy(() =>
   import("./Components/ClientsSay/ClientsSay")
@@ -17,14 +17,13 @@ const MainSection = React.lazy(() =>
   import("./Components/MainSection/MainSection")
 );
 
-
 function App() {
   const [isFeetback, setIsFeetback] = useState(false);
 
   return (
     <div className="App">
       <div className="logoName">
-          <img src={wardLogo} />
+        <img src={wardLogo} />
       </div>
       <MainSection setStatus={setIsFeetback} />
       <AboutUs />
@@ -32,10 +31,10 @@ function App() {
       <Brand />
       <Help />
       <TechStack />
-      {/* /* <ClientsSay /> */}
-       {/* <Cases /> */}
+      <ClientsSay />
+      <Cases />
       <Feedback status={isFeetback} setStatus={setIsFeetback} />
-      {/* <Footer /> */}
+      <Footer />
 
       <div className="flag" onClick={() => setIsFeetback(!isFeetback)}>
         HIRE US

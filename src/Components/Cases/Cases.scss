@@ -1,149 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Jost', sans-serif;
 
 .Cases {
-    width: 100%;
-    // background-image: url(../../Logo/Desktop16.svg);
-    // background-size: cover;
+  width: 100%;
+  // background-image: url(../../Logo/Desktop16.svg);
+  // background-size: cover;
+}
+.cases_bg_block {
 }
 
 .cases-container {
-    max-width: 1440px;
-    min-height: max-content;
-    margin: 0 auto;
-    position: relative;
+  max-width: 1440px;
+  min-height: max-content;
+  margin: 0 auto;
+  position: relative;
 }
 
 .cases-bg-container {
-    max-width: 1440px;
-    min-height: 1023px;
-    margin: -3px auto;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    z-index: 2;
-    box-shadow: 1px 0px 10px #2b3d5c;
+  max-width: 1440px;
+  min-height: 1023px;
+  margin: -3px auto;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 1px 0px 10px #2b3d5c;
 }
 
 .sky {
-    width: 100%;
+  width: 100%;
 }
 
 .sky img {
-    width: 100%;
+  width: 100%;
 }
 
 .sloy1 {
- position: absolute;
- top: 0;
- left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sloy2 {
-    position: absolute;
-    top: 0;
-    left: 584px;
-    z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 584px;
+  z-index: 2;
 }
 
 .sloy3 {
-    position: absolute;
-    top: 0;
-    right: -1px;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  z-index: 1;
 }
 
 .man-container {
-    width: 680px;
-    height: 680px;
-    margin: 156px auto;
-    position: relative;
-    overflow: hidden;
-    z-index: 5;
+  width: 680px;
+  height: 680px;
+  margin: 156px auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
 }
 
 .oblako1 {
-    position: absolute;
-    top: -94px;
-    right: -11px;
+  position: absolute;
+  top: -94px;
+  right: -11px;
 }
 
 .oblako2 {
-    position: absolute;
-    top: 119px;
-    left: -3px;
+  position: absolute;
+  top: 119px;
+  left: -3px;
 }
 
 .oblako3 {
-    position: absolute;
-    top: 421px;
-    left: 168px;
-    z-index: 6;
+  position: absolute;
+  top: 421px;
+  left: 168px;
+  z-index: 6;
 }
 
 .man {
-    position: absolute;
-    top: 44px;
-    left: 155px;
+  position: absolute;
+  top: 44px;
+  left: 155px;
 }
 
 .text {
-    position: absolute;
-    top: 78px;
-    left: 168px;
+  position: absolute;
+  top: 78px;
+  left: 168px;
 }
 
-
-
 .content-part {
-    width: 100%;
-    z-index: 12;
-    padding: 72px 72px 43px 73px;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  z-index: 12;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  padding: 72px 72px 43px 73px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .case-l {
-    max-width: 600px;
-    padding-right: 230px;
+  max-width: 600px;
+  padding-right: 230px;
 }
 
 .case-l p {
-    font-size: 24px;
-    font-weight: 500;
-    color: rgba(207, 215, 231, 1);
-    font-family: 'Jost', sans-serif;
-    padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(207, 215, 231, 1);
+  font-family: "Jost", sans-serif;
+  padding-bottom: 24px;
 }
 
 .case-l h3 {
   font-size: 30px;
   font-weight: 600;
   color: rgba(247, 248, 250, 1);
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   padding: 16px 0px;
 }
 
 .case-r {
-    max-width: 600px;
-    text-align: right;
-    padding-left: 230px;
+  max-width: 600px;
+  text-align: right;
+  padding-left: 230px;
 }
 
 .case-r p {
-    font-size: 24px;
-    font-weight: 500;
-    color: rgba(207, 215, 231, 1);
-    font-family: 'Jost', sans-serif;
-    padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(207, 215, 231, 1);
+  font-family: "Jost", sans-serif;
+  padding-bottom: 24px;
 }
 
 .case-r h3 {
   font-size: 30px;
   font-weight: 600;
   color: rgba(247, 248, 250, 1);
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   padding: 16px 0px;
+}
+
+@media (max-width: 1200px) {
+  .content-part {
+    position: static;
+  }
+  .case-r {
+    padding-left: 100px;
+  }
+  .case-l {
+    padding-right: 100px;
+  }
+  .content-part{
+    background-image: url(../..//photos/sloy1.png),url(../..//photos/sloy2.png),url(../..//photos/sloy2.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: 0 30% 75% ;
+  }
+}
+
+@media (max-width: 820px) {
+  .content-part {
+    display: block;
+  }
+  .case-l {
+    text-align: center;
+    padding-right: 0px;
+  }
+  .case-r {
+    padding-left: 0px;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .oblako1 {
+  }
+  .oblako2 {
+  }
+  .oblako3 {
+    left: calc(50% - 140px);
+  }
+  .man {
+    left: calc(50% - 205px);
+    width: 310px;
+  }
+  .text {
+    top: 30px;
+    left: calc(50% - 220px);
+  }
+}
+
+@media (max-width: 540px) {
+}
+
+@media (max-width: 420px) {
+  .man img {
+    width: 300px;
+  }
+  .oblako3 {
+    top: calc(280px);
+  }
+
+  .man {
+    left: calc(50% - 150px);
+  }
+  .text img {
+    width: 90vw;
+  }
+  .text {
+    left: 20px;
+  }
+}
+
+@media (max-width: 360px) {
 }
