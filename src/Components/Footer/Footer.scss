@@ -6,10 +6,10 @@
 .footer_container {
   max-width: 1440px;
   background:linear-gradient(180deg, #23344D 19.22%, #113C59 63.56%, #32424F 104.49%);
-  padding: 82px 68px;
+  padding: 82px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   margin: 0 auto;
 }
@@ -29,6 +29,7 @@
 
 .contact-input {
   text-align: center;
+  margin: 0 70px;
 }
 
 .contact-input h3 {
@@ -103,7 +104,7 @@
   font-size: 20px;
 }
 .footer_container {
-  padding: 35px 68px;
+  padding: 35px 20px;
 }
 }
 
@@ -125,7 +126,7 @@
   font-size: 16px;
 }
 .footer_container {
-  padding: 35px 30px;
+  padding: 35px 20px;
 }
 }
 
@@ -153,7 +154,7 @@
   font-size: 14px;
 }
 .footer_container {
-  padding: 35px 30px;
+  padding: 35px 20px;
 }
 }
 
@@ -187,7 +188,7 @@
 }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 550px) {
   .contact-input-flex {
     width: 230px;
     margin: 0 10px;
@@ -224,6 +225,9 @@
   padding: 20px 20px;
   flex-wrap: wrap;
   flex-direction: column;
+}
+.contact-input {
+  margin: 0 0px;
 }
 }
 
