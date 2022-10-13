@@ -146,3 +146,16 @@
   max-width: 1000px;
   height: 600px;
 }
+
+.slidebur_container::-webkit-scrollbar {
+  width: 0px;           
+}
+.slidebur_container::-webkit-scrollbar-track {
+  background: rgba(255, 166, 0, 0);        /* цвет зоны отслеживания */
+}
+
+.slidebur_container::-webkit-scrollbar-thumb {
+  background-color: rgba(123, 176, 255, 0.25);    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid rgba(123, 176, 255, 0.25);  /* отступ вокруг бегунка */
+}

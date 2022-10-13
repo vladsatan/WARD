@@ -5,10 +5,6 @@
 
 .Cases {
   width: 100%;
-  // background-image: url(../../Logo/Desktop16.svg);
-  // background-size: cover;
-}
-.cases_bg_block {
 }
 
 .cases-container {
@@ -101,7 +97,7 @@
   width: 100%;
   z-index: 12;
   position: absolute;
-  top: 150px;
+  top: 30px;
   left: 0;
   padding: 72px 72px 43px 73px;
   display: flex;
@@ -140,7 +136,7 @@
   font-weight: 500;
   color: rgba(207, 215, 231, 1);
   font-family: "Jost", sans-serif;
-  padding-bottom: 24px;
+  padding: 0px 10px 24px 10px;
 }
 
 .case-r h3 {
@@ -185,10 +181,6 @@
 }
 
 @media (max-width: 720px) {
-  .oblako1 {
-  }
-  .oblako2 {
-  }
   .oblako3 {
     left: calc(50% - 140px);
   }
@@ -200,9 +192,18 @@
     top: 30px;
     left: calc(50% - 220px);
   }
+  .man-container {
+   margin: 156px auto 0px auto;
+}
+.cases-bg-container {
+  min-height: 862px;
+}
 }
 
 @media (max-width: 540px) {
+  .oblako3 {
+    left: calc(50% - 176px);
+}
 }
 
 @media (max-width: 420px) {
