@@ -22,7 +22,7 @@ export default function Header() {
         <a href="#about">ABOUT US</a>
         <a href="#services">Our Services</a>
         <a href="#techStack">Tech Stack</a>
-        <a href="#strategy">Strategy</a>
+        <a href="#strategy">Approach</a>
       </div>
     </header>
   );
