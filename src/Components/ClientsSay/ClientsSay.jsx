@@ -44,19 +44,6 @@ const ClientsSay = () => {
   const [page, setPage] = useState(2);
   const back = useRef();
   const slidebur = useRef();
-  const block = useRef();
-  const prev = (number) => {
-    setPage((page) => page + number);
-
-    setClients([
-      ...clientsArray.slice(0, page),
-      {
-        ...clientsArray[page],
-        active: false,
-      },
-      ...clientsArray.slice(page + 1, clientsArray.length),
-    ]);
-  };
 
   const scrolled = (e) => {
     const clientWidth = e.target.clientWidth / 2;
