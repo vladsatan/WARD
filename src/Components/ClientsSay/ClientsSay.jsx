@@ -11,20 +11,32 @@ const ClientsSay = () => {
     {
       active: true,
       image: client1,
-      p: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien blandit purus bibendum quis massa lectus. Duis sed dictumst laoreet duis aliquam augue facilisi blandit imperdiet."',
-      span: "Baby John - Head of Artur Ravlyk HUI",
+      p: '"Working with this team is a pleasure and our project was very successful. Since I had no experience with web development and a good constructive plan for its implementation, Arthur helped me quickly and efficiently solve these issues. I will recommend them to everyone!"',
+      span: "Founder of Week",
     },
     {
       active: false,
       image: client2,
-      p: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien blandit purus bibendum quis massa lectus. Duis sed dictumst laoreet duis aliquam augue facilisi blandit imperdiet."',
-      span: "Baby John - Head of Artur Ravlyk HUI",
+      p: '"Cool experience in working with this company.Our collaboration always had quick feedback and offered cool ideas with their experienced expert in my industry. I have experienced website development before. I can confidently say that this is the best experience I have had in the past. The marketing department did a great job on my rebranding and design and they definitely have a good style in development. I will definitely contact them again next time."',
+      span: "Co-founder  of MOYO",
     },
     {
       active: false,
       image: client3,
-      p: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien blandit purus bibendum quis massa lectus. Duis sed dictumst laoreet duis aliquam augue facilisi blandit imperdiet."',
-      span: "Baby John - Head of Artur Ravlyk HUI",
+      p: '"Very professional treatment and approach to the work. They were very careful with my idea and implementation. We will keep in touch with Ward in the future."',
+      span: "Co-founder of SteamPay",
+    },
+    {
+      active: false,
+      image: client3,
+      p: '"Artur was a pleasure to work with.He felt my vision and was able to clearly ask leading questions that accelerated the process of our work. It was awesome!"',
+      span: "Founder of GGSEL",
+    },
+    {
+      active: false,
+      image: client3,
+      p: '"From the first call we found a common language and were on the same page with Vladislav. Very good price and top quality development. I think no one will regret cooperating with them.I was glad to meet Vladislav and Artur, we will continue to work with them!"',
+      span: "Co-founder of Carveli",
     },
     {},
   ]);
@@ -54,7 +66,7 @@ const ClientsSay = () => {
     [...children].forEach((el, index) => {
       if (
         Math.abs(el.offsetLeft - scrollPosition) < clientWidth + 50 &&
-        Math.abs(el.offsetLeft - scrollPosition) > clientWidth - 300
+        Math.abs(el.offsetLeft - scrollPosition) > clientWidth - 270
       ) {
         if (index !== 0 && index !== children.length - 1) {
           const clases = el.classList;
@@ -71,11 +83,22 @@ const ClientsSay = () => {
     });
   };
   useEffect(() => {
-    const width = window.screen.width;
-    console.log(width);
-    if (width < 600) {
+    const scrollWidth =
+      (slidebur.current.offsetWidth / back.current.offsetWidth) *
+      slidebur.current.offsetWidth;
+
+    var middle =
+      back.current.children[Math.floor((back.current.children.length - 1) / 2)];
+    if (window.screen.width > 1100) {
+      slidebur.current.scrollLeft =
+        middle.offsetLeft +
+        middle.offsetWidth -
+        back.current.offsetWidth / 2 +
+        middle.offsetWidth / 2 +
+        40;
+    } else {
+      slidebur.current.scrollLeft = middle.offsetLeft - scrollWidth / 0.9;
     }
-    slidebur.current.scrollLeft = width / 2 - 400;
   }, []);
 
   useEffect(() => {
@@ -114,7 +137,7 @@ const ClientsSay = () => {
                   <span>{el.span}</span>
                 </div>
               ) : (
-                <div className="clients_transpareny"></div>
+                <div key={nanoid()} className="clients_transpareny"></div>
               )}
             </>
           ))}
