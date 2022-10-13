@@ -36,12 +36,12 @@
 }
 
 .left-s h1 {
-    font-size: 60px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-    font-style: normal;
-    padding-top: 38px;
+  font-size: 68px; 
+  font-family: "Bebas Neue", cursive;
+  font-style: normal; 
+  padding-top: 38px;
+  font-weight: 400;
+  color: #F7F8FACC; 
 }
 
 .left-s span {
@@ -60,11 +60,11 @@
 }
 
 .left-s button {
-    width: 300px;
-    height: 100px;
+    width: 257px;
+    height: 71px;
     background: linear-gradient(180deg, rgba(90, 170, 235, 1) 0%, rgba(201, 228, 250, 1) 100%);
     color: white;
-    border-radius: 40px;
+    border-radius: 20px;
     border: none;
     outline: none;
     font-family: 'Jost', sans-serif;
@@ -238,19 +238,7 @@
 .left-s button {
   width: 200px;
   height: 70px;
-  background: linear-gradient(180deg, #3CB9FF 0%, rgba(195, 233, 255, 0.5) 100%);
-  color: white;
-  border-radius: 40px;
-  border: none;
-  outline: none;
-  font-family: 'Jost', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  transition: .3s ease-in-out;
   margin: 0 35px;
-  display: block;
-  // animation: mainButton 2s infinite;
 }
 }
 
@@ -365,7 +353,7 @@
 }
 
 .left-s button {
-  width: 160px;
+  width: 120px;
   height: 60px;
   font-size: 16px;
   font-weight: 400;

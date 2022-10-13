@@ -14,15 +14,11 @@ import case3 from "../../Logo/case3.svg";
 import case4 from "../../Logo/case4.svg";
 import case5 from "../../Logo/case5.svg";
 import case6 from "../../Logo/case6.svg";
-import sky from "../../Logo/sky.svg";
 
 export default function Cases() {
   return (
     <div className="Cases" id="strategy">
       <div className="cases-container">
-        <div className="sky">
-          <img src={sky} alt="" />
-        </div>
         <div className="cases_bg_block">
           <div className="cases-bg-container">
             <div className="sloy1">

@@ -1,97 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Jost', sans-serif;
+
 .footer_container {
   max-width: 1440px;
-  width: 100vw;
-  margin-bottom: 30px;
-  overflow: hidden;
-
-  height: auto;
-  box-sizing: border-box;
-  padding: 30px;
+  background:linear-gradient(180deg, #23344D 19.22%, #113C59 63.56%, #32424F 104.49%);
+  padding: 82px 68px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   margin: 0 auto;
 }
 
-@mixin fam {
-  font-family: "Jost";
+.contact-tel {
+  text-align: center;
+  width: auto;
+}
+
+.contact-tel p {
+  font-family: 'Jost', sans-serif;
   font-style: normal;
-
-  color: #f7f8fa;
-}
-
-.footer_container span {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 46px;
-  @include fam();
-  z-index: 1;
-}
-
-.footer_container div.footer_text {
-
-  @include fam();
-  font-weight: 400;
+  font-weight: 100;
   font-size: 24px;
-  line-height: 35px;
-  z-index: 1;
-
+  color: white;
 }
 
-.footer_container h5 {
-  z-index: 1;
+.contact-input {
+  text-align: center;
+}
 
-  @include fam();
+.contact-input h3 {
+  font-family: 'Jost', sans-serif;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 46px;
+  font-size: 24px;
+  color: #E4E4E4;
+  padding-bottom: 16px;
 }
 
-.footer_sloy1 {
-  z-index: 0;
-  position: absolute;
-  width: 50%;
-  left: 0;
-  top: 0;
-  height: 100%;
-
-  background-image: url(../../photos/sloy1.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+.contact-input-flex {
+  display: flex;
+  width: 580px;
+  border: 1px solid #F3F5F8;
 }
 
-.footer_sloy2 {
-  z-index: 0;
-
-  position: absolute;
-  left: 25%;
-  top: 0;
-  height: 100%;
-
-  width: 70%;
-  background-image: url(../../photos/sloy2.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+.contact-input-flex input {
+  outline: none;
+  border: none;
+  width: 90%;
+  padding: 0px 24px;
+  background-color: #113c5900;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #F3F5F8;
+}
+.contact-input-flex input::placeholder {
+  color: #F3F5F8;
+  font-weight: 100;
 }
 
-.footer_sloy3 {
-  z-index: 0;
-
-  position: absolute;
-  left: 75%;
-  width: 30%;
-  top: 0;
-  height: 100%;
-
-  background-image: url(../../photos/sloy3.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+.send-BTN {
+  padding: 20px;
+  transition: .2s;
 }
+
+.send-BTN:hover {
+  border: none;
+  background-color: #ffffff52;
+}
+
+.contact-mail p {
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.contact-mail a {
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media (max-width: 1260px) {
+  .contact-input-flex {
+    width: 442px;
+}
+.contact-mail p {
+  font-size: 20px;
+}
+.contact-mail a {
+  font-size: 20px;
+}
+.contact-tel p {
+  font-size: 20px;
+}
+.footer_container {
+  padding: 35px 68px;
+}
+}
+
+@media (max-width: 1050px) {
+  .contact-input-flex {
+    width: 300px;
+}
+.contact-input-flex input {
+  font-size: 14px;
+  padding-left: 15px;
+}
+.contact-mail p {
+  font-size: 16px;
+}
+.contact-mail a {
+  font-size: 16px;
+}
+.contact-tel p {
+  font-size: 16px;
+}
+.footer_container {
+  padding: 35px 30px;
+}
+}
+
+@media (max-width: 750px) {
+  .contact-input-flex {
+    width: 250px;
+}
+.contact-input h3 {
+  font-size: 20px;
+}
+.send-BTN {
+  padding: 10px;
+}
+.contact-input-flex input {
+  font-size: 14px;
+  padding-left: 15px;
+}
+.contact-mail p {
+  font-size: 14px;
+}
+.contact-mail a {
+  font-size: 14px;
+}
+.contact-tel p {
+  font-size: 14px;
+}
+.footer_container {
+  padding: 35px 30px;
+}
+}
+
+@media (max-width: 630px) {
+  .contact-input-flex {
+    width: 230px;
+    margin: 0 10px;
+}
+.contact-input h3 {
+  font-size: 16px;
+}
+.send-BTN {
+  padding: 5px;
+}
+.contact-input-flex input {
+  font-size: 10px;
+  padding-left: 15px;
+}
+.contact-mail p {
+  font-size: 10px;
+}
+.contact-mail a {
+  font-size: 10px;
+}
+.contact-tel p {
+  font-size: 10px;
+}
+.footer_container {
+  padding: 20px 20px;
+  flex-wrap: wrap;
+}
+}
+
+@media (max-width: 630px) {
+  .contact-input-flex {
+    width: 230px;
+    margin: 0 10px;
+    order: 1;
+    margin-bottom: 20px;
+}
+.contact-mail{   
+  order: 2;
+  margin-bottom: 20px;
+}
+ .contact-tel{
+   order: 3;
+ }
+.contact-input h3 {
+  font-size: 16px;
+}
+.send-BTN {
+  padding: 5px;
+}
+.contact-input-flex input {
+  font-size: 10px;
+  padding-left: 15px;
+}
+.contact-mail p {
+  font-size: 10px;
+}
+.contact-mail a {
+  font-size: 10px;
+}
+.contact-tel p {
+  font-size: 10px;
+}
+.footer_container {
+  padding: 20px 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+}
+
+ 
