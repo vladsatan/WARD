@@ -2,6 +2,8 @@ import "./ClientsSay.scss";
 import client1 from "../../photos/client1.svg";
 import client2 from "../../photos/client2.svg";
 import client3 from "../../photos/client3.png";
+import client4 from "../../photos/client4.png"
+import client5 from "../../photos/client5.png"
 import { useEffect, useRef, useState } from "react";
 import { nanoid } from "nanoid";
 
@@ -28,13 +30,13 @@ const ClientsSay = () => {
     },
     {
       active: false,
-      image: client3,
+      image: client5,
       p: '"Artur was a pleasure to work with.He felt my vision and was able to clearly ask leading questions that accelerated the process of our work. It was awesome!"',
       span: "Founder of GGSEL",
     },
     {
       active: false,
-      image: client3,
+      image: client4,
       p: '"From the first call we found a common language and were on the same page with Vladislav. Very good price and top quality development. I think no one will regret cooperating with them.I was glad to meet Vladislav and Artur, we will continue to work with them!"',
       span: "Co-founder of Carveli",
     },
