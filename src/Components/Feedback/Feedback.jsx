@@ -31,7 +31,7 @@ export default function Feedback(props) {
       }
     });
 
-    const request = {
+    const req = {
       classificationArray: classificationArray,
       fieldType: fieldType,
       firstName: firstName,
@@ -43,8 +43,16 @@ export default function Feedback(props) {
       help: help,
       budget: budget,
     };
+    const request = { ...req };
+    // const request = { firstName: "Ivanna" };
 
-    fetch("http://localhost:8080/api/email", { method: "POST", body: request })
+    fetch("https://wardapi.herokuapp.com/email", {
+      method: "POST",
+      body: JSON.stringify(request),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
