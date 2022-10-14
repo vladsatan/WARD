@@ -1,35 +1,86 @@
 import React from "react";
 import "./Feedback.scss";
 import close from "../../Logo/close.svg";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Feedback(props) {
   const { status, setStatus } = props;
+
+
+  const [firstNameS,setFirstName] = useState('')
+  const [lastNameS,setLastName] = useState('')
+  const [emailS,setEmail] = useState('')
+  const [telS,setTel] = useState('')
+  const [companyS,setCompany] = useState('')
+  const [websiteS,setWebsite] = useState('')
+  const [helpS,setHelp] = useState('')
+  const [budgetS,setBudget] = useState('')
+
+  const [classificationS,setClassification] = useState('')
+  const [fieldNodesS,setFieldNodes] = useState('')
+
+  const [classificationArrayS,setClassificationArray] = useState([])
+  const [fieldTypeS,setFieldType] = useState([])
+
+   useEffect(()=>{
+
+    if(classificationS.chec === true){
+      const array = []
+      array.push(classificationS)
+      const newArray = array.concat(classificationArrayS)
+      setClassificationArray(newArray)
+      console.log(classificationArrayS);
+    } 
+    
+    else if(classificationS.chec === false) {
+      setClassificationArray(array=>array.filter(e=>e.text != classificationS.text))
+      console.log(classificationArrayS);
+    }
+
+   },[classificationS])
+
+
+   useEffect(()=>{
+
+    if(fieldNodesS.chec === true){
+      const array = []
+      array.push(fieldNodesS)
+      const newArray = array.concat(fieldTypeS)
+      setFieldType(newArray)
+      console.log(fieldTypeS);
+    } 
+    
+    else if(fieldNodesS.chec === false) {
+      setFieldType(array=>array.filter(e=>e.text != fieldNodesS.text))
+      console.log(fieldTypeS);
+    }
+
+   },[fieldNodesS])
+
+  
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    const classificationArray = [];
-    const fieldType = [];
-    const firstName = e.target.firstName;
-    const lastName = e.target.lastName;
-    const email = e.target.email;
-    const tel = e.target.tel;
-    const company = e.target.company;
-    const website = e.target.website;
-    const help = e.target.help;
-    const budget = e.target.budget;
 
-    const classificationNodes = e.target.classification;
-    const fieldNodes = e.target.fieldType;
 
-    classificationNodes.forEach((el) => {
-      if (el.value && el.checked) {
-        classificationArray.push(el.value);
-      }
-    });
-    fieldNodes.forEach((el) => {
-      if (el.value && el.checked) {
-        fieldType.push(el.value);
-      }
-    });
+    console.log(e);
+
+    const resultArrayClassification = classificationArrayS.map(e=>e.text)
+    const resultArrayType = fieldTypeS.map(e=>e.text)
+
+    const classificationArray = resultArrayClassification;
+    const fieldType = resultArrayType;
+    const firstName = firstNameS;
+    const lastName = lastNameS;
+    const email = emailS;
+    const tel = telS;
+    const company = companyS;
+    const website = websiteS;
+    const help = helpS;
+    const budget = budgetS;
+
+
 
     const request = {
       classificationArray: classificationArray,
@@ -43,11 +94,32 @@ export default function Feedback(props) {
       help: help,
       budget: budget,
     };
+  console.log(request);
 
-    fetch("http://localhost:8080/api/email", { method: "POST", body: request })
+    fetch("https://wardapi.herokuapp.com/email", { method: "POST", body: JSON.stringify(request)})
       .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
+
+
+       setFirstName('')
+       setLastName('')
+       setEmail('')
+       setTel('')
+       setCompany('')
+       setWebsite('')
+       setHelp('')
+       setBudget('')
+
+       setClassification('')
+       setFieldNodes('')
+
+       setClassificationArray([])
+       setFieldType([])
+
+  
+ 
+        
   };
   return (
     <form
@@ -60,17 +132,18 @@ export default function Feedback(props) {
         <span>*</span> indicates required fields
       </p>
       <div className="input_flex">
-        <input type="text" placeholder="First Name" name="firstName" />
-        <input type="text" placeholder="Last Name" name="lastName" />
+        <input type="text" placeholder="First Name" name="firstName" onChange={(e)=>setFirstName(e.target.value)} />
+        <input type="text" placeholder="Last Name" name="lastName" onChange={(e)=>setLastName(e.target.value)} />
         <input
           required={true}
           type="email"
           placeholder="E-mail *"
           name="email"
+          onChange={(e)=>setEmail(e.target.value)}
         />
-        <input type="tel" placeholder="Phone Number" name="tel" />
-        <input type="text" placeholder="Company name" name="company" />
-        <input type="text" placeholder="Website URL" name="website" />
+        <input type="tel" placeholder="Phone Number" name="tel" onChange={(e)=>setTel(e.target.value)} />
+        <input type="text" placeholder="Company name" name="company" onChange={(e)=>setCompany(e.target.value)} />
+        <input type="text" placeholder="Website URL" name="website" onChange={(e)=>setWebsite(e.target.value)} />
       </div>
       <div className="check_container">
         <div className="side">
@@ -78,6 +151,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
               value="Ecommerce"
               type="checkbox"
               name="classification"
@@ -88,6 +162,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
               value="B2B"
               type="checkbox"
               name="classification"
@@ -98,6 +173,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
               value="SaaS"
               type="checkbox"
               name="classification"
@@ -108,6 +184,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
               value="Healthcare"
               type="checkbox"
               name="classification"
@@ -118,6 +195,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
               value="Marketing agencies"
               type="checkbox"
               name="classification"
@@ -128,6 +206,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
               value="StartUps"
               type="checkbox"
               name="classification"
@@ -138,6 +217,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
               value="Other"
               type="checkbox"
               name="classification"
@@ -151,6 +231,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setFieldNodes({chec: e.target.checked, text: e.target.value})}
               value="Design"
               type="checkbox"
               name="fieldType"
@@ -161,6 +242,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setFieldNodes({chec: e.target.checked, text: e.target.value})}
               value="Marketing"
               type="checkbox"
               name="fieldType"
@@ -171,6 +253,7 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
+            onChange={(e)=>setFieldNodes({chec: e.target.checked, text: e.target.value})}
               value="Development"
               type="checkbox"
               name="fieldType"
@@ -184,6 +267,7 @@ export default function Feedback(props) {
         <div className="aria-box">
           <h4>How can we help?</h4>
           <textarea
+          onChange={(e)=>setHelp(e.target.value)}
             placeholder="Tell us about your project..."
             name="help"
             id="help"
@@ -196,6 +280,7 @@ export default function Feedback(props) {
             Expected Annual Budget <span>*</span>
           </h4>
           <textarea
+          onChange={(e)=>setBudget(e.target.value)}
             placeholder="Please Select"
             name="budget"
             id="budget"
