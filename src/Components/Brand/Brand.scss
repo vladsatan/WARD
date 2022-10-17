@@ -9,7 +9,7 @@
 
 .brand-cotainer {
   max-width: 1440px;
-  margin: 100px auto;
+  margin: 44px auto;
   position: relative;
   text-align: center;
 }
@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 48px;
   color: #f7f8fa;
-  margin-bottom: 72px;
+  margin-bottom: 68px;
 }
 
 .equity_flex {
@@ -40,14 +40,14 @@
 }
 
 .equity_container img {
-  padding-bottom: 45px;
+  width: 150px;
 }
 
 .equity_container p {
   font-family: "Jost", sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #f3f5f8;
+  color: #f3f5f8ad;
 }
 
 .equity_container span {
@@ -63,11 +63,13 @@
 }
 
 .equity_tittle_span {
-  margin-bottom: 92px;
+  padding-top: 44px;
+  padding-bottom: 52px;
 }
 
 .equity_tittle {
-  margin-bottom: 44px;
+ padding-top: 24px;
+ padding-bottom: 24px;
 }
 
 .equity_back {
@@ -90,15 +92,22 @@
     margin: 0px 5px;
 }
     .equity_tittle_span {
-        margin-bottom: 37px;
+        padding: 25px 0px;
     }
     .equity_container img {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .equity_ti {
         font-size: 48px;
         margin-bottom: 20px;
     }
+    .equity_container p {
+      padding-bottom: 24px;
+    }
+    .equity_tittle {
+      padding-top: 10px;
+      padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -116,32 +125,44 @@
         padding-bottom: 20px;
         width: 150px;
     }
-    .equity_tittle_span {
-        margin-bottom: 37px;
-        font-size: 28px;
-    }
+
     .equity_container p {
         font-family: "Jost", sans-serif;
         font-weight: 300;
         font-size: 18px;
-        color: #F3F5F8;
         padding: 0 35px;
     }
-    .equity_tittle {
-        margin-bottom: 44px;
-        font-size: 28px;
-          padding: 0 61px;
-
-    }
+    .equity_tittle_span {
+      padding-top: 0px;
+      padding-bottom: 30px;
+  }
+  .brand-cotainer {
+    margin: -40px auto;
+}
 }
 
 @media (max-width: 420px) {
+  .equity_container img {
+    width: 100px;
+    padding-bottom: 16px;
+  }
     .equity_container p {
         padding: 0 35px;
     }
     .equity_flex {
       margin: 0 auto 36px auto;
   }
+  .equity_tittle_span {
+   font-size: 32px;
+   padding-bottom: 16px;
+}
+.equity_tittle {
+    font-size: 32px;
+    padding-top: 0px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 }
 
 @media (max-width: 360px) {
@@ -150,6 +171,9 @@
     }
     .equity_tittle {
         padding: 0 55px;
+    }
+    .equity_container img {
+      width: 100px;
     }
 }
 
