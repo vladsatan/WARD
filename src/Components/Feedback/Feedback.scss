@@ -1,293 +1,315 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Jost', sans-serif;
 
 .feedback_container {
-    margin: 0 auto;
-    width: 655px;
-    background-color: #91B3CF;
-    padding: 20px 90px 20px 90px;
-    text-align: center;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transform: translateX(110%);
-    transition: .5s;
-    z-index: 101;
-    max-height: 100vh;
-    overflow: scroll;
-} 
+  margin: 0 auto;
+  width: 655px;
+  background-color: #91b3cf;
+  padding: 20px 90px 20px 90px;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(110%);
+  transition: 0.5s;
+  z-index: 101;
+  max-height: 100vh;
+  overflow: scroll;
+}
 .feedback_container::-webkit-scrollbar {
-    width: 0px;
-  }
+  width: 0px;
+}
 
 .feedback_container.active {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .feedback_container h1 {
-    font-size: 96px;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-    color: transparent;
-    background-clip: text;
-    background-image: url(../../photos/feetback.png);
-    background-position: 27px 20px;
+  font-size: 96px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  color: transparent;
+  background-clip: text;
+  background-image: url(../../photos/feetback.png);
+  background-position: 27px 20px;
 }
 
 .feedback_container h2 {
-    font-size: 24px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 700;
-    color: rgba(231, 237, 242, 1);
+  font-size: 24px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  color: rgba(231, 237, 242, 1);
 }
 
 .error-text {
-    font-size: 14px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 1);
-    margin-top: 16px;
-    margin-bottom: 24px;
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .error-text span {
-    color: rgba(222, 1, 95, 1);
+  color: rgba(222, 1, 95, 1);
 }
 
 .input_flex {
-    display: flex;
-    width: 600px;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-    position: relative;
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  position: relative;
 }
 
 .input_flex input {
-    width: 230px;
-    border: none;
-    outline: none;
-    border: 1px solid #93C5F3;
-    border-radius: 5px;
-    margin-right: 14px;
-    margin-bottom: 14px;
-    background: rgba(255, 255, 255, 0.5);
-    padding: 4px 10px;
-    font-size: 15px;
-    font-weight: 300;
-    font-family: 'Jost', sans-serif;
+  width: 230px;
+  border: none;
+  outline: none;
+  border: 1px solid #93c5f3;
+  border-radius: 5px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4px 10px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Jost", sans-serif;
 }
 
 .check_container {
-    width: 100%;
-    display: flex;
-    margin-bottom: 24px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 24px;
 }
 
 .side {
-    text-align: left;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: 'Jost', sans-serif;
-    color: rgba(31, 35, 48, 1);
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Jost", sans-serif;
+  color: rgba(31, 35, 48, 1);
 }
 
 .side h4 {
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Jost', sans-serif;
-    color: rgba(49, 56, 77, 1);
-    margin-bottom: 21px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  color: rgba(49, 56, 77, 1);
+  margin-bottom: 21px;
 }
 
 .box-check {
-    display: flex;
-    margin-bottom: 11px;
+  display: flex;
+  margin-bottom: 11px;
 }
 
 .box-check input {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .side-r {
-    margin-left: 95px;
+  margin-left: 95px;
 }
 
 .check_container h4 {
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Jost', sans-serif;
-    color: rgba(49, 56, 77, 1);
-    margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  color: rgba(49, 56, 77, 1);
+  margin-bottom: 16px;
 }
 
 .check_container h4 span {
-    color: rgba(222, 1, 95, 1);
+  color: rgba(222, 1, 95, 1);
 }
 
 .check_container textarea {
-    width: 230px;
-    height: 100px;
-    border: 0;
-    outline: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid #93C5F3;
-    padding: 10px;
-    resize: none;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: 'Jost', sans-serif;
-    color: rgba(71, 77, 95, 1);
+  width: 230px;
+  height: 100px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #93c5f3;
+  padding: 10px;
+  resize: none;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Jost", sans-serif;
+  color: rgba(71, 77, 95, 1);
 }
 
 .check_container textarea::-webkit-scrollbar {
-    width: 0;
-  }
+  width: 0;
+}
 
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .aria-box {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .feedback_container button {
-    font-size: 13px;
-    font-weight: 600;
-    font-family: 'Jost', sans-serif;
-    text-align: center;
-    width: 100px;
-    height: 30px;
-    background: linear-gradient(178.66deg, #C8D9E7 1.14%, rgba(200, 217, 231, 0) 130.77%);
-    border: 1px solid #BEE1FD;
-    color:rgba(49, 56, 77, 1) ;
-    transition: .1s;
-   
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  background: linear-gradient(
+    178.66deg,
+    #c8d9e7 1.14%,
+    rgba(200, 217, 231, 0) 130.77%
+  );
+  border: 1px solid #bee1fd;
+  color: rgba(49, 56, 77, 1);
+  transition: 0.1s;
 }
 
-.feedback_container button:hover{
- background: #041f50c3;
- color: white;
+.feedback_container button:hover {
+  background: #041f50c3;
+  color: white;
 }
 
 .close {
-        width: 50px;
-        height: 50px;
-        background: #010f3aa3;
-        position: fixed;
-        top: 45%;
-        left: -1px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 102;
+  width: 50px;
+  height: 50px;
+  background: #010f3aa3;
+  position: fixed;
+  top: 45%;
+  left: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 102;
 }
 
-
 @media (max-width: 1440px) {
-    .feedback_container {
-        padding: 20px 90px 20px 90px;
-    }
-    .feedback_container h1 {
-        font-size: 80px;
-    }
-    
-    .feedback_container h2 {
-        font-size: 22px;
-  
-    }
-    
-    .error-text {
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
-    .input_flex {
-        margin-bottom: 5px;
-    }
-    .check_container {
-        margin-bottom: 5px;
-    }
-    .feedback_container button {
-       margin-top: 15px;
-       
-    }
-    
+  .feedback_container {
+    padding: 20px 90px 20px 90px;
+  }
+  .feedback_container h1 {
+    font-size: 80px;
+  }
+
+  .feedback_container h2 {
+    font-size: 22px;
+  }
+
+  .error-text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .input_flex {
+    margin-bottom: 5px;
+  }
+  .check_container {
+    margin-bottom: 5px;
+  }
+  .feedback_container button {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 720px) {
-    .feedback_container {
-        padding: 20px 30px 20px 30px;
-        width: 538px;
-    } 
+  .feedback_container {
+    padding: 20px 30px 20px 30px;
+    width: 538px;
+  }
 }
 
 @media (max-width: 600px) {
-    .feedback_container {
-        padding: 20px 30px 20px 30px;
-        width: 452px;
-    } 
-    .feedback_container h1 {
-        font-size: 60px;
-        background-position: -18px 5px;
-    }
-    .feedback_container h2 {
-        font-size: 20px;
-    }
-    .error-text {
-        margin-top: 10px;
-        margin-bottom: 15px;
-        font-size: 12px;
-    }
-    .input_flex input {
-        width: 187px;
-        border: none;
-        font-size: 14px;
-    }
-    .input_flex {
-        width: 403px;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-    .check_container h4 {
-        font-size: 13px;
-    }
-    .side-r {
-        margin-left: 59px;
-    }
-    .check_container textarea {
-        width: 193px;
-    }
-    .close {
-        width: 30px;
-        height: 30px;
-    }
+  .feedback_container {
+    padding: 20px 30px 20px 30px;
+    width: 452px;
+  }
+  .feedback_container h1 {
+    font-size: 60px;
+    background-position: -18px 5px;
+  }
+  .feedback_container h2 {
+    font-size: 20px;
+  }
+  .error-text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+  .input_flex input {
+    width: 187px;
+    border: none;
+    font-size: 14px;
+  }
+  .input_flex {
+    width: 403px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .check_container h4 {
+    font-size: 13px;
+  }
+  .side-r {
+    margin-left: 59px;
+  }
+  .check_container textarea {
+    width: 193px;
+  }
+  .close {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 490px) {
-    .feedback_container {
-        padding: 55px 20px 20px 20px;
-        width: 100%;
-        height: 100%;
-    }
-    .close {
-        width: 30px;
-        height: 30px;
-        left: 14px;
-        top: 18px;
-    }
-    .check_container {
-        margin-left: 26px;
-    }
-}
+  .feedback_container {
+    padding: 55px 20px 20px 20px;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  .close {
+    width: 30px;
+    height: 30px;
+    left: 14px;
+    top: 18px;
+  }
+  .check_container {
+    margin-left: 26px;
+  }
+  .input_flex {
+    width: auto;
+  }
 
-@media (max-width: 454px) {
-    .check_container {
-        margin-left: 6px;
-    }
-    .check_container textarea {
-        width: 184px;
-    }
+  .input_flex input {
+    width: 30vw;
+  }
+  .aria-box {
+    width: 40vw;
+    box-sizing: border-box;
+  }
+  .aria-box textarea {
+    width: 40vw;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .check_container div {
+    width: 40vw;
+    box-sizing: border-box;
+  }
+  .check_container div textarea {
+    width: 40vw;
+  }
+  .check_container {
+    align-items: flex-end;
+    margin-left: 0;
+  }
+  .check_container {
+    // margin-left: 6px;
+    justify-content: space-between;
+  }
 }

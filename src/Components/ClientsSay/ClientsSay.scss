@@ -42,9 +42,9 @@
 }
 
 .client_primary {
-  width: 80%;
-  max-width: 650px;
-  height: 600px;
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -57,9 +57,9 @@
 }
 
 .clients_transpareny {
-  width: 80%;
-  max-width: 700px;
-  height: 500px;
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
   margin-left: 20px;
   transition-duration: 1s;
 }
@@ -93,10 +93,10 @@
 .client_secondary {
   background: rgba(123, 176, 255, 0.15);
   backdrop-filter: blur(5px);
-  width: 80%;
+  width: 100%;
   transition-duration: 1s;
-  max-width: 650px;
-  height: 550px;
+  max-width: 600px;
+  height: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -113,7 +113,7 @@
   font-family: "Jost";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 29px;
   text-align: center;
   color: rgba(216, 229, 255, 0.5);
@@ -158,28 +158,23 @@
   border: 3px solid rgba(123, 176, 255, 0.25); /* отступ вокруг бегунка */
 }
 
-@media (max-width:500px){
-  .slidebur_container{
-    height: 1300px;
-  }
-  .client_secondary{
-    max-width: 90vw;
-    height: 750px;
-
-  
-  }
-  .client_primary{
-    max-width: 100vw;
+@media (max-width: 500px) {
+  .slidebur_container {
     height: 900px;
-
-
   }
-  .clients_slider{
+  .client_secondary {
+    max-width: 90vw;
+    height: 500px;
+  }
+  .client_primary {
+    max-width: 100vw;
+    height: 600px;
+  }
+  .clients_slider {
     height: 100%;
   }
 
-  .clients_container{
-    height: 1350px;
+  .clients_container {
+    height: 1000px;
   }
-
 }

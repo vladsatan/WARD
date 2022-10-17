@@ -5,66 +5,56 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 export default function Feedback(props) {
-  const { status, setStatus, setSubmit} = props;
+  const { status, setStatus, setSubmit } = props;
 
+  const [firstNameS, setFirstName] = useState("");
+  const [lastNameS, setLastName] = useState("");
+  const [emailS, setEmail] = useState("");
+  const [telS, setTel] = useState("");
+  const [companyS, setCompany] = useState("");
+  const [websiteS, setWebsite] = useState("");
+  const [helpS, setHelp] = useState("");
+  const [budgetS, setBudget] = useState("");
 
-  const [firstNameS,setFirstName] = useState('')
-  const [lastNameS,setLastName] = useState('')
-  const [emailS,setEmail] = useState('')
-  const [telS,setTel] = useState('')
-  const [companyS,setCompany] = useState('')
-  const [websiteS,setWebsite] = useState('')
-  const [helpS,setHelp] = useState('')
-  const [budgetS,setBudget] = useState('')
+  const [classificationS, setClassification] = useState("");
+  const [fieldNodesS, setFieldNodes] = useState("");
 
-  const [classificationS,setClassification] = useState('')
-  const [fieldNodesS,setFieldNodes] = useState('')
+  const [classificationArrayS, setClassificationArray] = useState([]);
+  const [fieldTypeS, setFieldType] = useState([]);
 
-  const [classificationArrayS,setClassificationArray] = useState([])
-  const [fieldTypeS,setFieldType] = useState([])
-
-   useEffect(()=>{
-
-    if(classificationS.chec === true){
-      const array = []
-      array.push(classificationS)
-      const newArray = array.concat(classificationArrayS)
-      setClassificationArray(newArray)
+  useEffect(() => {
+    if (classificationS.chec === true) {
+      const array = [];
+      array.push(classificationS);
+      const newArray = array.concat(classificationArrayS);
+      setClassificationArray(newArray);
       console.log(classificationArrayS);
-    } 
-    
-    else if(classificationS.chec === false) {
-      setClassificationArray(array=>array.filter(e=>e.text != classificationS.text))
+    } else if (classificationS.chec === false) {
+      setClassificationArray((array) =>
+        array.filter((e) => e.text != classificationS.text)
+      );
       console.log(classificationArrayS);
     }
+  }, [classificationS]);
 
-   },[classificationS])
-
-
-   useEffect(()=>{
-
-    if(fieldNodesS.chec === true){
-      const array = []
-      array.push(fieldNodesS)
-      const newArray = array.concat(fieldTypeS)
-      setFieldType(newArray)
+  useEffect(() => {
+    if (fieldNodesS.chec === true) {
+      const array = [];
+      array.push(fieldNodesS);
+      const newArray = array.concat(fieldTypeS);
+      setFieldType(newArray);
       console.log(fieldTypeS);
-    } 
-    
-    else if(fieldNodesS.chec === false) {
-      setFieldType(array=>array.filter(e=>e.text != fieldNodesS.text))
+    } else if (fieldNodesS.chec === false) {
+      setFieldType((array) => array.filter((e) => e.text != fieldNodesS.text));
       console.log(fieldTypeS);
     }
+  }, [fieldNodesS]);
 
-   },[fieldNodesS])
-
-  
-  
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const resultArrayClassification = classificationArrayS.map(e=>e.text)
-    const resultArrayType = fieldTypeS.map(e=>e.text)
+    const resultArrayClassification = classificationArrayS.map((e) => e.text);
+    const resultArrayType = fieldTypeS.map((e) => e.text);
 
     const classificationArray = resultArrayClassification;
     const fieldType = resultArrayType;
@@ -76,8 +66,6 @@ export default function Feedback(props) {
     const website = websiteS;
     const help = helpS;
     const budget = budgetS;
-
-
 
     const request = {
       classificationArray: classificationArray,
@@ -92,38 +80,37 @@ export default function Feedback(props) {
       budget: budget,
     };
 
-
-  fetch("https://wardapi.herokuapp.com/email", {
-    method: "POST",
-    body: JSON.stringify(request),
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*"
-    },
-  })   .then((res) => res.json())
+    fetch("https://wardapi.herokuapp.com/email", {
+      method: "POST",
+      body: JSON.stringify(request),
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    })
+      .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
 
-       setSubmit(true)
-       setStatus(false)
+    setSubmit(true);
+    setStatus(false);
 
-       setFirstName('')
-       setLastName('')
-       setEmail('')
-       setTel('')
-       setCompany('')
-       setWebsite('')
-       setHelp('')
-       setBudget('')
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setTel("");
+    setCompany("");
+    setWebsite("");
+    setHelp("");
+    setBudget("");
 
-       setClassification('')
-       setFieldNodes('')
+    setClassification("");
+    setFieldNodes("");
 
-       setClassificationArray([])
-       setFieldType([])
-};
+    setClassificationArray([]);
+    setFieldType([]);
+  };
   return (
-  
     <form
       onSubmit={(e) => handleSubmit(e)}
       className={status ? "feedback_container active" : "feedback_container"}
@@ -134,18 +121,43 @@ export default function Feedback(props) {
         <span>*</span> indicates required fields
       </p>
       <div className="input_flex">
-        <input type="text" placeholder="First Name" name="firstName" onChange={(e)=>setFirstName(e.target.value)} />
-        <input type="text" placeholder="Last Name" name="lastName" onChange={(e)=>setLastName(e.target.value)} />
+        <input
+          type="text"
+          placeholder="First Name"
+          name="firstName"
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          name="lastName"
+          onChange={(e) => setLastName(e.target.value)}
+        />
         <input
           required={true}
           type="email"
           placeholder="E-mail *"
           name="email"
-          onChange={(e)=>setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
         />
-        <input type="tel" placeholder="Phone Number" name="tel" onChange={(e)=>setTel(e.target.value)} />
-        <input type="text" placeholder="Company name" name="company" onChange={(e)=>setCompany(e.target.value)} />
-        <input type="text" placeholder="Website URL" name="website" onChange={(e)=>setWebsite(e.target.value)} />
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          name="tel"
+          onChange={(e) => setTel(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Company name"
+          name="company"
+          onChange={(e) => setCompany(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Website URL"
+          name="website"
+          onChange={(e) => setWebsite(e.target.value)}
+        />
       </div>
       <div className="check_container">
         <div className="side">
@@ -153,7 +165,12 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setClassification({
+                  chec: e.target.checked,
+                  text: e.target.value,
+                })
+              }
               value="Ecommerce"
               type="checkbox"
               name="classification"
@@ -164,7 +181,12 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setClassification({
+                  chec: e.target.checked,
+                  text: e.target.value,
+                })
+              }
               value="B2B"
               type="checkbox"
               name="classification"
@@ -175,7 +197,12 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setClassification({
+                  chec: e.target.checked,
+                  text: e.target.value,
+                })
+              }
               value="SaaS"
               type="checkbox"
               name="classification"
@@ -186,7 +213,12 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setClassification({
+                  chec: e.target.checked,
+                  text: e.target.value,
+                })
+              }
               value="Healthcare"
               type="checkbox"
               name="classification"
@@ -197,7 +229,12 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setClassification({
+                  chec: e.target.checked,
+                  text: e.target.value,
+                })
+              }
               value="Marketing agencies"
               type="checkbox"
               name="classification"
@@ -208,7 +245,12 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setClassification({
+                  chec: e.target.checked,
+                  text: e.target.value,
+                })
+              }
               value="StartUps"
               type="checkbox"
               name="classification"
@@ -219,7 +261,12 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setClassification({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setClassification({
+                  chec: e.target.checked,
+                  text: e.target.value,
+                })
+              }
               value="Other"
               type="checkbox"
               name="classification"
@@ -233,7 +280,9 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setFieldNodes({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setFieldNodes({ chec: e.target.checked, text: e.target.value })
+              }
               value="Design"
               type="checkbox"
               name="fieldType"
@@ -244,7 +293,9 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setFieldNodes({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setFieldNodes({ chec: e.target.checked, text: e.target.value })
+              }
               value="Marketing"
               type="checkbox"
               name="fieldType"
@@ -255,7 +306,9 @@ export default function Feedback(props) {
 
           <div className="box-check">
             <input
-            onChange={(e)=>setFieldNodes({chec: e.target.checked, text: e.target.value})}
+              onChange={(e) =>
+                setFieldNodes({ chec: e.target.checked, text: e.target.value })
+              }
               value="Development"
               type="checkbox"
               name="fieldType"
@@ -269,7 +322,7 @@ export default function Feedback(props) {
         <div className="aria-box">
           <h4>How can we help?</h4>
           <textarea
-          onChange={(e)=>setHelp(e.target.value)}
+            onChange={(e) => setHelp(e.target.value)}
             placeholder="Tell us about your project..."
             name="help"
             id="help"
@@ -282,7 +335,7 @@ export default function Feedback(props) {
             Expected Annual Budget <span>*</span>
           </h4>
           <textarea
-          onChange={(e)=>setBudget(e.target.value)}
+            onChange={(e) => setBudget(e.target.value)}
             placeholder="Please Select"
             name="budget"
             id="budget"
@@ -296,7 +349,6 @@ export default function Feedback(props) {
       <div className="close" onClick={() => setStatus(!status)}>
         <img src={close} alt="" />
       </div>
-       
     </form>
   );
 }
