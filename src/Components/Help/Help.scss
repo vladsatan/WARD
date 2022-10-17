@@ -16,12 +16,12 @@
 }
 
 .help_container h1 {
-  padding: 72px 0px;
+  padding: 60px 0px;
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
-  font-size: 74px;
+  font-size: 65px;
   color: white;
-  background-image: url(../../photos/smog.png);
+  background-image: url(../../photos/helpBG.png);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 80px 0px 100px #151722 , inset -80px 0px 100px #151722;
@@ -41,20 +41,21 @@
 .box {
   padding: 16px 26px;
   width: 360px;
-  background: linear-gradient(180deg, #0f1016 0%, rgba(15, 16, 22, 0) 100%);
   border-radius: 10px;
   padding-bottom: 30px;
+  border: 1px solid transparent;
+  background: linear-gradient(180deg, rgba(15, 16, 22, 1) 80%,rgba(15, 16, 22, 0) 100%) padding-box, linear-gradient(to bottom, rgba(54, 54, 54, 1) 0%, rgba(2, 6, 21, 0) 100%) border-box;
 }
 
 .box h3 {
   color: rgba(188, 216, 241, 1);
   font-family: "Jost", sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
 }
 
 .box p {
-  color: rgba(243, 245, 248, 1);
+  color: rgb(243 245 248 / 58%);
   font-family: "Jost", sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -65,7 +66,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 24px;
 }
 
 .mini-container {
@@ -75,6 +76,7 @@
 
 .mini-container img {
   margin-bottom: 16px;
+  width: 150px;
 }
 
 .box-padd {
@@ -115,6 +117,7 @@
 @media (max-width: 420px) {
   .help_container h1 {
     font-size: 30px;
+    padding: 32px 0px;
 }
 .box {
   width: 293px;
@@ -125,6 +128,13 @@
 }
 .box-padd2 {
   padding-bottom: 17px;
+}
+.help_container {
+  margin: 50px auto;
+}
+.mini-container img {
+  margin-bottom: 10px;
+  width: 120px;
 }
 }
 
