@@ -70,25 +70,22 @@ export default function Feedback(props) {
     const budget = budgetS;
 
     const request = {
-      classificationArray: ["d"],
-      fieldType: ['hello'],
-      firstName: "first",
-      lastName: "x",
-      email: "x",
-      tel: "j",
-      company:"j",
-      website: "j",
-      help: "k",
-      budget: "j",
+      classificationArray: classificationArray,
+      fieldType: fieldType,
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      tel: tel,
+      company: company,
+      website: website,
+      help: help,
+      budget: budget,
     };
-    // const request = { firstName: "Ivanna" };
+    console.log(request);
 
-    fetch("http://localhost:8080/email", {
+    fetch("https://wardapi.herokuapp.com/email", {
       method: "POST",
       body: JSON.stringify(request),
-      headers: {
-        "Content-Type": "application/json",
-      },
     })
       .then((res) => res.json())
       .then((data) => console.log(data))
