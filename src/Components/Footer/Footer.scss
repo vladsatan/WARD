@@ -63,8 +63,12 @@
 }
 
 .send-BTN {
-  padding: 20px;
   transition: .2s;
+  width: 10%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .send-BTN:hover {

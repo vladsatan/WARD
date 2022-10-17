@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 export default function Feedback(props) {
-  const { status, setStatus } = props;
+  const { status, setStatus, setSubmit } = props;
 
   const [firstNameS, setFirstName] = useState("");
   const [lastNameS, setLastName] = useState("");
@@ -53,8 +53,6 @@ export default function Feedback(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(e);
-
     const resultArrayClassification = classificationArrayS.map((e) => e.text);
     const resultArrayType = fieldTypeS.map((e) => e.text);
 
@@ -81,15 +79,21 @@ export default function Feedback(props) {
       help: help,
       budget: budget,
     };
-    console.log(request);
 
     fetch("https://wardapi.herokuapp.com/email", {
       method: "POST",
       body: JSON.stringify(request),
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
     })
       .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
+
+    setSubmit(true);
+    setStatus(false);
 
     setFirstName("");
     setLastName("");

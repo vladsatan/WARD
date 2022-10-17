@@ -19,7 +19,7 @@ const ClientsSay = () => {
     {
       active: false,
       image: client2,
-      p: '"Cool experience in working with this company.Our collaboration always had quick feedback and offered cool ideas with their experienced expert in my industry. I have experienced website development before. I can confidently say that this is the best experience I have had in the past. The marketing department did a great job on my rebranding and design and they definitely have a good style in development. I will definitely contact them again next time."',
+      p: '"Great experience working with this company.Our collaboration always had quick feedback and offered cool ideas with their experienced expert in my industry.The marketing department did a great job on my rebranding and design. I will definitely contact them again next time."',
       span: "Co-founder  of MOYO",
     },
     {
@@ -86,7 +86,7 @@ const ClientsSay = () => {
         middle.offsetWidth / 2 +
         40;
     } else {
-      slidebur.current.scrollLeft = middle.offsetLeft - scrollWidth / 0.9;
+      slidebur.current.scrollLeft = middle.offsetLeft - scrollWidth / 0.8;
     }
   }, []);
 
