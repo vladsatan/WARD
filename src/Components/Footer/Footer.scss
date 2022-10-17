@@ -50,7 +50,7 @@
   outline: none;
   border: none;
   width: 90%;
-  padding: 0px 24px;
+  padding: 0px 0px 0px 24px;
   background-color: #113c5900;
   font-family: 'Jost', sans-serif;
   font-weight: 300;
@@ -109,6 +109,13 @@
 }
 .footer_container {
   padding: 35px 20px;
+}
+.send-BTN {
+  width: 20%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 }
 
@@ -211,6 +218,10 @@
 }
 .send-BTN {
   padding: 5px;
+  width: 20%;
+}
+.send-BTN img {
+  width: 32px;
 }
 .contact-input-flex input {
   font-size: 10px;

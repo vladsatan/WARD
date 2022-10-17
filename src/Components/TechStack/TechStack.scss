@@ -32,6 +32,36 @@
     max-width: 1222px;
     flex-wrap: wrap;
     margin: 0 auto 45px auto;
+    padding: 0px 50px;
+}
+
+.stack_container1 img {
+    width: 180px;
+    height: 167px;
+}
+
+.stack_container2 img {
+    width: 230px;
+    height: 191px;
+}
+
+.stack_container3 img {
+    width: 250px;
+    height: 117px;
+}
+
+.stack_container4 img {
+    width: 180px;
+    height: 227px;
+}
+
+.stack_container5 img {
+    width: 200px;
+    height: 150px;  
+}
+
+.stack_container6 img {
+    width: 180px;
 }
 
 .stack_container1,
@@ -40,13 +70,13 @@
 .stack_container4,
 .stack_container5,
 .stack_container6 {
-    width: 400px;
-    height: 316px;
+    width: 325px;
+    height: 257px;
     background-color: gray;
     margin-right: 7px;
     margin-bottom: 7px;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     transition: .3s;
@@ -110,69 +140,114 @@
     box-shadow: 0px 0px 10px 5px #3cb9ff;
 }
 
-@media (max-width: 1220px) {
-    .stack_container1, .stack_container2, .stack_container3, .stack_container4, .stack_container5, .stack_container6 {
-        width: 300px;
-        height: 250px;
-    }
-    .stack-logos {
-        width: 186px;
-    }
-}
 
 @media (max-width: 955px) {
-    .stack_container1, .stack_container2, .stack_container3, .stack_container4, .stack_container5, .stack_container6 {
-        width: 234px;
-        height: 175px;
+    .stack_container1 {
+        border-top-left-radius: 0px;
+        background-color: #98acc4;
     }
-    .stack-logos {
-        width: 120px;
+    .stack_container3 {
+        border-top-right-radius: 0px;
+        background-color: #627997;
+    }
+    .stack_container4 {
+        border-bottom-left-radius: 0px;
+        background-color: #6c81a5;
+    }
+    .stack_container6 {
+        border-bottom-right-radius: 0px;
+        background-color: #8b9fba;
+
     }
 }
   
 
-@media (max-width: 742px) {
-    .stack_container1, .stack_container2, .stack_container3, .stack_container4, .stack_container5, .stack_container6 {
-        width: 181px;
-        height: 130px;
+@media (max-width: 763px) {
+    .stack_container1 {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #98acc4;
+        margin-right: 0px;
     }
-    .stack-logos {
-        width: 90px;
+    .stack_container2 {
+        margin-right: 0px;
     }
+    .stack_container3 {
+        border-top-right-radius: 0px;
+        background-color: #627997;
+        margin-right: 0px;
+    }
+    .stack_container4 {
+        border-bottom-left-radius: 0px;
+        background-color: #6c81a5;
+        margin-right: 0px;
+    }
+    .stack_container5 {
+        margin-right: 0px;
+    }
+    .stack_container6 {
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        background-color: #8b9fba;
+        margin-right: 0px;
 
+    }
 }
-  
 
-@media (max-width: 584px) {
-    .stack_container1, .stack_container2, .stack_container3, .stack_container4, .stack_container5, .stack_container6 {
+@media (max-width: 420px) {
+    .stack_container1 {
+      width: 269px;
+      height: 213px;
+    }
+    .stack_container2 {
+        width: 269px;
+        height: 213px;
+    }
+    .stack_container3 {
+        width: 269px;
+        height: 213px;
+    }
+    .stack_container4 {
+        width: 269px;
+        height: 213px;
+    }
+    .stack_container5 {
+        width: 269px;
+        height: 213px;
+    }
+    .stack_container6 {
+        width: 269px;
+        height: 213px;
+    }
+
+    .stack_container1 img {
         width: 150px;
-        height: 95px;
-        margin-right: 4px;
-        margin-bottom: 4px;
     }
-    .stack-logos {
-        width: 57px;
+    
+    .stack_container2 img {
+        width: 190px;
     }
-    .TechStack_container h1 {
-        font-size: 50px;
- }
-}
-
-@media (max-width: 461px) {
-    .stack_container1, .stack_container2, .stack_container3, .stack_container4, .stack_container5, .stack_container6 {
-        width: 106px;
-        height: 76px;
-        margin-right: 2px;
-        margin-bottom: 2px;
+    
+    .stack_container3 img {
+        width: 207px;
     }
-    .stack-logos {
-        width: 57px;
+    
+    .stack_container4 img {
+        width: 150px;
+    }
+    
+    .stack_container5 img {
+        width: 166px;  
+    }
+    
+    .stack_container6 img {
+        width: 150px;
+    }
+    .TechStack_container {
+        padding: 0px 0px;
     }
 }
 
 @media (max-width: 350px) {
-    .stack_container1, .stack_container2, .stack_container3, .stack_container4, .stack_container5, .stack_container6 {
-        width: 106px;
-        height: 76px;
-    }
+    
 }

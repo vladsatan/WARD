@@ -51,22 +51,20 @@
   width: 517px;
   width: auto;
   font-family: "Bebas Neue", cursive;
-  font-size: 96px;
+  font-size: 74px;
   font-weight: 400;
   color: transparent;
   background-clip: text;
-  background-image: linear-gradient(
-    180deg,
-    #33343c 0%,
-    rgba(33, 33, 33, 0.54) 100%
-  );
-  padding-top: 102px;
+  background-image: linear-gradient(180deg, #F3F5F8 0%, rgba(243, 245, 248, 0.84) 46.15%, rgba(243, 245, 248, 0) 100%);
+  padding-top: 60px;
   z-index: 6;
   padding-left: 156px;
 }
 
+
+
 .solution_container h1 span {
-  color: #3cb9ff;
+  color: rgba(97, 198, 255, 1);
   z-index: 6;
 }
 
@@ -93,38 +91,39 @@
 .solution1 {
   max-width: 763px;
   font-family: "Jost", sans-serif;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 600;
   color: #f3f5f8;
-  padding-bottom: 72px;
+  padding-bottom: 24px;
   margin: 0;
-  margin-top: 30px;
+  padding-top: 44px;
 }
 
 .solution2 {
   max-width: 650px;
   font-family: "Jost", sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   color: #dbdddf;
-  padding-bottom: 72px;
-  margin-left: 480px;
+  padding-bottom: 24px;
+  margin-left: 370px;
 }
 
 .solution3 {
   max-width: 766px;
   font-family: "Jost", sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 500;
   color: #929395;
-  padding-bottom: 72px;
+  padding-bottom: 24px;
   margin: 0;
 }
 .solution-fixed {
   width: 100%;
+  height: 200px;
   padding-bottom: 72px;
   position: relative;
-  background-image: url(../../photos/smog.png);
+  background-image: url(../../photos/solutinBG.png);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 100px 0px 70px #151722, inset -100px 0px 70px #151722;
@@ -138,7 +137,6 @@
     font-size: 32px;
     font-weight: 500;
     color: #dbdddf;
-    padding-bottom: 72px;
     margin-left: 150px;
   }
   .solution_content {
@@ -150,6 +148,7 @@
   }
   .solution-fixed {
     padding-bottom: 23px;
+    height: 150px;
 }
 .solution_container h1 {
   padding-top: 33px;
@@ -163,6 +162,7 @@
   }
   .solution2 {
     margin-left: 0px;
+    padding-bottom: 24px;
   }
   .solution_container h1 {
     font-size: 74px;
@@ -178,7 +178,7 @@
   }
   .solution_container h1 {
       font-size: 60px;
-      padding-top: 30px;
+      padding-top: 22px;
       margin-bottom: -8px;
       padding-left: 60px;
   }
@@ -194,32 +194,36 @@
     margin-left: 0px;
   }
   .solution3 {
-    max-width: 282px;
+    max-width: 382px;
     font-size: 20px;
     padding-bottom: 40px;
   }
   .solution_content {
     padding-left: 60px;
   }
+  .solution-fixed {
+    padding-bottom: 23px;
+    height: 112px;
+}
   }
 
 
 @media (max-width: 540px) {
   .solution_container h1 {
-    font-size: 50px;
-    padding-top: 30px;
+    font-size: 40px;
+    padding-top: 18px;
     margin-bottom: -21px;
-    padding-left: 34px;
+    padding-left: 53px;
 }
   .solution1 {
     max-width: 323px;
     font-size: 18px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .solution2 {
     width: 297px;
     font-size: 16px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin-left: 0px;
   }
   .solution3 {
@@ -227,16 +231,33 @@
     font-size: 16px;
     padding-bottom: 0px;
   }
+  .solution-fixed {
+    padding-bottom: 20px;
+    height: 80px;
+}
 }
 
 @media (max-width: 420px) {
   .solution_content {
     padding-left: 34px;
   }
+  .solution-fixed {
+    padding-bottom: 0px;
+    height: 100px;
+}
+.solution_container h1 {
+  font-size: 40px;
+  padding-top: 27px;
+  margin-bottom: 0px;
+  padding-left: 53px;
+}
 }
 
 @media (max-width: 360px) {
   .solution_content {
     padding-left: 16px;
   }
+  .solution_container h1 {
+    padding-left: 20px;
+}
 }
