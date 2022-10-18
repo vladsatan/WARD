@@ -57,20 +57,30 @@
 }
 
 .input_flex {
+  box-sizing: border-box;
   display: flex;
-  width: 600px;
-  flex-wrap: wrap;
+  width: calc(100% + 30px);
   margin-bottom: 24px;
   position: relative;
+  margin-left: -30px;
+  justify-content: center;
+}
+.input_flex div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  // width: 230px;
 }
 
-.input_flex input {
-  width: 230px;
+.input_flex div input {
+  width: 100%;
   border: none;
   outline: none;
   border: 1px solid #93c5f3;
   border-radius: 5px;
-  margin-right: 14px;
+  // margin-right: 14px;
   margin-bottom: 14px;
   background: rgba(255, 255, 255, 0.5);
   padding: 4px 10px;
@@ -240,16 +250,6 @@
     margin-bottom: 15px;
     font-size: 12px;
   }
-  .input_flex input {
-    width: 187px;
-    border: none;
-    font-size: 14px;
-  }
-  .input_flex {
-    width: 403px;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
   .check_container h4 {
     font-size: 13px;
   }
@@ -281,13 +281,7 @@
   .check_container {
     margin-left: 26px;
   }
-  .input_flex {
-    width: auto;
-  }
 
-  .input_flex input {
-    width: 30vw;
-  }
   .aria-box {
     width: 40vw;
     box-sizing: border-box;
@@ -309,7 +303,15 @@
     margin-left: 0;
   }
   .check_container {
-    // margin-left: 6px;
     justify-content: space-between;
+  }
+}
+@media (max-width: 490px) {
+  .box-check p {
+    font-size: 12px;
+  }
+
+  .side-r {
+    margin-left: 20px;
   }
 }
