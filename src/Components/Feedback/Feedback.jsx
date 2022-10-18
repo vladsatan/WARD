@@ -121,43 +121,47 @@ export default function Feedback(props) {
         <span>*</span> indicates required fields
       </p>
       <div className="input_flex">
-        <input
-          type="text"
-          placeholder="First Name"
-          name="firstName"
-          onChange={(e) => setFirstName(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Last Name"
-          name="lastName"
-          onChange={(e) => setLastName(e.target.value)}
-        />
-        <input
-          required={true}
-          type="email"
-          placeholder="E-mail *"
-          name="email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="tel"
-          placeholder="Phone Number"
-          name="tel"
-          onChange={(e) => setTel(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Company name"
-          name="company"
-          onChange={(e) => setCompany(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Website URL"
-          name="website"
-          onChange={(e) => setWebsite(e.target.value)}
-        />
+        <div>
+          <input
+            type="text"
+            placeholder="First Name"
+            name="firstName"
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+          <input
+            required={true}
+            type="email"
+            placeholder="E-mail *"
+            name="email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Company name"
+            name="company"
+            onChange={(e) => setCompany(e.target.value)}
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Last Name"
+            name="lastName"
+            onChange={(e) => setLastName(e.target.value)}
+          />
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            name="tel"
+            onChange={(e) => setTel(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Website URL"
+            name="website"
+            onChange={(e) => setWebsite(e.target.value)}
+          />
+        </div>
       </div>
       <div className="check_container">
         <div className="side">
