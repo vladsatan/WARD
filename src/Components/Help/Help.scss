@@ -121,6 +121,7 @@
 }
 .box {
   width: 293px;
+  padding-top: 12px;
 }
 .box p {
   padding: 0 10px;
@@ -129,15 +130,18 @@
 .box-padd2 {
   padding-bottom: 17px;
 }
+.box h3 {
+  padding-bottom: 12px;
+}
 .help_container {
   margin: 50px auto;
 }
 .mini-container img {
-  margin-bottom: 10px;
-  width: 120px;
+ display: none;
 }
+.box img {
+  display: block;
+  width: 150px;
+  margin: 0 auto 12px auto;
 }
-
-@media (max-width: 360px) {
-
 }

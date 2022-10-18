@@ -11,7 +11,7 @@ import Header from "../Header/Header";
 
 export default function MainSection(props) {
 
-  const {setStatus} = props;
+  const {setStatus,logoPH} = props;
 
   return (
     <>
@@ -20,6 +20,7 @@ export default function MainSection(props) {
       <div className="MainSection">
         <div className="MainSection_container">
           <div className="left-s">
+            <div className="logoPhone"><img src={logoPH} alt="" width={'70px'} /></div>
             <h1>
            <span>The Ward Company</span><br /> We are a engineering<br /> & design company<br /> from the future</h1>
 

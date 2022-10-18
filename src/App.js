@@ -2,6 +2,8 @@ import "./App.scss";
 import React from "react";
 import { useState } from "react";
 import wardLogo from "./wardLogo.svg";
+import logoPH from "./photos/logoPH.png"
+import arroy from "./Logo/arroy.svg"
 import PhotoAbout from "./Logo/Photo-about.svg"
 const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 const ClientsSay = React.lazy(() =>
@@ -27,7 +29,7 @@ function App() {
       <div className="logoName">
         <img src={wardLogo} />
       </div>
-      <MainSection setStatus={setIsFeetback} />
+      <MainSection setStatus={setIsFeetback} logoPH={logoPH} />
       <AboutUs />
       <Solution />
       <Brand />
@@ -45,7 +47,11 @@ function App() {
       </div>
 
       <div className="flag" onClick={() => setIsFeetback(!isFeetback)}>
-        HIRE US
+        <p>HIRE US</p>
+      </div>
+
+      <div className="mobile-flag" onClick={() => setIsFeetback(!isFeetback)}>
+           <img src={arroy} />
       </div>
 
     </div>
