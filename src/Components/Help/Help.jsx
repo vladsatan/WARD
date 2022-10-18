@@ -15,6 +15,7 @@ export default function Help() {
                 <div className='mini-container'>
                     <img src={Briefcase} alt="" />
                     <div className='box'>
+                    <img src={Briefcase} alt="" />
                         <h3 className='box-padd'>Brand Strategy</h3>
                         <p>Our marketing and design 
                            department will work together 
@@ -31,6 +32,7 @@ export default function Help() {
                 <div className='mini-container'>
                     <img src={web} alt="" />
                     <div className='box'>
+                    <img src={web} alt="" />
                         <h3 className='box-padd2'>Web Development</h3>
                         <p>Our team will be happy to 
                            automate your workspace 
@@ -45,6 +47,7 @@ export default function Help() {
                 <div className='mini-container'>
                     <img src={Settings} alt="" />
                     <div className='box'>
+                    <img src={Settings} alt="" />
                         <h3 className='box-padd'>Digital Marketing</h3>
                         <p>The best marketing department, 
                            who have been in the market 

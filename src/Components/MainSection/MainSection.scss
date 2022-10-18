@@ -28,6 +28,10 @@
     margin: 0 auto;
 }
 
+.logoPhone {
+  display: none;
+}
+
 
 .left-s {
     max-width: 470px;
@@ -368,7 +372,7 @@
 @media (max-width: 420px) {
   .MainSection_container {
     justify-content: space-between;
-    padding: 0px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -397,6 +401,12 @@
   padding-left: 6px;
   padding-right: 0px;
   width: 312px;
+}
+.logoPhone {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 56px;
 }
 }
 

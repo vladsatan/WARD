@@ -148,6 +148,9 @@
 }
 
 @media (max-width: 720px) {
+    .about_text h1 {
+        padding-bottom: 24px;
+    }
     .earth {
         top: 113px;
         right: 110px;
@@ -201,6 +204,7 @@
     .grey {
         width: 316px;
         font-size: 18px;
+        padding-bottom: 24px;
     }
     .grey_1 {
         font-size: 18px;
@@ -223,6 +227,21 @@
     }
     .about-flex {
         padding: 0px 27px;
+    }
+    .grey {
+        width: 316px;
+        font-size: 20px;
+        padding-bottom: 16px;
+    }
+    .grey_1 {
+        font-size: 18px;
+        width: 281px;
+        padding-bottom: 16px;
+    }
+    .grey_2 {
+        max-width: 255px;
+        font-size: 16px;
+        padding-bottom: 16px;
     }
 }
 
