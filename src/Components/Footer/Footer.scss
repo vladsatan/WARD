@@ -246,4 +246,30 @@
 }
 }
 
- 
+@media (max-width: 420px) {
+  .contact-tel {
+    order: 1;
+    margin-bottom: 12px;
+}
+.contact-tel p {
+  font-size: 18px;
+}
+.contact-mail {
+  margin-bottom: 12px;
+}
+
+.contact-mail p {
+  font-size: 18px;
+}
+.contact-mail a {
+  font-size: 18px;
+}
+.contact-input {
+  margin: 0 0px;
+  order: 3;
+}
+.contact-input h3 {
+  font-size: 18px;
+  font-weight: 900;
+}
+}

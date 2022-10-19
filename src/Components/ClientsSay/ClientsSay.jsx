@@ -1,7 +1,7 @@
 import "./ClientsSay.scss";
 import client1 from "../../photos/client1.svg";
 import client2 from "../../photos/client2.svg";
-import client3 from "../../photos/client3.png";
+import client3 from "../../Logo/client3.svg";
 import client4 from "../../photos/client4.png";
 import client5 from "../../photos/client5.png";
 import { useEffect, useRef, useState } from "react";
