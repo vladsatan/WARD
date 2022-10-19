@@ -80,33 +80,28 @@
     display: block;
 }
 
-.left-s button:hover {
-  animation: mainButton 2s infinite;
-  animation-play-state: paused;
-}
-
-@keyframes mainButton {
-  0% {
-    -webkit-transform:translateY(-50%);
-    transform: translateY(-50%);
-  }
-  25% {
-    -webkit-transform:translateY(0%);
-    transform: translateY(0%);
-  }
-  50% {
-    -webkit-transform:translateY(-20%);
-    transform: translateY(-20%);
-  }
-  75% {
-    -webkit-transform:translateY(0%);
-    transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform:translateY(-5%);
-    transform: translateY(-5%);
-  }
-}
+// @keyframes mainButton {
+//   0% {
+//     -webkit-transform:translateY(-50%);
+//     transform: translateY(-50%);
+//   }
+//   25% {
+//     -webkit-transform:translateY(0%);
+//     transform: translateY(0%);
+//   }
+//   50% {
+//     -webkit-transform:translateY(-20%);
+//     transform: translateY(-20%);
+//   }
+//   75% {
+//     -webkit-transform:translateY(0%);
+//     transform: translateY(0%);
+//   }
+//   100% {
+//     -webkit-transform:translateY(-5%);
+//     transform: translateY(-5%);
+//   }
+// }
 
 
 
