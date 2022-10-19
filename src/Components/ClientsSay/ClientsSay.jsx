@@ -2,8 +2,8 @@ import "./ClientsSay.scss";
 import client1 from "../../photos/client1.svg";
 import client2 from "../../photos/client2.svg";
 import client3 from "../../Logo/client3.svg";
-import client4 from "../../photos/client4.png"
-import client5 from "../../photos/client5.png"
+import client4 from "../../photos/client4.png";
+import client5 from "../../photos/client5.png";
 import { useEffect, useRef, useState } from "react";
 import { nanoid } from "nanoid";
 
@@ -78,16 +78,10 @@ const ClientsSay = () => {
 
     var middle =
       back.current.children[Math.floor((back.current.children.length - 1) / 2)];
-    if (window.screen.width > 1100) {
-      slidebur.current.scrollLeft =
-        middle.offsetLeft +
-        middle.offsetWidth -
-        back.current.offsetWidth / 2 +
-        middle.offsetWidth / 2 +
-        40;
-    } else {
-      slidebur.current.scrollLeft = middle.offsetLeft - scrollWidth / 0.8;
-    }
+    console.log(back.current.offsetWidth);
+    slidebur.current.scrollLeft =
+      back.current.offsetWidth / 2 - slidebur.current.offsetWidth / 2 + 10;
+    console.log(back.current.offsetWidth);
   }, []);
 
   useEffect(() => {
