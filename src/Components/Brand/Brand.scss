@@ -5,186 +5,63 @@
 
 .Brand {
   width: 100%;
+  background-color: #181c2e;
 }
 
 .brand-cotainer {
   max-width: 1440px;
-  margin: 44px auto;
+  margin: 0px auto;
   position: relative;
   text-align: center;
+  padding-top: 34px;
+  padding-bottom: 44px;
 }
 
-.equity_ti {
-  font-family: "Bebas Neue", cursive;
+.brand-cotainer h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 64px;
   font-weight: 400;
-  font-size: 48px;
-  color: #f7f8fa;
-  margin-bottom: 68px;
+  color: #F7F8FA;
+  padding-bottom: 44px;
 }
 
-.equity_flex {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+.brand-cotainer h1 span {
+  color: rgba(152, 204, 253, 1);
+}
+
+.brand-flex {
   margin: 0 auto;
-  flex-wrap: wrap;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.equity_container {
-  width: 337px;
-  text-align: center;
-  color: white;
-  padding: 5px;
-  margin: 0px 30px 20px 30px;
+.brand-box {
+  text-align: left;
+  padding: 0 90px;
 }
 
-.equity_container img {
-  width: 150px;
+.brand-box img {
+  display: block;
+  margin: 0 80px;
 }
 
-.equity_container p {
-  font-family: "Jost", sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  color: #f3f5f8ad;
-}
-
-.equity_container span {
-  color: #3cb9ff;
-}
-
-.equity_tittle_span,
-.equity_tittle {
-  font-family: "Bebas Neue", cursive;
+.brand-box h2 {
+  font-family: 'Bebas Neue', cursive;
   font-weight: 400;
   font-size: 40px;
-  color: #f7f8fa;
+  color: rgba(247, 248, 250, 1);
+  margin-top: 44px;
+  margin-bottom: 24px;
 }
 
-.equity_tittle_span {
-  padding-top: 44px;
-  padding-bottom: 52px;
+.brand-box h2 span {
+  color: rgba(152, 204, 253, 1);
 }
 
-.equity_tittle {
- padding-top: 24px;
- padding-bottom: 24px;
-}
-
-.equity_back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.03;
-  background-image: url(../../photos/equityBack.svg);
-  box-shadow: inset 300px 100px 100px #151722, inset -300px -100px 100px #151722;
-  background-repeat: no-repeat;
-  background-size: contain;
-    margin-bottom: 44px;
-}
-
-@media (max-width: 720px) {
-  .equity_flex {
-    margin: 0 auto 36px auto;
-}
-  .equity_container {
-    margin: 0px 5px;
-}
-    .equity_tittle_span {
-        padding: 25px 0px;
-    }
-    .equity_container img {
-        padding-bottom: 10px;
-    }
-    .equity_ti {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-    .equity_container p {
-      padding-bottom: 24px;
-    }
-    .equity_tittle {
-      padding-top: 10px;
-      padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 540px) {
-  .equity_flex {
-    margin: 0 auto 36px auto;
-}
-    .brand-cotainer {
-        margin: 3px auto;
-    }
-    .equity_ti {
-        font-size: 35px;
-        margin-bottom: 20px;
-    }
-    .equity_container img {
-        padding-bottom: 20px;
-        width: 150px;
-    }
-
-    .equity_container p {
-        font-family: "Jost", sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        padding: 0 35px;
-    }
-    .equity_tittle_span {
-      padding-top: 0px;
-      padding-bottom: 30px;
-  }
-  .brand-cotainer {
-    margin: -40px auto;
-}
-}
-
-@media (max-width: 420px) {
-  .equity_container img {
-    width: 100px;
-    padding-bottom: 16px;
-  }
-    .equity_container p {
-        padding: 0 35px;
-    }
-    .equity_flex {
-      margin: 0 auto 36px auto;
-  }
-  .equity_tittle_span {
-   font-size: 32px;
-   padding-bottom: 16px;
-}
-.equity_tittle {
-    font-size: 32px;
-    padding-top: 0px;
-    padding-bottom: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-}
-
-@media (max-width: 360px) {
-    .equity_container {
-        margin-right: -5px;
-    }
-    .equity_tittle {
-        padding: 0 55px;
-    }
-    .equity_container img {
-      width: 100px;
-    }
-}
-
-
-.equity_back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.03;
-  background-image: url(../../photos/equityBack.svg);
-  box-shadow: inset 300px 100px 100px #151722, inset -300px -100px 100px #151722;
-  background-repeat: no-repeat;
-  background-size: contain;
+.brand-box p {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(243, 245, 248, 1);
 }

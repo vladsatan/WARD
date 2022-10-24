@@ -5,33 +5,32 @@
 
 .TechStack {
     width: 100%;
+    background-color: #181c2e;
 }
 
 .TechStack_container {
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
-    padding: 52px 0px;
+    padding-top: 24px;
+    padding-bottom: 68px;
 }
 
 .TechStack_container h1 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    font-size: 74px;
+    font-size: 64px;
     color: #F7F8FA;
     margin-bottom: 24px;
 }
 
-.TechStack_container span {
-    color: #3CB9FF;
-}
 
 .big_stack_container {
     display: flex;
     justify-content: center;
     max-width: 1222px;
     flex-wrap: wrap;
-    margin: 0 auto 45px auto;
+    margin: 0 auto;
     padding: 0px 50px;
 }
 
@@ -70,50 +69,36 @@
 .stack_container4,
 .stack_container5,
 .stack_container6 {
-    width: 325px;
-    height: 257px;
-    background-color: gray;
-    margin-right: 7px;
-    margin-bottom: 7px;
+    width: 272px;
+    height: 215px;
+    margin-right: 27px;
+    margin-bottom: 27px;
     display: flex;
-    // flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     transition: .3s;
+    background: #141621;
 }
 
 .stack_container1 {
     border-top-left-radius: 30px;
-      background-image: url(../../Logo/redux.svg);
-      background-size: cover;
 }
 
 .stack_container2 {
-    background-image: url(../../Logo/php.svg);
     background-size: cover;
 }
 
 .stack_container3 {
     border-top-right-radius: 30px;
-    background-image: url(../../Logo/node.svg);
-    background-size: cover;
 }
 
 .stack_container4 {
     border-bottom-left-radius: 30px;
-    background-image: url(../../Logo/JS.svg);
-    background-size: cover;
 }
 
-.stack_container5 {
-    background-image: url(../../Logo/Sass.svg);
-    background-size: cover;
-}
 
 .stack_container6 {
     border-bottom-right-radius: 30px;
-    background-image: url(../../Logo/React.svg);
-    background-size: cover;
 }
 
 .stack_container1:hover {
@@ -141,93 +126,4 @@
 }
 
 
-@media (max-width: 1095px) {
-    .stack_container1 {
-        border-top-left-radius: 30px;
-          background-image: url(../../photos/reduxMob.png);
-          background-size: cover;
-    }
-    
-    .stack_container2 {
-        background-image: url(../../photos/nodeMob.png);
-        background-size: cover;
-        border-top-right-radius: 30px;
-    }
-    
-    .stack_container3 {
-        border-top-right-radius: 0px;
-        background-image: url(../../photos/phpMob.png);
-        background-size: cover;
-    }
-    
-    .stack_container4 {
-        border-bottom-left-radius: 0px;
-        background-image: url(../../photos/sassMob.png);
-        background-size: cover;
-    }
-    
-    .stack_container5 {
-        background-image: url(../../photos/jsMob.png);
-        background-size: cover;
-        border-bottom-left-radius: 30px;
-    }
-    
-    .stack_container6 {
-        border-bottom-right-radius: 30px;
-        background-image: url(../../photos/reactMob.png);
-        background-size: cover;
-    }
-}
-
-@media (max-width: 764px) {
-.stack_container1,
-.stack_container2,
-.stack_container3,
-.stack_container4,
-.stack_container5,
-.stack_container6 {
-    width: 120px;
-    height: 100px;
-    margin-right: 7px;
-    margin-bottom: 7px;
-}
-.stack_container1 img {
-    width: 77px;
-
-}
-
-.stack_container2 img {
-    width: 99px;
-}
-
-.stack_container3 img {
-    width: 107px;
-
-}
-
-.stack_container4 img {
-    width: 77px;
-}
-
-.stack_container5 img {
-    width: 86px;
-}
-
-.stack_container6 img {
-    width: 77px;
-}
-.big_stack_container {
-    max-width: 475px;
-    padding: 0px 20px;
-}
-}
-
-@media (max-width: 420px) {
-    .TechStack_container h1 {
-        font-size: 50px;
-    }
-    .TechStack_container {
-        padding: 0px 0px;
-    }
-}
-
+ 

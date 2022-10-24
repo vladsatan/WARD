@@ -1,12 +1,6 @@
 import React from "react";
 import "./MainSection.scss";
-import cub from "../../anim/cub.png";
-import cvadrat from "../../anim/cvadrat.svg";
-import ellipse from "../../anim/Ellipse.svg";
-import line from "../../anim/Line.svg";
-import pizza from "../../anim/pizza.svg";
-import bigelipse from "../../anim/bigelipse.svg";
-import figurback from "../../Logo/figur-back.svg";
+import robot from "../../photos/robotMain.png"
 import Header from "../Header/Header";
 
 export default function MainSection(props) {
@@ -22,48 +16,17 @@ export default function MainSection(props) {
           <div className="left-s">
             <div className="logoPhone"><img src={logoPH} alt="" width={'70px'} /></div>
             <h1>
-           <span>The Ward Company</span><br /> We are a engineering<br /> & design company<br /> from the future</h1>
-
-            <div className="anim-cont disnun">
-              <div className="cub">
-                <img src={cub} alt="cub" />
-              </div>
-              <img className="line" src={line} alt="line" />
-              <img className="cvadrat" src={cvadrat} alt="cvadrat" />
-              <img className="ellipse" src={ellipse} alt="ellipse" />
-              <img className="pizza" src={pizza} alt="pizza" />
-              <img className="bigelipse" src={bigelipse} alt="bigelipse" />
-              <img
-                className="figur"
-                src={figurback}
-                alt="figurs"
-                width={"100%"}
-              />
-            </div>
+            WE HELP BRANDS OF <span>ALL SIZES</span><br /> increase their <span>visibility</span><br /> and <span>profitability</span>
+           </h1>
 
             <p>
-            We help brands of all sizes increase their visibility and profitability!
+            The Ward Company.<br/>We are engineering<br/> & design company<br/> from the future!
             </p>
             <button onClick={()=>setStatus(true)}>HIRE US</button>
           </div>
 
           <div className="right-s">
-            <div className="anim-cont">
-              <div className="cub">
-                <img src={cub} alt="cub" />
-              </div>
-              <img className="line" src={line} alt="line" />
-              <img className="cvadrat" src={cvadrat} alt="cvadrat" />
-              <img className="ellipse" src={ellipse} alt="ellipse" />
-              <img className="pizza" src={pizza} alt="pizza" />
-              <img className="bigelipse" src={bigelipse} alt="bigelipse" />
-              <img
-                className="figur"
-                src={figurback}
-                alt="figurs"
-                width={"100%"}
-              />
-            </div>
+        <img src={robot} alt="" />
           </div>
         </div>
       </div>
