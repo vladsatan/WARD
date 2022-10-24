@@ -1,25 +1,27 @@
 import React from 'react'
 import "./AboutUs.scss"
-import earth from "../../Logo/earth.svg"
-import aboutPhoto from "../../Logo/Photo-about.svg"
+import aboutPhoto from "../../photos/about.png"
 
 export default function AboutUs() {
   return (
     <div className='AboutUs' id='about'>
         <div className='about-container'>
-            <img className='earth' src={earth} alt="" />
-            <h2>“Your brand should not face long-term damage as a result of a poor website.”</h2>
-            <div className='about-flex'>
-                <div className='about_text'>
-                    <h1>About <span>The Ward</span></h1>
-                    <p className='grey'>The Ward team of devoted specialists who offers systematic approach to brand strategy, development, digital design, and online marketing.</p>
-                    <p className='grey_1'>We thrive to work with brands that inspire and excite our team.</p>
-                    <p className='grey_2'>Together, we are working to grow enlightened and progressive brands.</p>
-                </div>
-                <div className='about_img'>
-                    <img src={aboutPhoto} alt="" />
-                </div>
+           <div className='about-flex'>
+            <div className='about-photo'><img src={aboutPhoto} alt="" /></div>
+            <div className='about-contant'>
+                <h1>About <span>us</span></h1>
+                <p>The Ward team of devoted specialists 
+                   who offers systematic approach to brand 
+                   strategy, development, digital design, 
+                   and online marketing.</p>
+
+                <p>We thrive to work with brands 
+                   that inspire and excite our team.</p>
+
+                <p>Together, we are working to grow 
+                   enlightened and progressive brands.</p>
             </div>
+           </div>
         </div>
     </div>
   )

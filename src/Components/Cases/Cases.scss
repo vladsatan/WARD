@@ -5,6 +5,8 @@
 
 .Cases {
   width: 100%;
+  background-color: #181c2e;
+  padding-bottom: 44px;
 }
 
 .cases-container {
@@ -12,6 +14,21 @@
   min-height: max-content;
   margin: 0 auto;
   position: relative;
+}
+
+.cases-container h1 {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 580px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 64px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.cases-container h1 span {
+  color: rgba(152, 204, 253, 1);
 }
 
 .cases-bg-container {
@@ -22,7 +39,6 @@
   display: flex;
   overflow: hidden;
   z-index: 2;
-  box-shadow: 1px 0px 10px #2b3d5c;
 }
 
 .sky {
@@ -99,7 +115,7 @@
   position: absolute;
   top: 0px;
   left: 0;
-  padding: 72px 72px 43px 73px;
+  padding: 44px 72px 43px 73px;
   display: flex;
   justify-content: space-between;
 }
@@ -118,11 +134,11 @@
 }
 
 .case-l h3 {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 34px;
+  font-weight: 400;
   color: rgba(247, 248, 250, 1);
   font-family: "Jost", sans-serif;
-  padding: 16px 0px;
+  padding: 10px 0px;
 }
 
 .case-r {
@@ -140,11 +156,11 @@
 }
 
 .case-r h3 {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 34px;
+  font-weight: 400;
   color: rgba(247, 248, 250, 1);
   font-family: "Jost", sans-serif;
-  padding: 16px 0px;
+  padding: 10px 0px;
 }
 
 @media (max-width: 1200px) {
@@ -158,9 +174,6 @@
     padding-right: 100px;
   }
   .content-part{
-    background-image: url(../..//photos/sloy1.png),url(../..//photos/sloy2.png),url(../..//photos/sloy2.png);
-    background-size: cover;
-    background-repeat: repeat;
     background-position: 0 30% 75% ;
   }
 }
