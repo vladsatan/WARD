@@ -21,10 +21,10 @@
 }
 
 .solution_container h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 64px;
   font-weight: 400;
-  color: #F7F8FA;
+  color: #f7f8fa;
   padding-bottom: 14px;
 }
 
@@ -43,10 +43,10 @@
 }
 
 .solution-cont p {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 34px;
-  color: #F3F5F8;
+  color: #f3f5f8;
   padding-bottom: 44px;
 }
 
@@ -69,4 +69,52 @@
   top: 0px;
   left: 0px;
   z-index: 2;
+}
+
+@media screen and (max-width: 1300px) {
+  .solution-flex {
+    padding: 40px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .solution-img {
+    order: -1;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .solution-cont {
+    width: 100%;
+    padding: 0 100px;
+  }
+
+  .solution-flex {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .solution-cont p {
+    font-size: 30px;
+  }
+  .robotSolution {
+    width: 193px;
+    height: 281px;
+  }
+  .metalGears {
+    width: 133px;
+    height: 115px;
+  }
+  .solution-img {
+    width: 230px;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .solution-cont p {
+    font-size: 20px;
+  }
+  .solution_container h1 {
+    font-size: 32px;
+  }
 }

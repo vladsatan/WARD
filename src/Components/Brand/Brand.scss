@@ -18,10 +18,10 @@
 }
 
 .brand-cotainer h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 64px;
   font-weight: 400;
-  color: #F7F8FA;
+  color: #f7f8fa;
   padding-bottom: 44px;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .brand-box h2 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   font-size: 40px;
   color: rgba(247, 248, 250, 1);
@@ -60,8 +60,39 @@
 }
 
 .brand-box p {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: rgba(243, 245, 248, 1);
+}
+
+@media screen and (max-width: 1300px) {
+  .brand-cotainer {
+    padding: 40px;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  .brand-box {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .brand-flex {
+    flex-wrap: wrap;
+  }
+  .brand-box {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .brand-box p {
+    font-size: 20px;
+  }
+  .brand-cotainer h1{
+    font-size: 32px;
+  }
+  .brand-box h2 {
+    font-size: 32px;
+  }
 }

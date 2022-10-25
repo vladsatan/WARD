@@ -1,173 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App{
-    width: 100vw;
-    background-color: #151722;
-
+.App {
+  width: 100vw;
+  background-color: #151722;
 }
 
 .logoName {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 10px 110px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0px 20px 0px 100px;
+  box-sizing: border-box;
 }
 
 .logoName img {
-    width: 226px;
-    height: 81px;
+  width: 226px;
+  height: 81px;
 }
 
 .popup {
-    width: 400px;
-    height: 168px;
-    padding: 30px;
-    background-color: #91B3CF;
-    position: fixed;
-    top: 250px;
-    right: 0px;
-    z-index: 110;
+  width: 400px;
+  height: 168px;
+  padding: 30px;
+  background-color: #91b3cf;
+  position: fixed;
+  top: 250px;
+  right: 0px;
+  z-index: 110;
 }
 
 .popupClose {
-    display: none;
+  display: none;
 }
 
 .popup h1 {
-    font-size: 25px;
-    color: #f7f7f9;
-    z-index: 100;
-    display: block;
-    position: absolute;
+  font-size: 25px;
+  color: #f7f7f9;
+  z-index: 100;
+  display: block;
+  position: absolute;
 }
 
 .popup img {
-    position: absolute;
-    top: 5px;
-    right: 50px;
-    z-index: 0;
-    opacity: 0.5;
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .popup button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    outline: none;
-    border: none;
-    background-color: #de015f;
-    color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  outline: none;
+  border: none;
+  background-color: #de015f;
+  color: white;
 }
 
 .mobile-flag {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #91B3CF;
-    position: fixed;
-    bottom: 120px;
-    right: 10px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgba(200, 217, 231, 1);
-    animation: hire 2s infinite;
-    z-index: 100;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #91b3cf;
+  position: fixed;
+  bottom: 120px;
+  right: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(200, 217, 231, 1);
+  animation: hire 2s infinite;
+  z-index: 100;
 }
 
 .mobile-flag img {
-    width: 25px;
+  width: 25px;
 }
 
-
 .flag {
-    position: fixed;
-    bottom: 200px;
-    right: 0;
-    width: 150px;
-    padding: 10px 36px;
-    background-color: #F3F5F8;
-    color: rgba(53, 62, 109, 1);
-    text-align: center;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: 'Jost', sans-serif;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    user-select: none; 
-    animation: hire 2s infinite;
-    transition: .3s;
-    z-index: 100;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  position: fixed;
+  bottom: 200px;
+  right: 0;
+  width: 150px;
+  padding: 10px 36px;
+  background-color: #f3f5f8;
+  color: rgba(53, 62, 109, 1);
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  animation: hire 2s infinite;
+  transition: 0.3s;
+  z-index: 100;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .flag:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes hire {
-    0% {
-        box-shadow: none ;
-    }
-
-    50% {
-        box-shadow: 0px 0px 10px 0px white ;
-    }
-
-    100% {
-      box-shadow: none;
-    }
+  0% {
+    box-shadow: none;
   }
 
-@media (max-width: 1100px){
-    .logoName {
-        padding: 10px 118px;
-    }
+  50% {
+    box-shadow: 0px 0px 10px 0px white;
+  }
+
+  100% {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1100px) {
 }
 
 @media (max-width: 780px) {
-    .logoName {
-        padding: 10px 20px;
-    }
-    .logoName img {
-            width: 177px;
-       }
+  .logoName {
+    padding: 10px 45px;
+  }
+  .logoName img {
+    width: 177px;
+  }
 }
 
+
+
 @media (max-width: 520px) {
-    .logoName {
-        padding: 10px 20px;
-    }
-    .logoName img {
-        width: 154px;
-    }
-    .flag {
-        display: none;
-    }
-    .mobile-flag {
-        display: flex;
-    }
+  .logoName {
+    padding: 10px 40px;
+  }
+  .logoName img {
+    width: 154px;
+  }
+  .flag {
+    display: none;
+  }
+  .mobile-flag {
+    display: flex;
+  }
 }
 
 @media (max-width: 720px) {
-    .flag {
-        width: 100px;
-        padding: 10px 26px;
-        font-size: 10px;
-        bottom: 110px;
-        z-index: 100;
-    }
-}
-
-@media (max-width: 420px){
-    .logoName {
-        display: none;
-    }
+  .flag {
+    width: 100px;
+    padding: 10px 26px;
+    font-size: 10px;
+    bottom: 110px;
+    z-index: 100;
+  }
 }

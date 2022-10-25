@@ -158,6 +158,12 @@
   border: 3px solid rgba(123, 176, 255, 0.25); /* отступ вокруг бегунка */
 }
 
+@media screen and (max-width: 700px) {
+  .clients_container h1 {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 600px) {
   .client_secondary {
     height: 400px;

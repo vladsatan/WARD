@@ -1,55 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Jost', sans-serif;
 
 .AboutUs {
-    width: 100%;
-    background-color: #181C2E;
+  width: 100%;
+  background-color: #181c2e;
 }
 
 .about-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 60px;
-    padding-right: 95px;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 60px;
+  padding-right: 95px;
 }
 
 .about-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-contant {
-    text-align: left;
-    margin-left: 44px;
+  text-align: left;
+  margin-left: 44px;
 }
 
 .about-contant h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-    font-size: 64px;
-    color: #F7F8FA;
-    margin-bottom: 44px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #f7f8fa;
+  margin-bottom: 44px;
 }
 
 .about-contant h1 span {
-    color: rgba(152, 204, 253, 1);
+  color: rgba(152, 204, 253, 1);
 }
 
 .about-contant p {
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 34px;
-    color: #F3F5F8;
-    padding-bottom: 24px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  color: #f3f5f8;
+  padding-bottom: 24px;
 }
 
 .about-photo img {
-    width: 649px;
+  width: 649px;
+}
+@media screen and (max-width: 1500px) {
+  .about-photo img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .about-flex {
+    display: block;
+  }
+  .about-container {
+    padding: 100px 60px 100px 60px;
+  }
+  .about-contant {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .about-contant p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-photo img {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-contant p {
+    font-size: 20px;
+  }
+  .about-contant h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about-contant p {
+    font-size: 20px;
+  }
 }

@@ -17,7 +17,7 @@
 }
 
 .help_container h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   font-size: 64px;
   color: rgba(255, 255, 255, 1);
@@ -42,7 +42,7 @@
 }
 
 .flex-box h2 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   font-size: 40px;
   color: rgba(247, 248, 250, 1);
@@ -51,8 +51,47 @@
 }
 
 .flex-box p {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: rgba(243, 245, 248, 1);
+}
+
+@media screen and (max-width: 1200px) {
+  .help-flex {
+    flex-wrap: wrap;
+  }
+  .flex-box {
+    max-width: 250px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 842px) {
+  .help-flex {
+    padding: 0;
+  }
+  .flex-box {
+    margin-right: 0;
+  }
+  .flex-box {
+    max-width: 50%;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .flex-box p {
+    font-size: 20px;
+  }
+  .flex-box h2 {
+    font-size: 32px;
+  }
+  .help_container h1 {
+    font-size: 32px;
+  }
+  .flex-box {
+    max-width: 350px;
+    padding: 0 50px;
+  }
 }
