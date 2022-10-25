@@ -3,10 +3,14 @@
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Jost', sans-serif;
 
+footer {
+  width: 100%;
+  background-color: #151722;
+}
+
 .footer_container {
   max-width: 1440px;
-  background:linear-gradient(180deg, #23344D 19.22%, #113C59 63.56%, #32424F 104.49%);
-  padding: 82px 20px;
+  padding: 44px 20px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -5,31 +5,20 @@ import obloko2 from "../../Logo/oblako2.svg";
 import obloko3 from "../../Logo/oblako3.svg";
 import bgtext from "../../Logo/bgtext.svg";
 import man from "../../Logo/man.svg";
-import sloy1 from "../../photos/sloy1.png";
-import sloy2 from "../../photos/sloy2.png";
-import sloy3 from "../../photos/sloy3.png";
-import case1 from "../../Logo/case1.svg";
-import case2 from "../../Logo/case2.svg";
-import case3 from "../../Logo/case3.svg";
-import case4 from "../../Logo/case4.svg";
-import case5 from "../../Logo/case5.svg";
-import case6 from "../../Logo/case6.svg";
+import case1 from "../../Logo/case1.png";
+import case2 from "../../Logo/case2.png";
+import case3 from "../../Logo/case3.png";
+import case4 from "../../Logo/case4.png";
+import case5 from "../../Logo/case5.png";
+import case6 from "../../Logo/case6.png";
 
 export default function Cases() {
   return (
     <div className="Cases" id="strategy">
       <div className="cases-container">
+        <h1>our <span>Approach</span></h1>
         <div className="cases_bg_block">
           <div className="cases-bg-container">
-            <div className="sloy1">
-              <img src={sloy1} alt="" />
-            </div>
-            <div className="sloy2">
-              <img src={sloy2} alt="" />
-            </div>
-            <div className="sloy3">
-              <img src={sloy3} alt="" />
-            </div>
             <div className="man-container">
               <div className="oblako1">
                 <img src={obloko1} alt="" />

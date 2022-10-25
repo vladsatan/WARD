@@ -21,10 +21,10 @@
 .MainSection_container {
     display: flex;
     max-width: 1440px;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 72px 20px 80px;
+    padding: 20px 20px 66px;
     margin: 0 auto;
 }
 
@@ -34,18 +34,18 @@
 
 
 .left-s {
-    max-width: 470px;
     text-align: left;
     z-index: 3;
+    margin-right: 24px;
+    max-width: 630px;
 }
 
 .left-s h1 {
   font-size: 68px; 
   font-family: "Bebas Neue", cursive;
   font-style: normal; 
-  padding-top: 38px;
   font-weight: 400;
-  color: #F7F8FACC; 
+  color: rgba(255, 255, 255, 1); 
 }
 
 .left-s span {
@@ -58,55 +58,62 @@
 .left-s p {
   color: white;
   font-family: 'Jost', sans-serif;
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 400px;
-  padding-top: 20px;
+  padding-top: 24px;
 }
 
 .left-s button {
     width: 251px;
     height: 71px;
-    border: 1px solid transparent;
-    background: linear-gradient(178.8deg, #5AAAEB 1.02%, #C9E4FA 117.6%) padding-box,linear-gradient(to bottom, rgba(191, 232, 255, 1) 0%,rgba(197, 234, 255, 0.6843) 50%, rgba(205, 237, 255, 0.3) 100%) border-box;;
-    color: white;
-    border-radius: 20px;
+    color: rgba(47, 54, 90, 1);
+    background: linear-gradient(178.57deg, #D9EDFF 1.21%, #FFFFFF 98.79%);
+    border-radius: 10px;
     outline: none;
-    font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 48px;
     transition: .3s ease-in-out;
-    margin: 72px 35px 0px 35px;
+    margin-top: 44px;
     display: block;
 }
 
-.left-s button:hover {
-  animation: mainButton 2s infinite;
-  animation-play-state: paused;
+@keyframes hire {
+  0% {
+      box-shadow: none ;
+  }
+
+  50% {
+      box-shadow: 0px 0px 10px 0px white ;
+  }
+
+  100% {
+    box-shadow: none;
+  }
 }
 
-@keyframes mainButton {
-  0% {
-    -webkit-transform:translateY(-50%);
-    transform: translateY(-50%);
-  }
-  25% {
-    -webkit-transform:translateY(0%);
-    transform: translateY(0%);
-  }
-  50% {
-    -webkit-transform:translateY(-20%);
-    transform: translateY(-20%);
-  }
-  75% {
-    -webkit-transform:translateY(0%);
-    transform: translateY(0%);
-  }
-  100% {
-    -webkit-transform:translateY(-5%);
-    transform: translateY(-5%);
-  }
-}
+// @keyframes mainButton {
+//   0% {
+//     -webkit-transform:translateY(-50%);
+//     transform: translateY(-50%);
+//   }
+//   25% {
+//     -webkit-transform:translateY(0%);
+//     transform: translateY(0%);
+//   }
+//   50% {
+//     -webkit-transform:translateY(-20%);
+//     transform: translateY(-20%);
+//   }
+//   75% {
+//     -webkit-transform:translateY(0%);
+//     transform: translateY(0%);
+//   }
+//   100% {
+//     -webkit-transform:translateY(-5%);
+//     transform: translateY(-5%);
+//   }
+// }
 
 
 

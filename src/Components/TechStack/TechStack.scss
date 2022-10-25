@@ -5,33 +5,32 @@
 
 .TechStack {
     width: 100%;
+    background-color: #181c2e;
 }
 
 .TechStack_container {
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
-    padding: 52px 0px;
+    padding-top: 24px;
+    padding-bottom: 68px;
 }
 
 .TechStack_container h1 {
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    font-size: 74px;
+    font-size: 64px;
     color: #F7F8FA;
     margin-bottom: 24px;
 }
 
-.TechStack_container span {
-    color: #3CB9FF;
-}
 
 .big_stack_container {
     display: flex;
     justify-content: center;
     max-width: 1222px;
     flex-wrap: wrap;
-    margin: 0 auto 45px auto;
+    margin: 0 auto;
     padding: 0px 50px;
 }
 
@@ -70,50 +69,36 @@
 .stack_container4,
 .stack_container5,
 .stack_container6 {
-    width: 325px;
-    height: 257px;
-    background-color: gray;
-    margin-right: 7px;
-    margin-bottom: 7px;
+    width: 272px;
+    height: 215px;
+    margin-right: 27px;
+    margin-bottom: 27px;
     display: flex;
-    // flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     transition: .3s;
+    background: #141621;
 }
 
 .stack_container1 {
     border-top-left-radius: 30px;
-      background-image: url(../../Logo/redux.svg);
-      background-size: cover;
 }
 
 .stack_container2 {
-    background-image: url(../../Logo/php.svg);
     background-size: cover;
 }
 
 .stack_container3 {
     border-top-right-radius: 30px;
-    background-image: url(../../Logo/node.svg);
-    background-size: cover;
 }
 
 .stack_container4 {
     border-bottom-left-radius: 30px;
-    background-image: url(../../Logo/JS.svg);
-    background-size: cover;
 }
 
-.stack_container5 {
-    background-image: url(../../Logo/Sass.svg);
-    background-size: cover;
-}
 
 .stack_container6 {
     border-bottom-right-radius: 30px;
-    background-image: url(../../Logo/React.svg);
-    background-size: cover;
 }
 
 .stack_container1:hover {
@@ -141,113 +126,4 @@
 }
 
 
-@media (max-width: 955px) {
-    .stack_container1 {
-        border-top-left-radius: 0px;
-        background-color: #98acc4;
-    }
-    .stack_container3 {
-        border-top-right-radius: 0px;
-        background-color: #627997;
-    }
-    .stack_container4 {
-        border-bottom-left-radius: 0px;
-        background-color: #6c81a5;
-    }
-    .stack_container6 {
-        border-bottom-right-radius: 0px;
-        background-color: #8b9fba;
-
-    }
-}
-  
-
-@media (max-width: 763px) {
-    .stack_container1 {
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        background-color: #98acc4;
-        margin-right: 0px;
-    }
-    .stack_container2 {
-        margin-right: 0px;
-    }
-    .stack_container3 {
-        border-top-right-radius: 0px;
-        background-color: #627997;
-        margin-right: 0px;
-    }
-    .stack_container4 {
-        border-bottom-left-radius: 0px;
-        background-color: #6c81a5;
-        margin-right: 0px;
-    }
-    .stack_container5 {
-        margin-right: 0px;
-    }
-    .stack_container6 {
-        border-bottom-right-radius: 30px;
-        border-bottom-left-radius: 30px;
-        background-color: #8b9fba;
-        margin-right: 0px;
-
-    }
-}
-
-@media (max-width: 420px) {
-    .stack_container1 {
-      width: 269px;
-      height: 213px;
-    }
-    .stack_container2 {
-        width: 269px;
-        height: 213px;
-    }
-    .stack_container3 {
-        width: 269px;
-        height: 213px;
-    }
-    .stack_container4 {
-        width: 269px;
-        height: 213px;
-    }
-    .stack_container5 {
-        width: 269px;
-        height: 213px;
-    }
-    .stack_container6 {
-        width: 269px;
-        height: 213px;
-    }
-
-    .stack_container1 img {
-        width: 150px;
-    }
-    
-    .stack_container2 img {
-        width: 190px;
-    }
-    
-    .stack_container3 img {
-        width: 207px;
-    }
-    
-    .stack_container4 img {
-        width: 150px;
-    }
-    
-    .stack_container5 img {
-        width: 166px;  
-    }
-    
-    .stack_container6 img {
-        width: 150px;
-    }
-    .TechStack_container {
-        padding: 0px 0px;
-    }
-}
-
-@media (max-width: 350px) {
-    
-}
+ 

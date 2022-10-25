@@ -12,9 +12,9 @@
 }
 
 .logoName {
-    max-width: 1165px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 110px;
 }
 
 .logoName img {
@@ -92,8 +92,8 @@
     right: 0;
     width: 150px;
     padding: 10px 36px;
-    background-color: #91B3CF;
-    color: rgba(231, 237, 242, 1);
+    background-color: #F3F5F8;
+    color: rgba(53, 62, 109, 1);
     text-align: center;
     font-weight: 600;
     font-size: 20px;
@@ -104,6 +104,8 @@
     animation: hire 2s infinite;
     transition: .3s;
     z-index: 100;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .flag:hover {
