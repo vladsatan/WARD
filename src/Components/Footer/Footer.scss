@@ -24,7 +24,7 @@ footer {
 }
 
 .contact-tel p {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 24px;
@@ -37,17 +37,17 @@ footer {
 }
 
 .contact-input h3 {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  color: #E4E4E4;
+  color: #e4e4e4;
   padding-bottom: 16px;
 }
 
 .contact-input-flex {
   display: flex;
   width: 580px;
-  border: 1px solid #F3F5F8;
+  border: 1px solid #f3f5f8;
 }
 
 .contact-input-flex input {
@@ -56,18 +56,18 @@ footer {
   width: 90%;
   padding: 0px 0px 0px 24px;
   background-color: #113c5900;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 300;
   font-size: 24px;
-  color: #F3F5F8;
+  color: #f3f5f8;
 }
 .contact-input-flex input::placeholder {
-  color: #F3F5F8;
+  color: #f3f5f8;
   font-weight: 100;
 }
 
 .send-BTN {
-  transition: .2s;
+  transition: 0.2s;
   width: 10%;
   height: 60px;
   display: flex;
@@ -82,198 +82,193 @@ footer {
 
 .contact-mail p {
   text-align: center;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contact-mail a {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
 @media (max-width: 1260px) {
   .contact-input-flex {
     width: 442px;
-}
-.contact-mail p {
-  font-size: 20px;
-}
-.contact-mail a {
-  font-size: 20px;
-}
-.contact-tel p {
-  font-size: 20px;
-}
-.footer_container {
-  padding: 35px 20px;
-}
-.send-BTN {
-  width: 20%;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  }
+  .contact-mail p {
+    font-size: 20px;
+  }
+  .contact-mail a {
+    font-size: 20px;
+  }
+  .contact-tel p {
+    font-size: 20px;
+  }
+  .footer_container {
+    padding: 35px 20px;
+  }
+  .send-BTN {
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1050px) {
   .contact-input-flex {
     width: 300px;
-}
-.contact-input-flex input {
-  font-size: 14px;
-  padding-left: 15px;
-}
-.contact-mail p {
-  font-size: 16px;
-}
-.contact-mail a {
-  font-size: 16px;
-}
-.contact-tel p {
-  font-size: 16px;
-}
-.footer_container {
-  padding: 35px 20px;
-}
+  }
+  .contact-input-flex input {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+  .contact-mail p {
+    font-size: 16px;
+  }
+  .contact-mail a {
+    font-size: 16px;
+  }
+  .contact-tel p {
+    font-size: 16px;
+  }
+  .footer_container {
+    padding: 35px 20px;
+  }
 }
 
 @media (max-width: 750px) {
   .contact-input-flex {
     width: 250px;
-}
-.contact-input h3 {
-  font-size: 20px;
-}
-.send-BTN {
-  padding: 10px;
-}
-.contact-input-flex input {
-  font-size: 14px;
-  padding-left: 15px;
-}
-.contact-mail p {
-  font-size: 14px;
-}
-.contact-mail a {
-  font-size: 14px;
-}
-.contact-tel p {
-  font-size: 14px;
-}
-.footer_container {
-  padding: 35px 20px;
-}
+  }
+  // .contact-input h3 {
+  //   font-size: 20px;
+  // }
+  .send-BTN {
+    padding: 10px;
+  }
+  .contact-input-flex input {
+    // font-size: 14px;
+    padding-left: 15px;
+  }
+  .contact-mail p {
+    // font-size: 14px;
+  }
+  .contact-mail a {
+    // font-size: 14px;
+  }
+  .contact-tel p {
+    // font-size: 14px;
+  }
+  .footer_container {
+    padding: 35px 20px;
+  }
 }
 
 @media (max-width: 630px) {
   .contact-input-flex {
     width: 230px;
     margin: 0 10px;
+  }
+  .contact-input h3 {
+    // font-size: 16px;
+  }
+  .send-BTN {
+    padding: 5px;
+  }
+  .contact-input-flex input {
+    // font-size: 10px;
+    padding-left: 15px;
+  }
+  .contact-mail p {
+    // font-size: 10px;
+  }
+  .contact-mail a {
+    // font-size: 10px;
+  }
+  .contact-tel p {
+    // font-size: 10px;
+  }
+  .footer_container {
+    padding: 20px 20px;
+    flex-wrap: wrap;
+  }
 }
-.contact-input h3 {
-  font-size: 16px;
-}
-.send-BTN {
-  padding: 5px;
-}
-.contact-input-flex input {
-  font-size: 10px;
-  padding-left: 15px;
-}
-.contact-mail p {
-  font-size: 10px;
-}
-.contact-mail a {
-  font-size: 10px;
-}
-.contact-tel p {
-  font-size: 10px;
-}
-.footer_container {
-  padding: 20px 20px;
-  flex-wrap: wrap;
-}
-}
-
-@media (max-width: 550px) {
+@media (max-width: 577px) {
   .contact-input-flex {
     width: 230px;
     margin: 0 10px;
-    order: 1;
     margin-bottom: 20px;
-}
-.contact-mail{   
-  order: 2;
-  margin-bottom: 20px;
-}
- .contact-tel{
-   order: 3;
- }
-.contact-input h3 {
-  font-size: 16px;
-}
-.send-BTN {
-  padding: 5px;
-  width: 20%;
-}
-.send-BTN img {
-  width: 32px;
-}
-.contact-input-flex input {
-  font-size: 10px;
-  padding-left: 15px;
-}
-.contact-mail p {
-  font-size: 10px;
-}
-.contact-mail a {
-  font-size: 10px;
-}
-.contact-tel p {
-  font-size: 10px;
-}
-.footer_container {
-  padding: 20px 20px;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.contact-input {
-  margin: 0 0px;
-}
+  }
+  .contact-input h3 {
+    font-size: 20px;
+  }
+  .contact-mail p {
+    font-size: 20px;
+  }
+  .contact-tel > p:nth-child(1) {
+    display: none;
+  }
+  .contact-input > p:nth-child(1) {
+    order: 2;
+  }
+  .contact-mail {
+    margin-bottom: 20px;
+  }
+  .contact-tel {
+  }
+  .contact-input h3 {
+    font-size: 20px;
+  }
+  .send-BTN {
+    padding: 5px;
+    width: 20%;
+  }
+  .send-BTN img {
+    width: 32px;
+  }
+  .contact-input-flex input {
+    font-size: 15px;
+    padding-left: 15px;
+  }
+
+  .contact-mail a {
+    font-size: 20px;
+  }
+  .contact-tel p {
+    font-size: 20px;
+  }
+  .footer_container {
+    padding: 20px 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .contact-input {
+    margin: 0 0px;
+  }
 }
 
 @media (max-width: 420px) {
   .contact-tel {
-    order: 1;
     margin-bottom: 12px;
-}
-.contact-tel p {
-  font-size: 18px;
-}
-.contact-mail {
-  margin-bottom: 12px;
-}
+  }
 
-.contact-mail p {
-  font-size: 18px;
-}
-.contact-mail a {
-  font-size: 18px;
-}
-.contact-input {
-  margin: 0 0px;
-  order: 3;
-}
-.contact-input h3 {
-  font-size: 18px;
-  font-weight: 900;
-}
+  .contact-mail {
+    margin-bottom: 12px;
+  }
+
+  .contact-input {
+    margin: 0 0px;
+  }
+  .contact-input h3 {
+    font-weight: 900;
+  }
 }

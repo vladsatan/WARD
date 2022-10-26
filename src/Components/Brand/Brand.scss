@@ -15,6 +15,7 @@
   text-align: center;
   padding-top: 34px;
   padding-bottom: 44px;
+  padding:40px 100px;
 }
 
 .brand-cotainer h1 {
@@ -32,13 +33,16 @@
 .brand-flex {
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .brand-box {
   text-align: left;
-  padding: 0 90px;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding-bottom: 30px;
 }
 
 .brand-box img {
@@ -68,20 +72,31 @@
 
 @media screen and (max-width: 1300px) {
   .brand-cotainer {
-    padding: 40px;
+    padding: 43px 100px;
     width: 100vw;
     box-sizing: border-box;
+
   }
-  .brand-box {
-    padding: 40px;
-  }
+  // .brand-box {
+  //   padding: 40px;
+  // }
 }
 @media screen and (max-width: 1100px) {
+  
   .brand-flex {
     flex-wrap: wrap;
   }
   .brand-box {
-    max-width: 400px;
+    max-width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .brand-cotainer{
+    padding-left: 40px;
+    padding-right: 40px;
+
   }
 }
 
@@ -89,10 +104,29 @@
   .brand-box p {
     font-size: 20px;
   }
-  .brand-cotainer h1{
+  .brand-cotainer h1 {
     font-size: 32px;
   }
   .brand-box h2 {
     font-size: 32px;
+  }
+
+  .brand-flex {
+    justify-content: left;
+  }
+  .brand-box {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .brand-box p {
+    padding-right: 50px;
   }
 }

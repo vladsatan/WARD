@@ -1,66 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
 // font-family: 'Bebas Neue', cursive;
 // font-family: 'Jost', sans-serif;
 
 .TechStack {
-    width: 100%;
-    background-color: #181c2e;
+  width: 100%;
+  background-color: #181c2e;
 }
 
 .TechStack_container {
-    max-width: 1440px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 24px;
-    padding-bottom: 68px;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 68px;
 }
 
 .TechStack_container h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-    font-size: 64px;
-    color: #F7F8FA;
-    margin-bottom: 24px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #f7f8fa;
+  margin-bottom: 24px;
 }
 
-
 .big_stack_container {
-    display: flex;
-    justify-content: center;
-    max-width: 1222px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+  max-width: 1222px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0px 50px;
 }
 
 .stack_container1 img {
-    width: 180px;
-    height: 167px;
+  width: 180px;
+  height: 167px;
 }
 
 .stack_container2 img {
-    width: 230px;
-    height: 191px;
+  width: 230px;
+  height: 191px;
 }
 
 .stack_container3 img {
-    width: 250px;
-    height: 117px;
+  width: 250px;
+  height: 117px;
 }
 
 .stack_container4 img {
-    width: 180px;
-    height: 227px;
+  width: 180px;
+  height: 227px;
 }
 
 .stack_container5 img {
-    width: 200px;
-    height: 150px;  
+  width: 200px;
+  height: 150px;
 }
 
 .stack_container6 img {
-    width: 180px;
+  width: 180px;
 }
 
 .stack_container1,
@@ -69,61 +68,106 @@
 .stack_container4,
 .stack_container5,
 .stack_container6 {
-    width: 272px;
-    height: 215px;
-    margin-right: 27px;
-    margin-bottom: 27px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-    background: #141621;
+  width: 272px;
+  height: 215px;
+  margin-right: 27px;
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  background: #141621;
 }
 
 .stack_container1 {
-    border-top-left-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
 .stack_container2 {
-    background-size: cover;
+  background-size: cover;
 }
 
 .stack_container3 {
-    border-top-right-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .stack_container4 {
-    border-bottom-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
-
 .stack_container6 {
-    border-bottom-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .stack_container1:hover {
-    box-shadow: 0px 0px 10px 5px #3cb9ff;
+  box-shadow: 0px 0px 10px 5px #3cb9ff;
 }
 
 .stack_container2:hover {
-    box-shadow: 0px 0px 10px 5px #3cb9ff;
+  box-shadow: 0px 0px 10px 5px #3cb9ff;
 }
 
 .stack_container3:hover {
-    box-shadow: 0px 0px 10px 5px #3cb9ff;
+  box-shadow: 0px 0px 10px 5px #3cb9ff;
 }
 
 .stack_container4:hover {
-    box-shadow: 0px 0px 10px 5px #3cb9ff;
+  box-shadow: 0px 0px 10px 5px #3cb9ff;
 }
 
 .stack_container5:hover {
-    box-shadow: 0px 0px 10px 5px #3cb9ff;
+  box-shadow: 0px 0px 10px 5px #3cb9ff;
 }
 
 .stack_container6:hover {
-    box-shadow: 0px 0px 10px 5px #3cb9ff;
+  box-shadow: 0px 0px 10px 5px #3cb9ff;
+}
+@media screen and (max-width: 997px) {
+  .big_stack_container > a:nth-child(1) {
+    order: 1;
+  }
+  .big_stack_container > a:nth-child(2) {
+    order: 3;
+  }
+  .big_stack_container > a:nth-child(3) {
+    order: 2;
+  }
+  .big_stack_container > a:nth-child(4) {
+    order: 5;
+  }
+  .big_stack_container > a:nth-child(5) {
+    order: 4;
+  }
+  .big_stack_container > a:nth-child(6) {
+    order: 6;
+  }
 }
 
+@media screen and (max-width: 780px) {
+  .stack_container1,
+  .stack_container2,
+  .stack_container3,
+  .stack_container4,
+  .stack_container5,
+  .stack_container6 {
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+  }
 
- 
+  .big_stack_container a {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 45%;
+    max-width: 45%;
+    height: 30vw;
+    box-sizing: border-box;
+  }
+  .big_stack_container {
+    padding-left: 20px;
+  }
+  .big_stack_container img {
+    max-width: 90%;
+    height: 85%;
+  }
+}
