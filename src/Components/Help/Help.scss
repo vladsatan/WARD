@@ -37,7 +37,6 @@
 }
 
 .flex-box {
-  text-align: left;
   max-width: 350px;
 }
 
@@ -55,6 +54,8 @@
   font-weight: 400;
   font-size: 24px;
   color: rgba(243, 245, 248, 1);
+  text-align: left;
+
 }
 
 @media screen and (max-width: 1200px) {
