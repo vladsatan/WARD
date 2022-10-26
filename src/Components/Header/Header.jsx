@@ -4,7 +4,6 @@ import { useEffect } from "react";
 
 export default function Header() {
   const [transparent, setTransparent] = useState(0);
-  
 
   useEffect(() => {
     let event = window.addEventListener("scroll", () => {

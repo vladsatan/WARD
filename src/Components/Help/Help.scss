@@ -17,7 +17,7 @@
 }
 
 .help_container h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   font-size: 64px;
   color: rgba(255, 255, 255, 1);
@@ -30,19 +30,19 @@
 
 .help-flex {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 143px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  flex-wrap: wrap;
 }
 
 .flex-box {
   text-align: left;
-  width: 356px;
-  margin-right: 100px;
+  max-width: 350px;
 }
 
 .flex-box h2 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   font-size: 40px;
   color: rgba(247, 248, 250, 1);
@@ -51,8 +51,55 @@
 }
 
 .flex-box p {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: rgba(243, 245, 248, 1);
+}
+
+@media screen and (max-width: 1200px) {
+  .flex-box {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .flex-box {
+    max-width: 100%;
+    width: 100%;
+  }
+  .flex-box p{
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 842px) {
+  .flex-box {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 780px) {
+  .help-flex {
+    padding: 0 40px;
+  }
+  .flex-box {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .flex-box p {
+    font-size: 20px;
+  }
+  .flex-box h2 {
+    font-size: 32px;
+  }
+  .help_container h1 {
+    font-size: 32px;
+  }
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

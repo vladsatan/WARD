@@ -2,9 +2,9 @@ import "./App.scss";
 import React from "react";
 import { useState } from "react";
 import wardLogo from "./wardLogo.svg";
-import logoPH from "./photos/logoPH.png"
-import arroy from "./Logo/arroy.svg"
-import PhotoAbout from "./Logo/Photo-about.svg"
+import logoPH from "./photos/logoPH.png";
+import arroy from "./Logo/arroy.svg";
+import PhotoAbout from "./Logo/Photo-about.svg";
 const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 const ClientsSay = React.lazy(() =>
   import("./Components/ClientsSay/ClientsSay")
@@ -37,13 +37,20 @@ function App() {
       <TechStack />
       <ClientsSay />
       <Cases />
-      <Feedback status={isFeetback} setStatus={setIsFeetback} setSubmit={setSubmit} />
+      <Feedback
+        status={isFeetback}
+        setStatus={setIsFeetback}
+        setSubmit={setSubmit}
+      />
       <Footer />
 
-      <div className={submit? 'popup' : 'popupClose' }>
-        <h1>Your application has been successfully sent, we will contact you shortly</h1>
-        <img src={PhotoAbout} width={'150px'} />
-        <button onClick={()=>setSubmit(false)}>x</button>
+      <div className={submit ? "popup" : "popupClose"}>
+        <h1>
+          Your application has been successfully sent, we will contact you
+          shortly
+        </h1>
+        <img src={PhotoAbout} width={"150px"} />
+        <button onClick={() => setSubmit(false)}>x</button>
       </div>
 
       <div className="flag" onClick={() => setIsFeetback(!isFeetback)}>
@@ -51,9 +58,8 @@ function App() {
       </div>
 
       <div className="mobile-flag" onClick={() => setIsFeetback(!isFeetback)}>
-           <img src={arroy} />
+        <img src={arroy} />
       </div>
-
     </div>
   );
 }

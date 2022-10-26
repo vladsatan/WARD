@@ -16,28 +16,32 @@ export default function Cases() {
   return (
     <div className="Cases" id="strategy">
       <div className="cases-container">
-        <h1>our <span>Approach</span></h1>
-        <div className="cases_bg_block">
-          <div className="cases-bg-container">
-            <div className="man-container">
-              <div className="oblako1">
-                <img src={obloko1} alt="" />
-              </div>
-              <div className="oblako2">
-                <img src={obloko2} alt="" />
-              </div>
-              <div className="oblako3">
-                <img src={obloko3} alt="" />
-              </div>
-              <div className="text">
-                <img src={bgtext} alt="" />
-              </div>
-              <div className="man">
-                <img src={man} alt="" />
+        {window.screen.width > 820 && (
+          <div className="cases_bg_block">
+            <h1>
+              our <span>Approach</span>
+            </h1>
+            <div className="cases-bg-container">
+              <div className="man-container">
+                <div className="oblako1">
+                  <img src={obloko1} alt="" />
+                </div>
+                <div className="oblako2">
+                  <img src={obloko2} alt="" />
+                </div>
+                <div className="oblako3">
+                  <img src={obloko3} alt="" />
+                </div>
+                <div className="text">
+                  <img src={bgtext} alt="" />
+                </div>
+                <div className="man">
+                  <img src={man} alt="" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
 
         <div className="content-part">
           <div className="left-cases">
@@ -67,6 +71,29 @@ export default function Cases() {
               </p>
             </div>
           </div>
+          {window.screen.width <= 820 && (
+            <div className="cases_bg_block">
+              <div className="cases-bg-container">
+                <div className="man-container">
+                  <div className="oblako1">
+                    <img src={obloko1} alt="" />
+                  </div>
+                  <div className="oblako2">
+                    <img src={obloko2} alt="" />
+                  </div>
+                  <div className="oblako3">
+                    <img src={obloko3} alt="" />
+                  </div>
+                  <div className="text">
+                    <img src={bgtext} alt="" />
+                  </div>
+                  <div className="man">
+                    <img src={man} alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           <div className="right-cases">
             <div className="case-r">
